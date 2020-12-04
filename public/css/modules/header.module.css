@@ -1,0 +1,29 @@
+.header {
+    display: grid;
+    grid-template:
+        "header__top" 50px
+        "header__bottom" 120px
+        / 1fr;
+}
+
+.header__top {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(768px, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-area: header__top;
+    background-color: #72ac1a;
+}
+
+.header__top__left {
+    grid-area: header__top__left;
+}
+
+.header__top__right {
+    grid-area: header__top__right;
+}
+
+.header__bottom {
+    grid-area: header__bottom;
+    background-color: #0c519c;
+}
