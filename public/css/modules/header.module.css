@@ -45,8 +45,8 @@
 
     .menu__top {
         display: grid;
-        grid-template-columns: 1fr 405px 1fr;
-        grid-template-rows: 100px;
+        grid-template-columns: 1fr 305px 1fr;
+        grid-template-rows: 74px;
         align-items: center;
     }
 
@@ -78,6 +78,10 @@
         height: 33px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .menu__bottom__title > i:hover {
+        cursor: pointer;
     }
 
     .menu__bottom__subtitle__container {
