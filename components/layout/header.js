@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../../public/css/modules/header.module.css";
+import useWidth from "../hooks/useWidth";
 
 export default function Header() {
+    const [openHamburger, setOpenHamburger] = useState(false);
     const [openMenu, setOpenMenu] = useState("");
+    const width = useWidth();
+
+    useEffect(() => {
+        setOpenMenu("");
+    }, [width]);
 
     function onClickMenu(event) {
         const menuName = event.target.id;
@@ -18,6 +25,22 @@ export default function Header() {
         }
     }
 
+    function onClickHamburger() {
+        setOpenHamburger(!openHamburger);
+    }
+
+    function onHoverMouse(menuName) {
+        if (width >= 1100) {
+            setOpenMenu(menuName);
+        }
+    }
+
+    function onOutMouse() {
+        if (width >= 1100) {
+            setOpenMenu("");
+        }
+    }
+
     return (
         <header className={styles.header}>
             <Head>
@@ -26,7 +49,7 @@ export default function Header() {
                     rel="stylesheet"
                     href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
                     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-                    crossorigin="anonymous"
+                    crossOrigin="anonymous"
                 />
             </Head>
             <div className={styles.header__top}>
@@ -46,9 +69,9 @@ export default function Header() {
                     <div className="inner__container">
                         <div className={styles.menu}>
                             <div className={styles.menu__top}>
-                                <i className="fas fa-bars" />
+                                <i className="fas fa-bars click" onClick={onClickHamburger} />
                                 <Link href="/">
-                                    <div className="image__wrapper">
+                                    <div className="image__wrapper click">
                                         <Image
                                             src="/image/logo/Interclean_logo.jpg"
                                             alt="interclean logo"
@@ -57,23 +80,43 @@ export default function Header() {
                                     </div>
                                 </Link>
                             </div>
-                            <div className={styles.menu__bottom}>
-                                <div className={styles.menu__bottom__container}>
+                            <div
+                                className={`${styles.menu__bottom} ${
+                                    openHamburger === true ? null : styles.hidden
+                                }`}
+                            >
+                                <div
+                                    className={styles.menu__bottom__container}
+                                    onMouseOverCapture={() => {
+                                        onHoverMouse("about");
+                                    }}
+                                    onMouseLeave={onOutMouse}
+                                >
                                     <div className={styles.menu__bottom__title}>
                                         <Link href="/about">
-                                            <div className="click">ABOUT</div>
+                                            <div className={`click ${styles.menu__button}`}>
+                                                ABOUT
+                                            </div>
                                         </Link>
                                     </div>
                                 </div>
-                                <div className={styles.menu__bottom__container}>
+                                <div
+                                    className={styles.menu__bottom__container}
+                                    onMouseOverCapture={() => {
+                                        onHoverMouse("applications");
+                                    }}
+                                    onMouseLeave={onOutMouse}
+                                >
                                     <div className={styles.menu__bottom__title}>
                                         <Link href="/applications">
-                                            <div className="click">APPLICATIONS</div>
+                                            <div className={`click ${styles.menu__button}`}>
+                                                APPLICATIONS
+                                            </div>
                                         </Link>
                                         <i
                                             id="applications"
                                             onClick={onClickMenu}
-                                            class="fas fa-chevron-right"
+                                            className="fas fa-chevron-right"
                                         />
                                     </div>
                                     {openMenu === "applications" ? (
@@ -111,15 +154,23 @@ export default function Header() {
                                         </div>
                                     ) : null}
                                 </div>
-                                <div className={styles.menu__bottom__container}>
+                                <div
+                                    className={styles.menu__bottom__container}
+                                    onMouseOverCapture={() => {
+                                        onHoverMouse("wash-systems");
+                                    }}
+                                    onMouseLeave={onOutMouse}
+                                >
                                     <div className={styles.menu__bottom__title}>
                                         <Link href="/wash-systems">
-                                            <div className="click">WASH SYSTEMS</div>
+                                            <div className={`click ${styles.menu__button}`}>
+                                                WASH SYSTEMS
+                                            </div>
                                         </Link>
                                         <i
                                             id="wash-systems"
                                             onClick={onClickMenu}
-                                            class="fas fa-chevron-right"
+                                            className="fas fa-chevron-right"
                                         />
                                     </div>
                                     {openMenu === "wash-systems" ? (
@@ -177,15 +228,23 @@ export default function Header() {
                                         </div>
                                     ) : null}
                                 </div>
-                                <div className={styles.menu__bottom__container}>
+                                <div
+                                    className={styles.menu__bottom__container}
+                                    onMouseOverCapture={() => {
+                                        onHoverMouse("services");
+                                    }}
+                                    onMouseLeave={onOutMouse}
+                                >
                                     <div className={styles.menu__bottom__title}>
                                         <Link href="/services">
-                                            <div className="click">SERVICES</div>
+                                            <div className={`click ${styles.menu__button}`}>
+                                                SERVICES
+                                            </div>
                                         </Link>
                                         <i
                                             id="services"
                                             onClick={onClickMenu}
-                                            class="fas fa-chevron-right"
+                                            className="fas fa-chevron-right"
                                         />
                                     </div>
                                     {openMenu === "services" ? (
@@ -198,15 +257,23 @@ export default function Header() {
                                         </div>
                                     ) : null}
                                 </div>
-                                <div className={styles.menu__bottom__container}>
+                                <div
+                                    className={styles.menu__bottom__container}
+                                    onMouseOverCapture={() => {
+                                        onHoverMouse("contact");
+                                    }}
+                                    onMouseLeave={onOutMouse}
+                                >
                                     <div className={styles.menu__bottom__title}>
                                         <Link href="/contact">
-                                            <div className="click">CONTACT</div>
+                                            <div className={`click ${styles.menu__button}`}>
+                                                CONTACT
+                                            </div>
                                         </Link>
                                         <i
                                             id="contact"
                                             onClick={onClickMenu}
-                                            class="fas fa-chevron-right"
+                                            className="fas fa-chevron-right"
                                         />
                                     </div>
                                     {openMenu === "contact" ? (
