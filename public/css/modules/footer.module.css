@@ -1,4 +1,34 @@
 .footer {
+    color: #eeeeee;
+}
+
+.footer_top {
+    background-color: #252525;
+}
+
+.footer_top__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    padding: 72px 0px 52px 0px;
+}
+
+.footer_top__menu_items {
+    padding: 0px 0px 17px 0px;
+}
+
+.footer_top__grid h5 {
+    padding: 17px 0px 17px 0px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.footer_bottom {
     background-color: #01a2d8;
+}
+
+.footer_bottom__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 53px;
 }
