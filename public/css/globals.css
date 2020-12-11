@@ -43,6 +43,47 @@ a {
     color: #0c519c;
 }
 
+/* 콘텐트 내용 */
+
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 32px;
+    color: #0c519b;
+    font-weight: 600;
+    line-height: 39px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #ef7200;
+    font-weight: 600;
+    line-height: 39px;
+}
+
+p {
+    color: #505050;
+    font-size: 16px;
+    line-height: 27px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ul {
+    list-style: disc;
+    line-height: 27px;
+}
+
 /* MOBILE */
 @media only screen and (max-width: 1100px) {
     .inner__container {

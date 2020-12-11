@@ -1,0 +1,11 @@
+.title_image {
+    height: 160px;
+    background-image: url("../../image/wash-systems/bg1.jpg");
+    background-position: bottom center;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-weight: 600;
+}
