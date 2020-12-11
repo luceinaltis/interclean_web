@@ -1,13 +1,12 @@
 // Layouts
-import Header from "../components/layout/header";
-import Footer from "../components/layout/footer";
+import { Header, Footer, PageHeader } from "../components/layout";
 
 export default function About() {
-    return (
-        <div>
-            <Header />
-            <div>about</div>;
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+      <PageHeader title="인터클린 소개" subtitle="" />
+      <Footer />
+    </div>
+  );
 }

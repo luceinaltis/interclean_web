@@ -46,6 +46,7 @@
 .menu__bottom {
     display: flex;
     align-items: center;
+    z-index: 50;
 }
 
 .menu__bottom div {
