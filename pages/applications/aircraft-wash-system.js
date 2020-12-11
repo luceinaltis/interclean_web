@@ -1,13 +1,12 @@
 // Layouts
-import Header from "../../components/layout/header";
-import Footer from "../../components/layout/footer";
+import { Header, Footer, PageHeader } from "../../components/layout";
 
 export default function AircraftWashSystem() {
-    return (
-        <div>
-            <Header />
-            <main>AircraftWashSystem</main>
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+      <PageHeader title="항공기 세척" subtitle="" />
+      <Footer />
+    </div>
+  );
 }
