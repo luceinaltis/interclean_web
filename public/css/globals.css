@@ -29,9 +29,15 @@ a {
 }
 
 .image__wrapper {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
 }
 
 .click {
@@ -54,6 +60,7 @@ h2 {
     color: #0c519b;
     font-weight: 600;
     line-height: 39px;
+    text-align: center;
 }
 
 h2 {
@@ -69,6 +76,12 @@ h3 {
     color: #ef7200;
     font-weight: 600;
     line-height: 39px;
+    text-align: center;
+}
+
+strong {
+    font-weight: 500;
+    color: #505050;
 }
 
 p {

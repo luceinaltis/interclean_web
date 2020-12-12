@@ -66,6 +66,8 @@ export default function Index() {
                             <li>Chassis Wash</li>
                             <li>Tire Wash</li>
                         </ul>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                         <ImageGrid cellData={gridCellData} />
                     </div>
                 </div>
