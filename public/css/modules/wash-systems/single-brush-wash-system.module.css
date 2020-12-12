@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: min-content;
+    gap: 60px;
+}
+
+.grid__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.grid__item h3 {
+    letter-spacing: -1px;
+}
+
+.grid__item i {
+    font-size: 80px;
+    color: #0c519b;
+}
+
+.grid__second {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.grid__third {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: 40px;
+}
