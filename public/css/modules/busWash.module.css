@@ -1,0 +1,116 @@
+/* 공용 */
+.zoom__imageWrapper {
+    display: table;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.zoom__image {
+    transition: 0.4s;
+}
+
+.zoom__image:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    display: table;
+    padding: 15px 30px;
+    transition: 0.2s;
+    color: white;
+    margin-top: 40px;
+}
+
+.button__blue {
+    background-color: #0c519b;
+}
+
+.button__blue:hover {
+    background-color: #ef8e00;
+    cursor: pointer;
+}
+
+.button__orange {
+    background-color: #ef8e00;
+}
+
+.button__orange:hover {
+    background-color: #0c519b;
+    cursor: pointer;
+}
+
+/* bus/headInfo.js */
+.headInfo {
+    margin: 50px 0px 30px;
+}
+
+.headInfo__title__blue {
+    color: #0c519b;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px 0px 10px;
+}
+
+.headInfo__title__orange {
+    color: #ef8e00;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0px 10px;
+}
+
+.headInfo__body {
+    line-height: 1.5;
+}
+
+/* bus/body.js */
+.body {
+    margin: 20px 0px 30px;
+}
+
+.body__title {
+    color: #0c519b;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0px 10px;
+}
+
+.body__body {
+    line-height: 1.5;
+}
+
+.body__body__bold {
+    font-weight: bold;
+}
+
+.body__button {
+    margin-top: 20px;
+}
+
+/* bus/tailInfo.js */
+.tailInfo {
+    margin: 20px 0px 30px;
+}
+
+.tailInfo__title {
+    color: #ef8e00;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0px 10px;
+}
+
+.tailInfo__body {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.tailInfo__video {
+    width: 1100px;
+    height: 619px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tailInfo__video {
+        width: 950px;
+        height: 534px;
+    }
+}

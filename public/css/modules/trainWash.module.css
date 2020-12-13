@@ -1,0 +1,81 @@
+/* 공용 */
+.zoom__imageWrapper {
+    display: table;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.zoom__image {
+    transition: 0.4s;
+}
+
+.zoom__image:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    display: table;
+    padding: 15px 30px;
+    background-color: #0c519b;
+    transition: 0.2s;
+    color: white;
+    margin: 20px 0px 30px;
+}
+
+.button:hover {
+    background-color: #ef8e00;
+    cursor: pointer;
+}
+
+/* bus/headInfo.js */
+.headInfo {
+    margin: 50px 0px 30px;
+    text-align: center;
+}
+
+.headInfo__title {
+    color: #0c519b;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.headInfo__subtitle {
+    color: #ef8e00;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0px 20px;
+}
+
+/* bus/body.js */
+.body {
+    margin: -20px 0px 80px;
+}
+
+.body__title {
+    color: #0c519b;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px 0px 10px;
+}
+
+.body__body {
+    line-height: 1.5;
+}
+
+.body__body__bold {
+    font-weight: bold;
+}
+
+.body__body__link {
+    color: gray;
+    text-decoration: underline;
+}
+
+.body__body__link:hover {
+    cursor: pointer;
+    color: skyblue;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}

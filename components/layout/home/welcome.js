@@ -16,7 +16,7 @@ export default function Welcome() {
                 <p className={styles.welcome__header__right}>TO INTERCLEAN</p> */}
           </div>
         </div>
-        <p>
+        <p className={styles.welcome__text}>
           InterClean Equipment , LLC. is headquartered in Ypsilanti, MI and is a
           global, high-tech company that manufactures vehicle wash systems from
           small trucks to heavy transport vehicles, buses, rail fleets and a

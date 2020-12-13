@@ -1,5 +1,4 @@
 .container {
-    background-color: #eaeef1;
     padding: 50px 0px;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .zoomImage__image {
-    width: 100%;
+    max-width: 100%;
     transition: 0.4s;
 }
 
@@ -59,5 +58,83 @@
 .bodyText {
     line-height: 2;
     font-weight: 500;
+}
+
+/* handglassCell.js */
+.dropbar {
+    background-color: #72ab1a;
+    color: white;
+    padding: 12px 20px 12px 40px;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px 10px;
+    transition: 0.4s;
+}
+
+.dropbar__icon {
+    color: white;
+}
+
+.dropbar:hover {
+    background-color: #0c519b;
+    cursor: pointer;
+}
+
+.handglassCell {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+.handglassCell:hover {
+    cursor: pointer;
+}
+
+.handglassCell__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    display: block;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+.handglassCell__glassContainer {
+    transition: 0.5s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.handglassCell__glass {
+   color: white;
+   font-size: 200%;
+}
+
+.handglassCell:hover .handglassCell__image {
+    filter: brightness(30%);
+    transform: scale(1.05);
+}
+
+.handglassCell:hover .handglassCell__glassContainer {
+    opacity: 1;
+}
+
+/* handglassGrid.js */
+.handglassGrid {
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(5, 1fr); 
+   grid-auto-rows: 120px;
+   justify-content: space-between;
+   row-gap: 20px;
+   column-gap: 25px;
+   overflow: hidden;
 }

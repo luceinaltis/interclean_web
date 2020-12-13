@@ -51,6 +51,17 @@ export default function Header() {
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
           crossOrigin="anonymous"
         />
+        {/* 폰트 */}
+        {/* font-family: 'Questrial', sans-serif; */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Questrial&display=swap"
+          rel="stylesheet"
+        />
+        {/*  font-family: 'Open Sans', sans-serif; */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className={styles.header__top}>
         <div className="container">

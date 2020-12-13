@@ -1,0 +1,80 @@
+/* modalImage.js */
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.imageContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.imageText {
+    color: white;
+    top: 0;
+    font-size: 24px;
+    margin: 10px 0px 10px 15px;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.image__arrowContainer {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transition: 0.4s;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 300%;
+    color: black;
+}
+
+.image__arrowContainer__pos_left {
+    left: 0;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.image__arrowContainer__pos_right {
+    right: 0;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.imageContainer:hover .image__arrowContainer {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image__arrow__dir_left {
+    transition: 0.4s;
+}
+
+.image__arrow__dir_right {
+    transition: 0.4s;
+}
+
+.image__arrowContainer:hover .image__arrow__dir_left {
+    color: white;
+}
+
+.image__arrowContainer:hover .image__arrow__dir_right {
+    color: white;
+}

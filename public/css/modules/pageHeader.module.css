@@ -17,11 +17,12 @@
     font-size: 50px;
     text-align: center;
     margin-bottom: 10px;
+    /* font-family: -apple-system, brandon, sans-serif; */
 }
 
 .subtitle {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 

@@ -1,0 +1,94 @@
+/* 공용 */
+.zoom__imageWrapper {
+    display: table;
+    margin: 30px auto 20px;
+    overflow: hidden;
+}
+
+.zoom__image {
+    max-width: 100%;
+    transition: 0.4s;
+}
+
+.zoom__image:hover {
+    transform: scale(1.05);
+}
+
+.button__blue {
+    display: table;
+    padding: 15px 30px;
+    background-color: #0c519b;
+    transition: 0.2s;
+    color: white;
+    margin-top: 20px;
+}
+
+.button__blue:hover {
+    background-color: #ef8e00;
+    cursor: pointer;
+}
+
+.button__orange {
+    display: table;
+    padding: 15px 30px;
+    background-color: #ef8e00;
+    transition: 0.2s;
+    color: white;
+    margin-top: 20px;
+}
+
+.button__orange:hover {
+    background-color: #0c519b;
+    cursor: pointer;
+}
+
+.content__title__blue {
+    color: #0c519b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content__title__orange {
+    color: #ef8e00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content__text {
+    line-height: 1.5;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.content__text__bold {
+    font-weight: bold;
+}
+
+.content__title__center {
+    text-align: center;
+}
+
+/* aircraft/headInfo.js */
+.headInfo {
+    width: 100%;
+    margin: 50px 0px 80px;
+}
+
+.headInfo__title {
+    font-size: 32px;
+}
+
+.content__wrapper {
+    width: 100%;
+    margin: 50px 0px 50px;
+}
+
+/* aircraft/body.js */
+.body {
+    width: 100%;
+    margin: 0px 0px 80px;
+}
+
+.body__content__wrapper {
+    margin-bottom: 80px;
+}
