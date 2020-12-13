@@ -5,6 +5,9 @@ import Dropbar from "./dropbar";
 import ModalImage from "./modalImage";
 import VideoImage from "./videoImage";
 import ModalVideo from "./modalVideo";
+import ButtonBlue from "./buttonBlue";
+import ButtonOrange from "./buttonOrange";
+import ZoomImage from "./zoomImage";
 
 export {
   WashSystemCell,
@@ -14,4 +17,7 @@ export {
   ModalImage,
   VideoImage,
   ModalVideo,
+  ButtonBlue,
+  ButtonOrange,
+  ZoomImage,
 };

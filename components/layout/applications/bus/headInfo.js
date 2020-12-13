@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/busWash.module.css";
+import styles from "@/public/css/modules/applications/busWash.module.css";
 import Link from "next/link";
 
 export default function HeadInfo() {

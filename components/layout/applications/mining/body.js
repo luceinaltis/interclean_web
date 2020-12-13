@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/mining.module.css";
+import styles from "@/public/css/modules/applications/mining.module.css";
 import Link from "next/link";
 
 export default function Body() {

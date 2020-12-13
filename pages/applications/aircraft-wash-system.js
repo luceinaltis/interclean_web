@@ -10,9 +10,6 @@ import {
   // ZoomImage,
 } from "@/components/layout/applications";
 
-//css
-import styles from "@/public/css/modules/applications.module.css";
-
 // aircraft-wash-system 에서만 필요한 layouts
 import { HeadInfo, Body } from "@/components/layout/applications/aircraft";
 

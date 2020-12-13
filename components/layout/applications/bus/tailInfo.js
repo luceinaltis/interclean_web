@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/busWash.module.css";
+import styles from "@/public/css/modules/applications/busWash.module.css";
 
 export default function TailInfo() {
   return (

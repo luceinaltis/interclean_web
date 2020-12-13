@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/applications.module.css";
+import styles from "@/public/css/modules/applications/applications.module.css";
 
 export default function Title({ title, subtitle }) {
   return (

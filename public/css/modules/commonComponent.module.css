@@ -1,0 +1,43 @@
+.zoom__imageWrapper {
+    display: table;
+    margin: 10px auto 20px;
+    overflow: hidden;
+}
+
+.zoom__image {
+    max-width: 100%;
+    transition: 0.4s;
+}
+
+.zoom__image:hover {
+    transform: scale(1.05);
+}
+
+.button__orange {
+    display: table;
+    padding: 15px 30px;
+    background-color: #ef8e00;
+    transition: 0.2s;
+    color: white;
+    margin-top: 20px;
+}
+
+.button__orange:hover {
+    background-color: #0c519b;
+    cursor: pointer;
+}
+
+.button__blue {
+    display: table;
+    padding: 15px 30px;
+    background-color: #ef8e00;
+    transition: 0.2s;
+    color: white;
+    margin-top: 20px;
+}
+
+.button__blue:hover {
+    background-color: #0c519b;
+    cursor: pointer;
+}
+
