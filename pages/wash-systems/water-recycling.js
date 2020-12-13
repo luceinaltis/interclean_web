@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 
 // Layouts
 import Header from "../../components/layout/header";
@@ -18,7 +19,42 @@ const gridCellData = [
     ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", "WATER RECYCLING"],
 ];
 
+// applications 에서 공통적으로 필요한 layouts
+import { Photos, Downloads } from "@/components/layout/applications";
+
 export default function WaterRecycling() {
+    const photosData = [
+        [
+            "/image/wash-systems/water-recycling/photos/grid1.jpg",
+            "wash system water recycling equipment",
+        ],
+        ["/image/wash-systems/water-recycling/photos/grid2.jpg", "OLYMPUS DIGITAL CAMERA"],
+        ["/image/wash-systems/water-recycling/photos/grid3.jpg", "Water Recycling Banner Image"],
+        ["/image/wash-systems/water-recycling/photos/grid4.jpg", "water recycling equipment"],
+        ["/image/wash-systems/water-recycling/photos/grid5.jpg", "water recycling for wash system"],
+        ["/image/wash-systems/water-recycling/photos/grid6.jpg", "water recycling system 2"],
+        ["/image/wash-systems/water-recycling/photos/grid7.jpg", "water recycling system"],
+        ["/image/wash-systems/water-recycling/photos/grid8.jpg", "water recycling wash equipment"],
+        ["/image/wash-systems/water-recycling/photos/grid9.jpg", "water recycling wash system"],
+        ["/image/wash-systems/water-recycling/photos/grid10.jpg", "KONICA MINOLTA DIGITAL CAMERA"],
+        ["/image/wash-systems/water-recycling/photos/grid11.jpg", "water recycling units"],
+        ["/image/wash-systems/water-recycling/photos/grid12.jpg", "green technology"],
+        ["/image/wash-systems/water-recycling/photos/grid13.jpg", "Services Image 1"],
+        ["/image/wash-systems/water-recycling/photos/grid14.jpg", "OLYMPUS DIGITAL CAMERA"],
+    ];
+
+    const downloadsData = [
+        [
+            "/downloads/wash-systems/water-recycling/InterClean_Brochure.pdf",
+            "InterClean Brochure",
+            "(PDF, 3.5 MB)",
+        ],
+    ];
+
+    const [menu, setMenu] = useState(undefined);
+    const openMenu = (menuName) => {
+        setMenu(menu !== menuName ? menuName : undefined);
+    };
     return (
         <div>
             <Header />
@@ -78,6 +114,12 @@ export default function WaterRecycling() {
                     <ImageGrid cellData={gridCellData} />
                 </div>
             </div>
+            <Photos photosData={photosData} menuOpened={menu === "PHOTOS"} openMenu={openMenu} />
+            <Downloads
+                downloadsData={downloadsData}
+                menuOpened={menu === "Downloads"}
+                openMenu={openMenu}
+            />
             <Footer />
         </div>
     );
