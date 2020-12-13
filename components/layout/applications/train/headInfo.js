@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/trainWash.module.css";
+import styles from "@/public/css/modules/applications/trainWash.module.css";
 
 export default function HeadInfo() {
   return (

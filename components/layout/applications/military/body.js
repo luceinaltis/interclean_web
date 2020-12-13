@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/militaryWash.module.css";
+import styles from "@/public/css/modules/applications/militaryWash.module.css";
 import Link from "next/link";
 
 export default function Body() {

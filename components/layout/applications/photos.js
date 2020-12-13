@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Dropbar, HandglassCell, ModalImage } from "@/components/elements";
-import styles from "@/public/css/modules/applications.module.css";
+import styles from "@/public/css/modules/applications/applications.module.css";
 import { Collapse } from "react-collapse";
 
 export default function Photos({ photosData, menuOpened, openMenu }) {

@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/aircraft.module.css";
+import styles from "@/public/css/modules/applications/aircraft.module.css";
 import Link from "next/link";
 
 export default function HeadInfo() {

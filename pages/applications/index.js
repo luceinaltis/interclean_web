@@ -3,7 +3,7 @@ import { Header, Footer, PageHeader } from "../../components/layout";
 import { ImageGrid } from "@/components/layout/home";
 import { BodyText, Title } from "@/components/layout/applications";
 
-import styles from "@/public/css/modules/applications.module.css";
+import styles from "@/public/css/modules/applications/applications.module.css";
 
 // 그리드에 들어갈 이미지 데이터
 // [이미지경로, 이동경로, 타이틀]
@@ -54,20 +54,6 @@ export default function Index() {
       <div className={styles.container}>
         <Title title="INTERCLEAN COMMERCIAL WASH SYSTEMS" subtitle="" />
         <BodyText children={bodyText} />
-        {/* <div className={styles.body__text}>
-          Finally, a Wash That Works! If you’re looking for a U.S. made heavy
-          duty wash system that is fully customizable to meet your vehicle’s
-          wash needs, contact InterClean. We’ve been designing and manufacturing
-          commercial wash systems with fresh and recycled water modules, tire
-          and chassis wash components, and a variety of manual, automatic, and
-          robotic systems that make your wash system work the way you need it
-          to.To learn more about our vehicle specific systems, click on the
-          picture that best represents your needs.
-        </div> */}
-        {/* <Title title="인터클린이 제공하는 세척 시스템" subtitle="" /> */}
-        {/* <div className={styles.body__title}>
-          인터클린이 제공하는 세척 시스템
-        </div> */}
         <ImageGrid cellData={gridCellData} />
       </div>
       <Footer />

@@ -1,4 +1,4 @@
-import styles from "@/public/css/modules/truckWash.module.css";
+import styles from "@/public/css/modules/applications/truckWash.module.css";
 
 export default function Body() {
   const imagePath = [
