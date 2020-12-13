@@ -2,6 +2,11 @@
     color: #eeeeee;
 }
 
+.footer ul {
+    list-style: none;
+    line-height: 16px;
+}
+
 .footer_top {
     background-color: #252525;
 }
