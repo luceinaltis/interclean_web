@@ -1,16 +1,28 @@
 // Layouts
 import { Header, Footer, PageHeader } from "../../components/layout";
-import { SideImage, Title, ZoomImage } from "@/components/layout/applications";
 
-// css
+// applications 에서 공통적으로 필요한 layouts
+import {
+  Photos,
+  Videos,
+  // SideImage,
+  // Title,
+  // ZoomImage,
+} from "@/components/layout/applications";
+
+//css
 import styles from "@/public/css/modules/applications.module.css";
+
+// military-wash-system 에서만 필요한 layouts
+import { Body } from "@/components/layout/applications/military";
 
 export default function MilitaryWashSystem() {
   return (
     <div>
       <Header />
       <PageHeader title="군용차량 세척" subtitle="" />
-      <div className={styles.container}>
+      <Body />
+      {/* <div className={styles.container}>
         <Title title="군용차량 세척 시스템" />
         <ZoomImage imagePath="/image/applications/military/mainImage.png" />
         <SideImage
@@ -36,7 +48,7 @@ export default function MilitaryWashSystem() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

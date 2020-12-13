@@ -1,20 +1,137 @@
-.body {
-    width: 100%;
-    padding: 50px 0px;
+/* headInfo.js */
+.headInfo {
+    margin: 0px 0px 30px;
 }
 
-.body__washingImage {
-    width: 100%;
+.headIcon__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
 }
 
-.title {
+.headIcon__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headIcon__text {
+    color: #f7821f;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.headText {
+    width: 100%;
+    margin: 30px 0px 10px;
     text-align: center;
-    font-size: 30px;
+}
+
+.headText__subtitle {
+    color: #f7821f;
+}
+
+.headText__title {
     color: #0c519b;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.subtitle {
+.headText__body {
+    margin: 20px 0px 10px 0px;
+    line-height: 1.5;
+}
+
+.headText__body__bold {
+    font-weight: bold;
+}
+
+.headButton {
+    background-color: #0c519b;
+    padding: 15px 30px;
+    color: white;
+    display: table;
+    margin: 20px auto;
+    transition: 0.4s;
+}
+
+.headButton:hover {
+    background-color: #f7821f;
+    cursor: pointer;
+}
+
+/* body.js */
+.body {
+    margin: 30px 0px 30px;
+}
+
+.body__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 30px;
+    row-gap: 80px;
+}
+
+.body__image {
+    max-width: 100%;
+}
+
+.body__text {
+
+}
+
+.body__title {
+    color: #f7821f;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.body__body {
+    line-height: 1.7;
+    margin: 20px 0px;
+}
+
+.body__button {
+    background-color: #0c519b;
+    padding: 15px 30px;
+    color: white;
+    transition: 0.4s;
+    display: table;
+}
+
+.body__button:hover {
+    background-color: #f7821f;
+    cursor: pointer;
+}
+
+/* tailInfo.js */
+.tailInfo {
+    margin: 0px 0px 50px;
+}
+
+.tailIcon__image {
+    display: table;
+    margin: 0px auto 15px;
+}
+
+.tailInfo__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 30px;
+    row-gap: 80px;
+}
+
+.tailIcon__info {
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.tailInfo__iconName {
+    color: #f7821f;
+    font-weight: bold;
+    font-size: 24px;
     text-align: center;
-    font-size: 23px;
-    color: #ef7e00
 }

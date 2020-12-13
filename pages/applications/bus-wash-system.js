@@ -2,15 +2,30 @@
 import { Header, Footer, PageHeader } from "../../components/layout";
 import { SideImage, Title, ZoomImage } from "@/components/layout/applications";
 
-// css
+// applications 에서 공통적으로 필요한 layouts
+import {
+  Photos,
+  Videos,
+  // SideImage,
+  // Title,
+  // ZoomImage,
+} from "@/components/layout/applications";
+
+//css
 import styles from "@/public/css/modules/applications.module.css";
+
+// bus-wash-system 에서만 필요한 layouts
+import { HeadInfo, Body, TailInfo } from "@/components/layout/applications/bus";
 
 export default function BusWashSystem() {
   return (
     <div>
       <Header />
       <PageHeader title="버스 세척" subtitle="" />
-      <div className={styles.container}>
+      <HeadInfo />
+      <Body />
+      <TailInfo />
+      {/* <div className={styles.container}>
         <Title title="버스 세척 시스템" />
         <ZoomImage imagePath="/image/applications/bus/mainImage.png" />
         <SideImage
@@ -34,7 +49,7 @@ export default function BusWashSystem() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

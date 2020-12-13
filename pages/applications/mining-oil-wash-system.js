@@ -1,16 +1,29 @@
-import { ImageGrid } from "@/components/layout/home";
+// Layouts
 import { Header, Footer, PageHeader } from "../../components/layout";
-import { SideImage, Title, ZoomImage } from "@/components/layout/applications";
 
-// css
+// applications 에서 공통적으로 필요한 layouts
+import {
+  Photos,
+  Videos,
+  // SideImage,
+  // Title,
+  // ZoomImage,
+} from "@/components/layout/applications";
+
+//css
 import styles from "@/public/css/modules/applications.module.css";
+
+// mining-oil-wash-system 에서만 필요한 layouts
+import { HeadInfo, Body } from "@/components/layout/applications/mining";
 
 export default function MiningOilWashSystem() {
   return (
     <div>
       <Header />
       <PageHeader title="가스 & 오일차량 세척" subtitle="" />
-      <div className={styles.container}>
+      <HeadInfo />
+      <Body />
+      {/* <div className={styles.container}>
         <Title title="가스 & 오일차량 세척 시스템" />
         <ZoomImage imagePath="/image/applications/mining/mainImage.png" />
         <SideImage
@@ -35,7 +48,7 @@ export default function MiningOilWashSystem() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

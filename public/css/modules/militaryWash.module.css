@@ -1,0 +1,68 @@
+.body {
+    margin: 50px 0px 80px;
+}
+
+.zoom__imageWrapper {
+    display: table;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.zoom__image {
+    transition: 0.4s;
+}
+
+.zoom__image:hover {
+    transform: scale(1.05);
+}
+
+.button__blue {
+    display: table;
+    padding: 15px 30px;
+    background-color: #0c519b;
+    transition: 0.2s;
+    color: white;
+    margin-top: 20px;
+}
+
+.button__blue:hover {
+    background-color: #ef8e00;
+    cursor: pointer;
+}
+
+.button__orange {
+    display: table;
+    padding: 15px 30px;
+    background-color: #ef8e00;
+    transition: 0.2s;
+    color: white;
+    margin-top: 20px;
+}
+
+.button__orange:hover {
+    background-color: #0c519b;
+    cursor: pointer;
+}
+
+.content__wrapper {
+    width: 100%;
+    margin: 50px 0px 50px;
+}
+
+.content__title__blue {
+    color: #0c519b;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0px 10px;
+}
+
+.content__title__orange {
+    color: #ef8e00;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0px 10px;
+}
+
+.content__text {
+    line-height: 1.5;
+}

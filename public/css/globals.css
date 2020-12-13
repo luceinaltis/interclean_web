@@ -48,8 +48,6 @@ a {
     color: #0c519c;
 }
 
-/* 콘텐트 내용 */
-
 h1,
 h2 {
     display: flex;
@@ -106,3 +104,7 @@ ul {
         margin-right: 8vw;
     }
 }
+
+.ReactCollapse--collapse {
+    transition: height 500ms;
+  }

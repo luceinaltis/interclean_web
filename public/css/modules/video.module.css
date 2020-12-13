@@ -1,0 +1,68 @@
+.imageWrapper {
+    position: relative;
+    overflow: hidden; 
+    display: table;  /* 이것 덕분에 자식 컴포넌트의 너비만큼 너비 형성됨 */
+}
+
+.videoImage {
+    max-width: 100%;
+    transition: 0.4s;
+}
+
+.imageWrapper:hover {
+    cursor: pointer;
+}
+
+.imageWrapper:hover .videoImage {
+    transform: scale(1.05);
+}
+
+.videoImage__iconWrapper {
+    font-size: 300%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #303030;
+    transition: 0.4s;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 8px;
+}
+
+.imageWrapper:hover .videoImage__iconWrapper {
+    background-color: #1e73be;
+    color: white;
+}
+
+/* modalVideo.js */
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.videoGrid {
+   width: 100%;
+   overflow: hidden;
+}
+
+.videoTitle {
+    margin: 20px 0px 10px 10px;
+}
