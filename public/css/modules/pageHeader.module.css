@@ -1,5 +1,5 @@
 .container {
-    background-image: url('/image/about/header.jpg');
+    background-image: url('/image/wash-systems/bg1.jpg');
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% auto;
@@ -28,7 +28,6 @@
 
 @media only screen and (max-width: 1000px) {
     .container {
-        background-image: url('/image/about/header.jpg');
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: auto 100%;

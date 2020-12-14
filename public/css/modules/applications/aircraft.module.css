@@ -84,3 +84,10 @@
 .body__content__wrapper {
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 800px) {
+    .content__text {
+        line-height: 1.8;
+        font-size: 14px;
+    }
+}

@@ -17,13 +17,15 @@ export default function TailInfo() {
             as RV’s and commercial delivery vehicles. Options include Spot Free
             Rinse, Blowers, Water Recycling and Chassis Wash.
           </div>
-          <iframe
-            className={styles.tailInfo__video}
-            src="https://www.youtube.com/embed/0mamDH80cuU"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+          <div className={styles.tailInfo__videoWrapper}>
+            <iframe
+              className={styles.tailInfo__video}
+              src="https://www.youtube.com/embed/0mamDH80cuU"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
       </div>
     </div>

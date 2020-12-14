@@ -36,8 +36,16 @@
     margin-top: 20px;
 }
 
-.button__blue:hover {
+.button__green {
+    display: table;
+    padding: 15px 30px;
+    background-color: #71aa18;
+    transition: 0.2s;
+    color: white;
+    margin-top: 20px;
+}
+
+.button__blue:hover,.button__green:hover {
     background-color: #0c519b;
     cursor: pointer;
 }
-

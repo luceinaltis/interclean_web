@@ -6,7 +6,7 @@ export default function Services() {
       <div className="container">
         <div className="inner__container">
           <div className={styles.services__title}>SERVICES</div>
-          <div className={styles.services__body}>
+          <div className={styles.services__grid}>
             <div className={styles.services__text}>
               The heavy-duty vehicle wash systems InterClean designs and
               manufactures can help our clients simplify maintenance and improve

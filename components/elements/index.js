@@ -7,6 +7,7 @@ import VideoImage from "./videoImage";
 import ModalVideo from "./modalVideo";
 import ButtonBlue from "./buttonBlue";
 import ButtonOrange from "./buttonOrange";
+import ButtonGreen from "./buttonGreen";
 import ZoomImage from "./zoomImage";
 
 export {
@@ -18,6 +19,7 @@ export {
   VideoImage,
   ModalVideo,
   ButtonBlue,
+  ButtonGreen,
   ButtonOrange,
   ZoomImage,
 };

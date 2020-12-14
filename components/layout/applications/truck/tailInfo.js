@@ -45,6 +45,11 @@ export default function TailInfo() {
     <div className="container">
       <div className="inner__container">
         <div className={styles.tailInfo}>
+          <div className={styles.tailInfo__title}>THE INTERCLEAN ADVANTAGE</div>
+          <div className={styles.tailInfo__subtitle}>
+            All InterClean Equipment Inc. truck wash systems are built with our
+            customers’ needs in mind.
+          </div>
           <div className={styles.tailInfo__grid}>
             {[0, 1, 2, 3].map((idx) => {
               return (

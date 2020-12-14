@@ -101,10 +101,32 @@
     flex-direction: row;
 }
 
+.welcome__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.welcome__text {
+    
+}
+
+.welcome__buttonGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 30px;
+}
+
 /* MOBILE */
 @media only screen and (max-width: 1100px) {
     .welcome p {
         font-size: 30px;
+    }
+
+    .welcome__grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
     }
 }
 
@@ -118,14 +140,18 @@
 }
 
 .whatsNew__imageContainer {
-    width: 535px;
-    height: 355px;
-    overflow: hidden;
     position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 66%;
 }
 
 .whatsNew__image {
-    object-fit: cover;
+    /* object-fit: cover; */
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
 }
@@ -149,14 +175,12 @@
 }
 
 .whatsNew__image__bottom_button {
+    display: table;
     background-color: #74ae24;
     color: white;
-    width: 154px;
-    height: 52px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px 10px;
+    margin-right: -10px;
 }
 
 .whatsNew__image__bottom_button:hover {
@@ -182,6 +206,30 @@
     grid-auto-rows: 355;
     justify-content: space-around;
     column-gap: 30px;
+}
+
+.whatsNew__imageWrapper {
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 66%;
+    overflow: hidden;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 1100px) {
+    .whatsNew__grid {
+        grid-template-columns: min(500px, 100%);
+        row-gap: 50px;
+    }
+
+    .whatsNew__imageContainer {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .whatsNew__image__bottom_text {
+        font-size: 14px;
+    }
 }
 
 /* washSystemCell.js, imageGrid.js */
@@ -229,12 +277,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     row-gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
+    column-gap: 20px;
+    width: 100%;
 }
 
-.welcome__text {
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: -apple-system, brandon, sans-serif; */
+.gridWrapper {
+    display: table;
+    margin: 0px auto;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -242,7 +292,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 1fr;
-        justify-content: space-between;
+        justify-content: space-around;
         row-gap: 20px;
         column-gap: 20px;
     }
@@ -255,8 +305,6 @@
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 1fr;
         justify-content: center;
-        row-gap: 20px;
-        column-gap: 20px;
     }
 }
 
@@ -265,7 +313,7 @@
 .services__background {
     background-image: url('/image/home/background.png');
     width: 100%;
-    padding: 30px 0px;
+    padding: 30px 50px;
 }
 
 .services__title {
@@ -276,16 +324,15 @@
     margin-bottom: 30px;
 }
 
-.services__body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.services__grid {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
 }
 
 .services__text {
-    width: 45%;
-    line-height: 180%;
+    line-height: 1.8;
 }
 
 .services__button {
@@ -307,16 +354,53 @@
 }
 
 .services__imageContainer {
-    width: 535px;
-    height: 400px;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 74.5%;
+    position: relative;
     overflow: hidden;
 }
 
 .services__image {
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.6s;
 }
 
 .services__image:hover {
     transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1100px) {
+    .services__grid {
+        grid-template-columns: repeat(1, 100%);
+        row-gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .services__text {
+        font-size: 14px;
+    }
+}
+
+.vehicle__title__color_orange {
+    text-align: center;
+    color: #ef7e02;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.vehicle__title__color_blue {
+    color: #074c96;
+}
+
+@media only screen and (max-width: 1100px) {
+    .vehicle__title__color_orange {
+        font-size: 30px;
+    }
 }
