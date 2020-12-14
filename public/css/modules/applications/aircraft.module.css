@@ -78,7 +78,7 @@
 /* aircraft/body.js */
 .body {
     width: 100%;
-    margin: 0px 0px 80px;
+    margin: 0px 0px -30px;
 }
 
 .body__content__wrapper {

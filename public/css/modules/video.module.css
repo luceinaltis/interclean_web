@@ -70,14 +70,10 @@
 }
 
 .modalVideo__wrapper {
-    width: 80%;
-    height: 0;
-    padding-bottom: 45%;
+    width: 650px;
+    height: 365px;
     position: relative;
     overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     margin: 0px auto;
 }
 
@@ -87,4 +83,15 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .modalVideo__wrapper {
+        width: 80%;
+        height: 0;
+        padding-bottom: 45%;
+        position: relative;
+        overflow: hidden;
+        margin: 0px auto;
+    }
 }

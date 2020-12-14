@@ -49,7 +49,7 @@
 
 /* bus/body.js */
 .body {
-    margin: -20px 0px 80px;
+    margin: -20px 0px -10px;
 }
 
 .body__title {
