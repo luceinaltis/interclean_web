@@ -1,0 +1,53 @@
+/* 공용 */
+.title__blue{
+    font-size: 32px;
+    color: #0c519b;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title__orange{
+    font-size: 24px;
+    color: #ee7e02;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contentWrapper {
+    margin: 30px 0px 40px;
+}
+
+.content__text {
+    line-height: 1.5;
+}
+
+/* retailTruck/headInfo.js */
+.headInfo {
+    margin: 60px 0px 0px;
+}
+
+.content__link {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.content__link:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+/* retailTruck/body.js */
+.body {
+    margin: 0px 0px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .content__text {
+        line-height: 1.8;
+        font-size: 14px;
+    }
+
+    .title__blue {
+        text-align: center;
+    }
+}

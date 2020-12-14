@@ -1,7 +1,8 @@
 // Layouts
 import { Header, Footer, PageHeader } from "../../components/layout";
 import { ImageGrid } from "@/components/layout/home";
-import { BodyText, Title } from "@/components/layout/applications";
+import { BodyText } from "@/components/layout/applications";
+import Title from "@/components/layout/wash-systems/title";
 
 import styles from "@/public/css/modules/applications/applications.module.css";
 
@@ -12,7 +13,7 @@ const gridCellData = [
   ["/image/grid/Truck.jpg", "/applications/truck-wash-system", "트럭 세척"],
   [
     "/image/grid/RetailTruck.jpg",
-    "/applications/truck-wash-system",
+    "/applications/retail-truck-wash-system",
     "특수목적 차량 세척",
   ],
   [
@@ -33,12 +34,12 @@ const gridCellData = [
   ],
   [
     "/image/grid/Wheel.jpg",
-    "/applications/mining-oil-wash-system",
+    "/wash-systems/wheel-wash-system",
     "휠 & 하부 세척",
   ],
   [
     "/image/grid/WaterRecycling.jpg",
-    "/applications/mining-oil-wash-system",
+    "/wash-systems/water-recycling",
     "물 재활용 시스템",
   ],
 ];
@@ -50,9 +51,9 @@ export default function Index() {
   return (
     <div>
       <Header />
-      <PageHeader title="주요 서비스" subtitle="" />
+      <Title titleString="APPLICATIONS" />
+      {/* <PageHeader title="주요 서비스" subtitle="" /> */}
       <div className={styles.container}>
-        <Title title="INTERCLEAN COMMERCIAL WASH SYSTEMS" subtitle="" />
         <BodyText children={bodyText} />
         <ImageGrid cellData={gridCellData} />
       </div>

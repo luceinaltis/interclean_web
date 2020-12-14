@@ -29,6 +29,8 @@ const gridCellData = [
   ],
 ];
 
+import styles from "@/public/css/modules/home.module.css";
+
 export default function Home() {
   return (
     <div>
@@ -37,13 +39,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
-        <SlideImage />
-        <Welcome />
-        <ImageGrid cellData={gridCellData} />
-        <WhatsNew />
-        <Services />
-      </main>
+      <SlideImage />
+      <Welcome />
+      <ImageGrid cellData={gridCellData}>
+        {/* <div className={styles.vehicle__title}> */}
+        <p className={styles.vehicle__title__color_orange}>
+          {"VEHICLE WASH "}
+          <font className={styles.vehicle__title__color_blue}>SYSTEMS</font>
+        </p>
+        {/* </div> */}
+      </ImageGrid>
+      <WhatsNew />
+      <Services />
       <Footer />
     </div>
   );

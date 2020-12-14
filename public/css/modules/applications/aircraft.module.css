@@ -78,9 +78,16 @@
 /* aircraft/body.js */
 .body {
     width: 100%;
-    margin: 0px 0px 80px;
+    margin: 0px 0px -30px;
 }
 
 .body__content__wrapper {
     margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .content__text {
+        line-height: 1.8;
+        font-size: 14px;
+    }
 }

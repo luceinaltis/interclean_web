@@ -27,7 +27,7 @@ export default function WhatsNewImage({ target }) {
         <span className={styles.whatsNew__image__bottom_text}>
           {title.split("\n").map((str, idx) => {
             return (
-              <p key={idx}>
+              <p key={idx} className={styles.whatsNew__image__bottom_text}>
                 {str}
                 <br />
               </p>
