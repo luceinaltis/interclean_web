@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 
 // Layouts
@@ -18,7 +19,144 @@ const gridCellData = [
     ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", "WATER RECYCLING"],
 ];
 
+// applications 에서 공통적으로 필요한 layouts
+import { Photos, Videos, Drawings, Downloads } from "@/components/layout/applications";
+
 export default function WheelWashSystem() {
+    const photosData = [
+        ["/image/wash-systems/wheel-wash-system/photos/grid1.jpg", "Truck chassis wash system"],
+        ["/image/wash-systems/wheel-wash-system/photos/grid2.jpg", "wheel and tire wash sprayers"],
+        ["/image/wash-systems/wheel-wash-system/photos/grid3.jpg", "wheel and tire wash"],
+        ["/image/wash-systems/wheel-wash-system/photos/grid4.jpg", "automated wheel wash"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid5.jpg",
+            "touchless wheel and chassis wash system",
+        ],
+        ["/image/wash-systems/wheel-wash-system/photos/grid6.jpg", "truck under chassis wash"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid7.jpg",
+            "automated wheel, tire and chassis wash",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid8.jpg",
+            "wheel, tire and chassis wash equipment",
+        ],
+        ["/image/wash-systems/wheel-wash-system/photos/grid9.jpg", "Tire wash equipment"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid10.jpg",
+            "spray wash for wheels and tires",
+        ],
+        ["/image/wash-systems/wheel-wash-system/photos/grid11.jpg", "wheel and tire wash system"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid12.jpg",
+            "wheel and tire wash equipment",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid13.jpg",
+            "truck wheel and tire wash equipment",
+        ],
+        ["/image/wash-systems/wheel-wash-system/photos/grid14.jpg", "tire wash equipment"],
+        ["/image/wash-systems/wheel-wash-system/photos/grid15.jpg", "under chassis wash system"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid16.jpg",
+            "spray wheel wash system for trucks",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid17.jpg",
+            "wheel and chassis wash equipment",
+        ],
+        ["/image/wash-systems/wheel-wash-system/photos/grid18.jpg", "spray wheel wash system"],
+        ["/image/wash-systems/wheel-wash-system/photos/grid19.jpg", "underchassis wash equipment"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid20.jpg",
+            "Wheel_Tire & Chassis Wash Banner2",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid21.jpg",
+            "wheel and chassis touchlesswash system",
+        ],
+        ["/image/wash-systems/wheel-wash-system/photos/grid22.jpg", "wheel and tire wash system"],
+        ["/image/wash-systems/wheel-wash-system/photos/grid23.jpg", "chassis wash system"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid24.jpg",
+            "wheel and chassis wash system",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid25.jpg",
+            "touchless wheel wash equipment",
+        ],
+        ["/image/wash-systems/wheel-wash-system/photos/grid26.jpg", "wheel and tire wash"],
+        ["/image/wash-systems/wheel-wash-system/photos/grid27.jpg", "under chassis wash system"],
+        [
+            "/image/wash-systems/wheel-wash-system/photos/grid28.jpg",
+            "wheel and chassis wash system",
+        ],
+    ];
+
+    const videoData = [
+        [
+            "B2VTsoxgGjo",
+            "/image/wash-systems/wheel-wash-system/videos/video1.png",
+            "INTERCLEAN ULTIMATE CHASSIS WASH SYSTEM",
+        ],
+        [
+            "pNmtvfzwl9c",
+            "/image/wash-systems/wheel-wash-system/videos/video2.png",
+            "INTERCLEAN XR80 TIRE WASH SYSTEM",
+        ],
+        [
+            "vtQ7mBr3vy0",
+            "/image/wash-systems/wheel-wash-system/videos/video3.png",
+            "MULTIPLE VEHICLE WHEEL AND TIRE WASH SYSTEM",
+        ],
+    ];
+
+    const drawingsData = [
+        [
+            "/image/wash-systems/wheel-wash-system/videos/ICE_Wheel_Wash_Chassis_Spinners_IN_DOT.pdf",
+            "Chassis Wash",
+            "(PDF, 0.3 MB)",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/videos/ICE_Wheel_Wash_XR-80_Ottawa.pdf",
+            "XR 80 Wheel Wash",
+            "(PDF, 0.3 MB)",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/videos/ICE_Wheel_Wash_XR-120_Elkford.pdf",
+            "XR 120 Wheel Wash",
+            "(PDF, 0.3 MB)",
+        ],
+        [
+            "/image/wash-systems/wheel-wash-system/videos/ICE_Wheel_Wash_Stryker.pdf",
+            "Stryker Wheel Wash",
+            "(PDF, 0.3 MB)",
+        ],
+    ];
+
+    const downloadsData = [
+        [
+            "/downloads/wash-systems/wheel-wash-system/InterClean_Brochure.pdf",
+            "InterClean Brochure",
+            "(PDF, 3.5 MB)",
+        ],
+        [
+            "/downloads/wash-systems/ultra-gantry/Wash-Chemicals.pdf",
+            "Wash Chemicals",
+            "(PDF, 3.4 MB)",
+        ],
+        [
+            "/downloads/wash-systems/ultra-gantry/Hydorfluoric-Acid-Report.pdf",
+            "Hydrofluoric Acid Report",
+            "(PDF, 0.2 MB)",
+        ],
+    ];
+
+    const [menu, setMenu] = useState(undefined);
+    const openMenu = (menuName) => {
+        setMenu(menu !== menuName ? menuName : undefined);
+    };
+
     return (
         <div>
             <Header />
@@ -63,6 +201,23 @@ export default function WheelWashSystem() {
                     <ImageGrid cellData={gridCellData} />
                 </div>
             </div>
+            <Photos photosData={photosData} menuOpened={menu === "PHOTOS"} openMenu={openMenu} />
+            <Videos
+                videoData={videoData}
+                needTitle={true}
+                menuOpened={menu === "VIDEOS"}
+                openMenu={openMenu}
+            />
+            <Drawings
+                drawingsData={drawingsData}
+                menuOpened={menu === "Drawings"}
+                openMenu={openMenu}
+            />
+            <Downloads
+                downloadsData={downloadsData}
+                menuOpened={menu === "Downloads"}
+                openMenu={openMenu}
+            />
             <Footer />
         </div>
     );
