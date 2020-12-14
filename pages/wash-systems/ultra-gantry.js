@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 
 // Layouts
 import Header from "../../components/layout/header";
@@ -7,7 +8,67 @@ import Footer from "../../components/layout/footer";
 import Title from "../../components/layout/wash-systems/title";
 import styles from "../../public/css/modules/wash-systems/ultra-gantry.module.css";
 
+// applications 에서 공통적으로 필요한 layouts
+import { Photos, Videos, Drawings, Downloads } from "@/components/layout/applications";
+
 export default function UltraGantry() {
+    const photosData = [
+        ["/image/wash-systems/ultra-gantry/photos/grid1.jpg", "Clean company logos"],
+        [
+            "/image/wash-systems/ultra-gantry/photos/grid2.jpg",
+            "3 Brush Gantry Truck and Bus Wash System",
+        ],
+        ["/image/wash-systems/ultra-gantry/photos/grid3.jpg", "Motorcoach-gantry-wash"],
+        ["/image/wash-systems/ultra-gantry/photos/grid4.jpg", "automated school bus wash"],
+        ["/image/wash-systems/ultra-gantry/photos/grid5.jpg", "school bus wash with brushes"],
+        ["/image/wash-systems/ultra-gantry/photos/grid6.jpg", "bus wash equipment"],
+        ["/image/wash-systems/ultra-gantry/photos/grid7.jpg", "bus wash system"],
+        ["/image/wash-systems/ultra-gantry/photos/grid8.jpg", "bus wash system"],
+        ["/image/wash-systems/ultra-gantry/photos/grid9.jpg", "bus wash equipment"],
+        ["/image/wash-systems/ultra-gantry/photos/grid10.jpg", "bus wash system with brushes"],
+        ["/image/wash-systems/ultra-gantry/photos/grid11.jpg", "spinning brushes bus wash"],
+        ["/image/wash-systems/ultra-gantry/photos/grid12.jpg", "bus wash system with brushes"],
+    ];
+
+    const videoData = [
+        [
+            "UpBDyeTqRrQ",
+            "/image/wash-systems/ultra-gantry/videos/video1.jpg",
+            "INTERCLEAN ULTRA GANTRY SYSTEM FOR TRUCKS, BUSES AND MOTORCOACHES",
+        ],
+        [
+            "0mamDH80cuU",
+            "/image/wash-systems/ultra-gantry/videos/video2.png",
+            "INTERCLEAN ULTRA GANTRY SYSTEM FOR TRANSIT, MUNICIPALITIES, AND COMMERCIAL FLEETS",
+        ],
+    ];
+
+    const drawingsData = [
+        [
+            "/image/wash-systems/ultra-gantry/drawings/layout1.jpg",
+            "Ultra Gantry Three Brush",
+            "(PDF, 0.2 MB)",
+        ],
+    ];
+
+    const downloadsData = [
+        [
+            "/downloads/wash-systems/ultra-gantry/Interclean-Wash-Systems-Overview.pdf",
+            "InterClean Brochure",
+            "(PDF, 3.0 MB)",
+        ],
+        [
+            "/downloads/wash-systems/ultra-gantry/IP-Detergents-Overview-Features.pdf",
+            "Wash Detergents",
+            "(PDF, 0.2 MB)",
+        ],
+    ];
+
+    const [menu, setMenu] = useState(undefined);
+    const openMenu = (menuName) => {
+        setMenu(menu !== menuName ? menuName : undefined);
+    };
+
     return (
         <div>
             <Header />
@@ -195,6 +256,23 @@ export default function UltraGantry() {
                     </p>
                 </div>
             </div>
+            <Photos photosData={photosData} menuOpened={menu === "PHOTOS"} openMenu={openMenu} />
+            <Videos
+                videoData={videoData}
+                needTitle={true}
+                menuOpened={menu === "VIDEOS"}
+                openMenu={openMenu}
+            />
+            <Drawings
+                drawingsData={drawingsData}
+                menuOpened={menu === "Drawings"}
+                openMenu={openMenu}
+            />
+            <Downloads
+                downloadsData={downloadsData}
+                menuOpened={menu === "Downloads"}
+                openMenu={openMenu}
+            />
             <Footer />
         </div>
     );
