@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div>
       <Header />
-      <Title titleString="AOUT US" />
+      <Title titleString="ABOUT US" />
       <div className="container">
         <div className="inner__container">
           <div className={styles.about}>

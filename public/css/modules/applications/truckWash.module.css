@@ -163,6 +163,12 @@
         margin-bottom: 30px;
     }
 
+    .body__grid__cell:nth-child(1) {order: 1;}
+    .body__grid__cell:nth-child(2) {order: 2;}
+    .body__grid__cell:nth-child(3) {order: 4;}
+    .body__grid__cell:nth-child(4) {order: 3;}
+    .body__grid__cell:nth-child(5) {order: 5;}
+    .body__grid__cell:nth-child(6) {order: 6;}
 }
 
 @media only screen and (max-width: 800px) {

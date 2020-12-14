@@ -13,8 +13,11 @@ export default function Body() {
         <div className={styles.body}>
           <div className={styles.body__grid}>
             {/* 첫 번째 */}
-            <img src={imagePath[0]} className={styles.body__image} />
-            <div className={styles.body__text}>
+            <img
+              src={imagePath[0]}
+              className={`${styles.body__image} ${styles.body__grid__cell}`}
+            />
+            <div className={`${styles.body__text} ${styles.body__grid__cell}`}>
               <div className={styles.body__title}>
                 DRIVE-THROUGH TRUCK WASH SYSTEM
               </div>
@@ -37,7 +40,7 @@ export default function Body() {
               <div className={styles.body__button}>LEARN MORE</div>
             </div>
             {/* 두 번째 */}
-            <div className={styles.body__text}>
+            <div className={`${styles.body__text} ${styles.body__grid__cell}`}>
               <div className={styles.body__title}>
                 ROLLOVER/ GANTRY TRUCK WASH SYSTEM
               </div>
@@ -59,10 +62,16 @@ export default function Body() {
               </div>
               <div className={styles.body__button}>LEARN MORE</div>
             </div>
-            <img src={imagePath[1]} className={styles.body__image} />
+            <img
+              src={imagePath[1]}
+              className={`${styles.body__image} ${styles.body__grid__cell}`}
+            />
             {/* 세 번째 */}
-            <img src={imagePath[2]} className={styles.body__image} />
-            <div className={styles.body__text}>
+            <img
+              src={imagePath[2]}
+              className={`${styles.body__image} ${styles.body__grid__cell}`}
+            />
+            <div className={`${styles.body__text} ${styles.body__grid__cell}`}>
               <div className={styles.body__title}>
                 WHEEL, TIRE, & CHASSIS WASH SYSTEM
               </div>
