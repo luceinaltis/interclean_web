@@ -1,0 +1,27 @@
+{
+    "ABOUT": "ABOUT",
+
+    "APPLICATIONS": "APPLICATIONS",
+    "Truck Washes": "Truck Washes",
+    "Bus Washes": "Bus Washes",
+    "Train Washes": "Train Washes",
+    "Military Washes": "Military Washes",
+    "Aircraft Washes": "Aircraft Washes",
+    "Mining & Oil Washes": "Mining & Oil Washes",
+
+    "WASH SYSTEMS": "WASH SYSTEMS",
+    "Drive-Thru Touchless": "Drive-Thru Touchless",
+    "Gantry & Rollover": "Gantry & Rollover",
+    "Interior Trailer Wash System": "Interior Trailer Wash System",
+    "Manual Wash Systems": "Manual Wash Systems",
+    "Mobile Wash Systems": "Mobile Wash Systems",
+    "Single Brush Wash System": "Single Brush Wash System",
+    "Wheel, Tire, & Chassis": "Wheel, Tire, & Chassis",
+    "Water Recycling Systems": "Water Recycling Systems",
+
+    "SERVICES": "SERVICES",
+    "Wash Detergents": "Wash Detergents",
+
+    "CONTACT": "CONTACT",
+    "Locate A Distributor": "Locate A Distributor"
+}
