@@ -55,6 +55,7 @@ export default function RetailTruckWashSystems() {
   const openMenu = (menuName) => {
     setMenu(menu !== menuName ? menuName : undefined);
   };
+
   return (
     <div>
       <Header />
