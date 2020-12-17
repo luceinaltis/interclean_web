@@ -44,10 +44,34 @@ export default function RetailTruckWashSystems() {
         ],
     ];
 
-    const [menu, setMenu] = useState(undefined);
+  const [menu, setMenu] = useState(undefined);
     const openMenu = (menuName) => {
         setMenu(menu !== menuName ? menuName : undefined);
     };
+
+  /* return (
+    <div>
+      <Header />
+      <Title titleString="RETAIL TRUCK WASH SYSTEM" />
+      <HeadInfo />
+      <Body />
+      <div className={styles.container}>
+        <Photos
+          photosData={photosData}
+          menuOpened={menu === "PHOTOS"}
+          openMenu={openMenu}
+        />
+        <Videos
+          videoData={videoData}
+          needTitle={true}
+          menuOpened={menu === "VIDEOS"}
+          openMenu={openMenu}
+        />
+      </div>
+      <Footer />
+    </div>
+  ); */
+    
     return (
         <div>
             <Header />

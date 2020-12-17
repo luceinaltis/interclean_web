@@ -404,3 +404,28 @@
         font-size: 30px;
     }
 }
+
+.imageIdx__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('/image/home/background.png');
+    padding: 5px 10px 0px;
+}
+
+.imageIdx {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #a3bad2 
+}
+
+.imageIdx__selected {
+    background-color: #ef7e00;
+}
