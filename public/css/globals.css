@@ -46,6 +46,7 @@ a {
 .click:hover {
     cursor: pointer;
     color: #0c519c;
+    transition: all 0.15s ease-in-out;
 }
 
 h1,
@@ -107,4 +108,4 @@ ul {
 
 .ReactCollapse--collapse {
     transition: height 500ms;
-  }
+}

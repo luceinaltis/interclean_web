@@ -2,7 +2,9 @@ import Link from "next/link";
 
 import styles from "../../public/css/modules/footer.module.css";
 
-export default function Footer() {
+import { i18n, withTranslation } from "../../i18n";
+
+function Footer({ t }) {
     return (
         <footer className={styles.footer}>
             <div className={styles.footer_top}>
@@ -10,87 +12,91 @@ export default function Footer() {
                     <div className="inner__container">
                         <div className={styles.footer_top__grid}>
                             <div>
-                                <h5>Quick Links</h5>
+                                <h5>{t("quick links")}</h5>
                                 <ul>
                                     <li className={`${styles.footer_top__menu_items} click`}>
-                                        <Link href="/about">ABOUT US</Link>
+                                        <Link href="/about">{t("about-us")}</Link>
+                                    </li>
+                                    {/* <li className={`${styles.footer_top__menu_items} click`}>
+                                        <Link href="/contact">{t("contact-us")}</Link>
+                                    </li> */}
+                                    <li className={`${styles.footer_top__menu_items} click`}>
+                                        <Link href="/applications">{t("applications")}</Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
-                                        <Link href="/contact">CONTACT US</Link>
+                                        <Link href="/wash-systems">{t("wash-systems")}</Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
-                                        <Link href="/applications">APPLICATIONS</Link>
-                                    </li>
-                                    <li className={`${styles.footer_top__menu_items} click`}>
-                                        <Link href="/wash-systems">WASH SYSTEMS</Link>
-                                    </li>
-                                    <li className={`${styles.footer_top__menu_items} click`}>
-                                        <Link href="/services">SERVICES</Link>
+                                        <Link href="/services">{t("services")}</Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/contact/locate-a-distributor">
-                                            DISTRIBUTORS
+                                            {t("distributors")}
                                         </Link>
+                                    </li>
+                                    <li>
+                                        <select
+                                            name="lang"
+                                            id="lang"
+                                            onChange={(e) => i18n.changeLanguage(e.target.value)}
+                                        >
+                                            <option value="ko">🇰🇷 Korean</option>
+                                            <option value="en">🇺🇸 English</option>
+                                        </select>
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <h5>APPLICATIONS</h5>
+                                <h5>{t("APPLICATIONS")}</h5>
                                 <ul>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications/bus-wash-system">
-                                            Bus Wash Systems
+                                            {t("bus-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications/truck-wash-system">
-                                            Truck Wash Systems
+                                            {t("truck-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications/retail-truck-wash-system">
-                                            Retail Truck
+                                            {t("retail-truck-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications/aircraft-wash-system">
-                                            Aircraft Wash Systems
+                                            {t("aircraft-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications/military-wash-system">
-                                            Military Wash Systems
+                                            {t("military-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications/train-wash-system">
-                                            Train Wash Systems
+                                            {t("train-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications/mining-oil-wash-system">
-                                            Mining & Oil Wash Systems
+                                            {t("mining-oil-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/wash-systems/wheel-wash-system">
-                                            Wheel / Tire & Chassis
+                                            {t("wheel-wash-systems")}
                                         </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/wash-systems/water-recycling">
-                                            Water Recycling Systems
+                                            {t("water-recycling-wash-systems")}
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
                             <div>
-                                <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
-                                <form action="">
-                                    <input type="text" placeholder="Name" />
-                                    <input type="email" placeholder="Email" />
-                                    <button type="submit">SUBMIT</button>
-                                </form>
                                 <h5>CONTACT US</h5>
                                 <ul>
                                     <li className={`${styles.footer_top__menu_items} click`}>
@@ -116,3 +122,9 @@ export default function Footer() {
         </footer>
     );
 }
+
+Footer.getInitialProps = async () => ({
+    namespacesRequired: ["footer"],
+});
+
+export default withTranslation("footer")(Footer);
