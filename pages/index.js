@@ -27,7 +27,7 @@ function Home({ t }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-
+            <div className="empty" />
             <SlideImage />
             <Welcome />
             <div className="container">

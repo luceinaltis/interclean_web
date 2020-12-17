@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../../public/css/modules/header.module.css";
 import useWidth from "../hooks/useWidth";
+import useScroll from "../hooks/useScroll";
 
 import { i18n, withTranslation } from "../../i18n";
 
@@ -61,11 +62,11 @@ function Header({ t }) {
                             <div>
                                 Follow us on:{" "}
                                 <span>
-                                    <i class="fab fa-facebook-square" />
+                                    <i className="fab fa-facebook-square" />
                                 </span>
                             </div>
                             <div className={styles.header__top__container__right}>
-                                <i class="fas fa-mobile-alt" />
+                                <i className="fas fa-mobile-alt" />
                                 +82 010-123-4567
                             </div>
                         </div>

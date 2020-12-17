@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+import Title from "@/components/layout/wash-systems/title";
+
 // Layouts
 import { Header, Footer, PageHeader } from "../../components/layout";
 
@@ -130,9 +132,9 @@ export default function TruckWashSystems() {
     return (
         <div>
             <Header />
-            <PageHeader
-                title="COMMERCIAL TRUCK WASH SYSTEMS"
-                subtitle="Fast, innovative, and automatic truck wash systems enable you to maintain the highest standard of cleanliness for your entire fleet."
+            <Title
+                titleString="COMMERCIAL TRUCK WASH SYSTEMS"
+                titleSubString="Fast, innovative, and automatic truck wash systems enable you to maintain the highest standard of cleanliness for your entire fleet."
             />
             <div className="container">
                 <div className="inner__container">

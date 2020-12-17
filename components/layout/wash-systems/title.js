@@ -3,9 +3,12 @@ import styles from "../../../public/css/modules/title.module.css";
 
 export default function title({ titleString, titleSubString }) {
     return (
-        <div className={styles.title_image}>
-            <div>{titleString}</div>
-            {titleSubString ? <div className={styles.subTitle}>{titleSubString}</div> : null}
-        </div>
+        <>
+            <div className="empty" />
+            <div className={styles.title_image}>
+                <div>{titleString}</div>
+                {titleSubString ? <div className={styles.subTitle}>{titleSubString}</div> : null}
+            </div>
+        </>
     );
 }

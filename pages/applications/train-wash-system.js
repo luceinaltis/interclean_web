@@ -38,7 +38,7 @@ export default function TrainWashSystem() {
     return (
         <div>
             <Header />
-            <PageHeader title="열차 세척" subtitle="" />
+            <Title titleString="열차 세척" subtitle="" />
             <div className="container">
                 <div className="inner__container">
                     <div className={styles.headInfo}>

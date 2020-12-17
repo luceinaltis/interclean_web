@@ -34,10 +34,8 @@ function Index({ t }) {
                 <div className="inner__container">
                     <h1>{t("p1")}</h1>
                     <p>{t("p2")}</p>
+                    <ImageGrid cellData={gridCellData} />
                 </div>
-            </div>
-            <div className={styles.container}>
-                <ImageGrid cellData={gridCellData} />
             </div>
             <Footer />
         </div>
