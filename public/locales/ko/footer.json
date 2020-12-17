@@ -1,5 +1,5 @@
 {
-    "qucik-links": "사이트맵",
+    "quick links": "사이트맵",
     "about-us": "회사소개",
     "contact-us": "CONTACT US",
     "applications": "응용",
@@ -7,6 +7,7 @@
     "services": "서비스",
     "distributors": "DISTRIBUTORS",
 
+    "APPLICATIONS": "상품 응용",
     "bus-wash-systems": "버스 세척",
     "truck-wash-systems": "트럭 세척",
     "retail-truck-wash-systems": "소매 트럭 세척",

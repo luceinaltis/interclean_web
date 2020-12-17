@@ -6,7 +6,7 @@ import { Header, Footer } from "../components/layout";
 // Elements
 import { ImageGrid, Welcome, SlideImage, WhatsNew, Services } from "../components/layout/home";
 
-import { i18n, withTranslation } from "../i18n";
+import { withTranslation } from "../i18n";
 
 import styles from "@/public/css/modules/home.module.css";
 
@@ -27,9 +27,7 @@ function Home({ t }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <button onClick={() => i18n.changeLanguage(i18n.language === "en" ? "ko" : "en")}>
-                언어 변경 테스트
-            </button>
+
             <SlideImage />
             <Welcome />
             <ImageGrid cellData={gridCellData}>

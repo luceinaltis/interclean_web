@@ -1,5 +1,5 @@
 {
-    "qucik-links": "Quick Links",
+    "quick links": "Quick Links",
     "about-us": "ABOUT US",
     "contact-us": "CONTACT US",
     "applications": "APPLICATIONS",
@@ -7,6 +7,7 @@
     "services": "SERVICES",
     "distributors": "DISTRIBUTORS",
 
+    "APPLICATIONS": "APPLICATIONS",
     "bus-wash-systems": "Bus Wash Systems",
     "truck-wash-systems": "Truck Wash Systems",
     "retail-truck-wash-systems": "Retail Truck",
