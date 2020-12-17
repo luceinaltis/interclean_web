@@ -39,6 +39,7 @@ function Home({ t }) {
                             <font className={styles.vehicle__title__color_blue}>SYSTEMS</font>
                         </p>
                         {/* </div> */}
+                        <p>&nbsp;</p>
                     </ImageGrid>
                 </div>
             </div>
