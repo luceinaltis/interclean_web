@@ -139,6 +139,9 @@ export default function TruckWashSystems() {
             <div className="container">
                 <div className="inner__container">
                     <div className={styles.headInfo}>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                         <div className={styles.headIcon__grid}>
                             {iconData &&
                                 iconData.map((val, idx) => {
@@ -260,6 +263,9 @@ export default function TruckWashSystems() {
                         </div>
                     </div>
                     <div className={styles.tailInfo}>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                         <div className={styles.tailInfo__title}>THE INTERCLEAN ADVANTAGE</div>
                         <div className={styles.tailInfo__subtitle}>
                             All InterClean Equipment Inc. truck wash systems are built with our

@@ -29,7 +29,11 @@ export default function InteriorTrailerWashSystem() {
             />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h1>ABOUT OUR TRAILER SANITIZING & WASH SYSTEMS</h1>
+                    <p>&nbsp;</p>
                     <p>
                         In less than 4 minutes, the inside of your truck trailer or container is
                         completely cleaned, sanitized, and ready for the next load. The automatic
@@ -75,7 +79,12 @@ export default function InteriorTrailerWashSystem() {
                         </div>
                     </div>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Footer />

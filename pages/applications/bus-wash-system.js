@@ -60,6 +60,7 @@ export default function BusWashSystem() {
                         <div className={styles.headInfo__title__blue}>
                             BUS WASH SYSTEMS FOR TRANSIT AND SCHOOLS
                         </div>
+                        <p>&nbsp;</p>
                         <div className={styles.headInfo__body}>
                             InterClean has different approaches for washing transit, school,
                             paratransit, and tour bus fleets. We offer drive through systems and

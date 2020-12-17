@@ -41,11 +41,14 @@ export default function Index() {
                             system is custom designed to meet the environmental conditions, vehicle
                             needs, water restrictions, space allotment and budgetary concerns. All
                             systems are guaranteed and maintained locally. Call +1 (734) 822-5910 to
-                            Speak to an InterClean Commercial Wash System Specialist. InterClean
-                            does not design or build wash systems that use deadly hydrofluoric acid
-                            in any part of the cleaning process. Read About the Danger of HF Acid in
-                            Wash Systems.
+                            Speak to an InterClean Commercial Wash System Specialist.
                         </p>
+                        <p>
+                            InterClean does not design or build wash systems that use deadly
+                            hydrofluoric acid in any part of the cleaning process. Read About the
+                            Danger of HF Acid in Wash Systems.
+                        </p>
+
                         <h2>
                             INTERCLEAN OPTIONS FOR LIGHT, MEDIUM, AND HEAVY VEHICLE WASHING SYSTEMS
                             INCLUDE:
@@ -72,6 +75,9 @@ export default function Index() {
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                         <ImageGrid cellData={gridCellData} />
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                     </div>
                 </div>
             </div>

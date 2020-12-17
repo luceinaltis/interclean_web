@@ -12,8 +12,12 @@ export default function InterpowerDetergents() {
             <Title titleString={"WASH DETERGENTS"} />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h3>InterPower Detergents</h3>
                     <h3>Heavy-Duty Detergents Designed For Heavy-Duty Equipment</h3>
+                    <p>&nbsp;</p>
                     <p>
                         All InterPower detergents are specifically designed for use in InterClean
                         Equipment, and other heavy-duty wash equipment, to ensure long and healthy
@@ -148,6 +152,9 @@ export default function InterpowerDetergents() {
                             </p>
                         </div>
                     </div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Footer />

@@ -29,6 +29,9 @@ export default function SingleBrushWashSystem() {
             />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h1>THE ALPHA 500 SINGLE BRUSH WASH MACHINE</h1>
                     <p>&nbsp;</p>
                     <p>
@@ -98,6 +101,8 @@ export default function SingleBrushWashSystem() {
                         </div>
                     </div>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <div className={styles.grid__second}>
                         <div className="image__wrapper">
                             <Image
@@ -123,6 +128,9 @@ export default function SingleBrushWashSystem() {
                             </ul>
                         </div>
                     </div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h2>WHY PURCHASE A BUS AND TRUCK WASH SYSTEM FROM INTERCLEAN?</h2>
                     <p>
                         At InterClean, we are passionate about providing lasting solutions for our
@@ -158,6 +166,8 @@ export default function SingleBrushWashSystem() {
                         </div>
                     </div>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h2>GET STARTED WITH YOUR OWN ALPHA 500 BRUSH WASH SYSTEM</h2>
                     <p>
                         Contact us today to purchase an Alpha 500 Brush Wash System for your
@@ -165,6 +175,8 @@ export default function SingleBrushWashSystem() {
                     </p>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <p>&nbsp;</p>
                 </div>
             </div>
