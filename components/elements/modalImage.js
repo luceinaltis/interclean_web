@@ -26,7 +26,7 @@ export default function ModalImage({
       {isOpened ? (
         <div
           className={styles.background}
-          onClick={(e) => {
+          onClick={() => {
             closeModal();
           }}
         >

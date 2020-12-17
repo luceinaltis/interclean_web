@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // css
 import styles from "@/public/css/modules/home.module.css";
@@ -22,6 +22,11 @@ export default function SlideImage() {
   };
   const [slideIdx, setSlideIdx] = useState(1);
 
+  useEffect(() => {
+    const interval = setInterval(() => setSlideIdx((slideIdx % 6) + 1), 4000);
+    return () => clearInterval(interval);
+  }, [slideIdx]);
+
   return (
     <div className={styles.slide}>
       {/* 슬라이드 내 이미지*/}
@@ -38,6 +43,19 @@ export default function SlideImage() {
         <span onClick={() => setSlideIdx((idx) => (idx % 6) + 1)}>
           <i className="fas fa-chevron-circle-right" />
         </span>
+      </div>
+      <div className={styles.imageIdx__wrapper}>
+        {imageSet &&
+          [...Array(Object.keys(imageSet).length)].map((_, idx) => {
+            return (
+              <div
+                key={idx}
+                className={`${styles.imageIdx}
+                 ${slideIdx - 1 === idx && styles.imageIdx__selected}
+                `}
+              />
+            );
+          })}
       </div>
     </div>
   );
