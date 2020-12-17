@@ -24,6 +24,9 @@ export default function Index() {
             <div>
                 <div className="container">
                     <div className="inner__container">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                         <h1>INTERCLEAN HEAVY DUTY, COMMERCIAL</h1>
                         <h3>VEHICLE WASH SYSTEMS</h3>
                         <p>

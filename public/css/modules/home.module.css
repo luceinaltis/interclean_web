@@ -108,7 +108,6 @@
 }
 
 .welcome__text {
-    
 }
 
 .welcome__buttonGrid {
@@ -125,8 +124,8 @@
     }
 
     .welcome__grid {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
     }
 }
 
@@ -189,7 +188,7 @@
 }
 
 .whatsNew__title__color_orange {
-    color: #ee7e02; 
+    color: #ee7e02;
     font-size: max(2.5vw, 40px);
     margin-bottom: 20px;
     text-align: center;
@@ -243,13 +242,13 @@
 .gridCell__imageContainer {
     width: 100%;
     height: 235px;
-    transition: .4s;
+    transition: 0.4s;
     overflow: hidden;
 }
 
 .gridCell__image {
     object-fit: cover;
-    transition: .4s;
+    transition: 0.4s;
     width: 100%;
     height: 100%;
 }
@@ -298,7 +297,6 @@
     }
 }
 
-
 @media only screen and (max-width: 700px) {
     .grid {
         display: grid;
@@ -311,7 +309,7 @@
 /* services.js */
 
 .services__background {
-    background-image: url('/image/home/background.png');
+    background-image: url("/image/home/background.png");
     width: 100%;
     padding: 30px 50px;
 }

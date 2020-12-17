@@ -30,14 +30,18 @@ function Home({ t }) {
 
             <SlideImage />
             <Welcome />
-            <ImageGrid cellData={gridCellData}>
-                {/* <div className={styles.vehicle__title}> */}
-                <p className={styles.vehicle__title__color_orange}>
-                    {"VEHICLE WASH "}
-                    <font className={styles.vehicle__title__color_blue}>SYSTEMS</font>
-                </p>
-                {/* </div> */}
-            </ImageGrid>
+            <div className="container">
+                <div className="inner__container">
+                    <ImageGrid cellData={gridCellData}>
+                        {/* <div className={styles.vehicle__title}> */}
+                        <p className={styles.vehicle__title__color_orange}>
+                            {"VEHICLE WASH "}
+                            <font className={styles.vehicle__title__color_blue}>SYSTEMS</font>
+                        </p>
+                        {/* </div> */}
+                    </ImageGrid>
+                </div>
+            </div>
             <WhatsNew />
             <Services />
             <Footer />
