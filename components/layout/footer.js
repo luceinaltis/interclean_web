@@ -17,9 +17,9 @@ function Footer({ t }) {
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/about">{t("about-us")}</Link>
                                     </li>
-                                    <li className={`${styles.footer_top__menu_items} click`}>
+                                    {/* <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/contact">{t("contact-us")}</Link>
-                                    </li>
+                                    </li> */}
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <Link href="/applications">{t("applications")}</Link>
                                     </li>

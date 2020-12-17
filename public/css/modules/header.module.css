@@ -120,9 +120,13 @@
     padding: 15px;
 }
 
+.menu__bottom__subtitle:not(:last-child) > div {
+    border-bottom: 1.5px rgb(38, 57, 77, 0.2) solid;
+}
+
 .menu__button {
     display: flex;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 25px 0px 25px;
     justify-content: center;
     align-items: center;
     width: 100%;

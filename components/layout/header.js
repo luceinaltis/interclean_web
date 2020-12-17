@@ -58,7 +58,12 @@ function Header({ t }) {
                 <div className="container">
                     <div className="inner__container">
                         <div className={styles.header__top__container}>
-                            <div>Follow us on:</div>
+                            <div>
+                                Follow us on:{" "}
+                                <span>
+                                    <i class="fab fa-facebook-square" />
+                                </span>
+                            </div>
                             <div className={styles.header__top__container__right}>
                                 <i class="fas fa-mobile-alt" />
                                 +82 010-123-4567
