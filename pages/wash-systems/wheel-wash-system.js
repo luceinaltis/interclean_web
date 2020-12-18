@@ -163,6 +163,9 @@ export default function WheelWashSystem() {
             <Title titleString={"WHEEL, TIRE, & CHASSIS WASH SYSTEM"} />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h1>CLEAN WATER WHEEL WASH SYSTEMS</h1>
                     <h3>FOR DIRTY JOBSITES</h3>
                     <p>&nbsp;</p>
@@ -172,6 +175,7 @@ export default function WheelWashSystem() {
                         width={806}
                         height={347}
                     />
+                    <p>&nbsp;</p>
                     <p>
                         InterClean Wheel Wash Systems keep your wheels, tires, and underbody free
                         from debris and your sediment contained to the jobsite. Whether
@@ -181,6 +185,7 @@ export default function WheelWashSystem() {
                         InterClean automatic wheel wash systems is fast, efficient, and is the best
                         solution for preventing trackout.
                     </p>
+                    <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <h2>WE KEEP YOUR WHEEL WASH WATER CLEAN AND CONTAINED</h2>
                     <p>
@@ -196,9 +201,13 @@ export default function WheelWashSystem() {
                         </strong>
                     </p>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h2>SEE OTHER COMMERCIAL VEHICLE WASH SYSTEMS MADE BY INTERCLEAN:</h2>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Photos photosData={photosData} menuOpened={menu === "PHOTOS"} openMenu={openMenu} />

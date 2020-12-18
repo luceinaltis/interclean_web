@@ -80,6 +80,7 @@ export default function BusWashSystem() {
     ],
   ];
 
+// <<<<<<< jintak
   const downloadsData = [
     [
       "/downloads/applications/truck/InterClean_Brochure.pdf",
@@ -98,6 +99,7 @@ export default function BusWashSystem() {
     setMenu(menu !== menuName ? menuName : undefined);
   };
 
+  /*
   return (
     <div>
       <Header />
@@ -194,6 +196,125 @@ export default function BusWashSystem() {
               applications such as RV’s and commercial delivery vehicles.
               Options include Spot Free Rinse, Blowers, Water Recycling and
               Chassis Wash.
+    
+    */
+    
+/*======= */
+    return (
+        <div>
+            <Header />
+            <Title titleString="버스 세척" />
+            <div className="container">
+                <div className="inner__container">
+                    <div className={styles.headInfo}>
+                        <div className={styles.zoom__imageWrapper}>
+                            <img
+                                src="/image/applications/bus/headImage.jpg"
+                                className={styles.zoom__image}
+                            />
+                        </div>
+                        <div className={styles.headInfo__title__blue}>
+                            BUS WASH SYSTEMS FOR TRANSIT AND SCHOOLS
+                        </div>
+                        <p>&nbsp;</p>
+                        <div className={styles.headInfo__body}>
+                            InterClean has different approaches for washing transit, school,
+                            paratransit, and tour bus fleets. We offer drive through systems and
+                            gantry or rollover systems that provide design flexibility and proven
+                            cleaning technology. Both types of bus wash systems can be designed with
+                            touchless, advanced friction/brushes, or a combination of both. All
+                            systems are made in the U.S.A. and designed to clean effectively and
+                            efficiently.
+                        </div>
+                        <div className={styles.headInfo__title__orange}>
+                            SUSTAINABLE DESIGN FEATURES ARE AN INTEGRAL PART OF INTERCLEAN BUS WASH
+                            SYSTEMS
+                        </div>
+                        <div className={styles.headInfo__body}>
+                            All of the wash systems InterClean designs are available with the EQ100
+                            water recycling module that effectively captures the wash water and
+                            recycles it through a series of settling pits, self-cleaning filter,
+                            separators, aeration, and circulation. The EQ100 water recycling system
+                            has been installed in multiple locations throughout the USA, Canada,
+                            Europe, Asia, Africa, South America, Australia, New Zealand and the
+                            Middle East and its effectiveness in recycling large volumes of water
+                            has been recognized globally for improving sustainability in Heavy Duty
+                            Vehicle Washing Systems.
+                        </div>
+                        <Link href="/contact">
+                            <div className={`${styles.button} ${styles.button__orange}`}>
+                                CONTACT US
+                            </div>
+                        </Link>
+                    </div>
+                    <div className={styles.body}>
+                        <div className={styles.zoom__imageWrapper}>
+                            <img
+                                src="/image/applications/bus/bodyImage.jpg"
+                                className={styles.zoom__image}
+                            />
+                        </div>
+                        <div className={styles.body__title}>DRIVE-THROUGH BUS WASH SYSTEMS</div>
+                        <div className={styles.body__body}>
+                            <span className={styles.body__body__bold}>
+                                InterClean’s Centri*Spinner
+                            </span>{" "}
+                            wash system is a leader in the School and Paratransit bus wash market
+                            and the wash system will not damage crossover mirrors, safety side
+                            signs, exterior cameras, bike racks or rear light covers and will
+                            effectively clean the contoured exterior of Paratransit buses. <br />
+                            <span className={styles.body__body__bold}>
+                                The XJ Bus Wash System
+                            </span>{" "}
+                            combines friction and touchless cleaning for Transit, Paratransit, and
+                            School Buses. This system can be customized for different bus wash
+                            applications. The most popular configuration is an overlapping 4-brush
+                            system to wrap the bus combined with InterClean touchless cleaning to
+                            clean the wheels, chassis, around and behind bike racks and mirrors.
+                            There is no stopping required for this drive-through system! Contact us
+                            for a customized quote for your bus wash project.
+                            <br />
+                            <span className={styles.body__body__bold}>
+                                The Hybrid Wash System
+                            </span>{" "}
+                            is a drive-through wash system designed to use a combination of
+                            touchless cleaning for the front, top, rear, wheel and chassis and foam
+                            brushes for the sides. The brushes are in a fixed position and use a
+                            foam brush material to help prevent scratching and damage to the bus.
+                        </div>
+                        <Link href="/contact">
+                            <div
+                                className={`${styles.button} ${styles.button__blue} ${styles.body__button}`}
+                            >
+                                CONTACT A PRODUCT EXPERT!
+                            </div>
+                        </Link>
+                    </div>
+                    <div className={styles.tailInfo}>
+                        <div className={styles.tailInfo__title}>
+                            INTERCLEAN ULTRA GANTRY SYSTEM FOR BUSES
+                        </div>
+                        <div className={styles.tailInfo__body}>
+                            InterClean Ultra Gantry System is the latest version of our Truck and
+                            Bus Wash System – now designed and built in the USA. This roll-over
+                            machine can be made with friction cleaning, touch-less or a combination
+                            of both. Ideal for commercial and retail applications, fleets, transit
+                            and can be customized for special applications such as RV’s and
+                            commercial delivery vehicles. Options include Spot Free Rinse, Blowers,
+                            Water Recycling and Chassis Wash.
+                        </div>
+                        <div className={styles.tailInfo__videoWrapper}>
+                            <iframe
+                                className={styles.tailInfo__video}
+                                src="https://www.youtube.com/embed/0mamDH80cuU"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
+                    </div>
+                </div>
+/* >>>>>>> master */
             </div>
             <div className={styles.tailInfo__videoWrapper}>
               <iframe

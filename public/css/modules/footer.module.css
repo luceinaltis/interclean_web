@@ -5,6 +5,7 @@
 .footer ul {
     list-style: none;
     line-height: 16px;
+    padding: none;
 }
 
 .footer_top {

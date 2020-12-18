@@ -46,16 +46,28 @@ function Index({ t }) {
     ],
   ];
 
-  return (
-    <div>
-      <Header />
-      <Title titleString={t("title")} />
-      <div className="container">
-        <div className="inner__container">
-          <div className={styles.applications__textWrapper}>
-            <h1 style={{ marginBottom: "20px", lineHeight: 1.2 }}>{t("p1")}</h1>
-            <p>{t("p2")}</p>
-          </div>
+
+    return (
+        <div>
+            <Header />
+            <Title titleString={t("title")} />
+            <div className="container">
+                <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <h1>{t("p1")}</h1>
+                    <p>&nbsp;</p>
+                    <p>{t("p2")}</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <Footer />
         </div>
       </div>
       <div className={styles.container}>

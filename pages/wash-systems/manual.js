@@ -23,6 +23,10 @@ export default function Manual() {
             <Title titleString={"MANUAL WASH SYSTEMS"} />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
                     <h1>MANUAL AND ROBOTIC WASH SYSTEMS FOR INDUSTRIAL APPLICATIONS</h1>
                     <p>&nbsp;</p>
                     <p>
@@ -68,6 +72,7 @@ export default function Manual() {
                         TO FOUR HOSES SIMULTANEOUSLY.
                     </strong>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h3>ROBOTIC VEHICLE WASH SYSTEMS FROM INTERCLEAN</h3>
                     <p>&nbsp;</p>
                     <p>
@@ -99,7 +104,12 @@ export default function Manual() {
                         and mining vehicles. Contact us today for specs and pricing.
                     </p>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Footer />
