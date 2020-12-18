@@ -57,9 +57,36 @@ export default function ModalImage({
                 </span>
               </div>
             </div>
-            <div className={styles.imageText}>{`${idx + 1} / ${
-              photosData.length
-            }`}</div>
+            <div>
+              <div className={styles.text__wrapper}>
+                <div
+                  className={styles.text__arrow}
+                  onClick={(e) => {
+                    e.stopPropagation(); // 이벤트 버블링 방지
+                    setIdx(-1);
+                  }}
+                >
+                  <i className="fas fa-angle-left" />
+                </div>
+                <div className={styles.imageText}>{`${idx + 1} / ${
+                  photosData.length
+                }`}</div>
+                <div
+                  className={styles.text__arrow}
+                  onClick={(e) => {
+                    e.stopPropagation(); // 이벤트 버블링 방지
+                    setIdx(1);
+                  }}
+                >
+                  <i className="fas fa-angle-right" />
+                </div>
+              </div>
+              <div>
+                <span className={styles.closeIcon}>
+                  <i className="fas fa-times" />
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       ) : null}

@@ -9,7 +9,7 @@ export default function ImageGrid({ cellData, children }) {
   return (
     <div className="container">
       <div className="inner__container">
-        {children};
+        {children}
         <div className={styles.gridWrapper}>
           <div className={styles.grid}>
             {cellData &&

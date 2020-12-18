@@ -4,14 +4,6 @@ import React, { useState, useEffect } from "react";
 import styles from "@/public/css/modules/home.module.css";
 
 export default function SlideImage() {
-  const styleSet = {
-    1: styles.slide__image1,
-    2: styles.slide__image2,
-    3: styles.slide__image3,
-    4: styles.slide__image1,
-    5: styles.slide__image2,
-    6: styles.slide__image3,
-  };
   const imageSet = {
     1: "/image/home/slide1.jpg",
     2: "/image/home/slide2.jpg",
@@ -29,13 +21,32 @@ export default function SlideImage() {
 
   return (
     <div className={styles.slide}>
-      {/* 슬라이드 내 이미지*/}
-      <img className={styles.slide__image} src={imageSet[slideIdx]} alt="tmp" />
-      <img
-        className={`${styles.slide__image}  ${styles.top}`}
-        src={imageSet[(slideIdx % 6) + 1]}
-        alt="tmp"
-      />
+      {Object.keys(imageSet).map((_, idx) => {
+        const val = idx + 1;
+        return (
+          <input
+            key={val}
+            style={{ display: "none" }}
+            type="radio"
+            name="pos"
+            id={`pos${val}`}
+            checked={val === slideIdx}
+            onChange={() => setSlideIdx(val)}
+          />
+        );
+      })}
+      <ul className={styles.slide__ul}>
+        {Object.keys(imageSet).map((_, idx) => {
+          const val = idx + 1;
+          return (
+            <li key={val} className={styles.slide__li}>
+              <div className={styles.slide__imageWrapper}>
+                <img src={imageSet[val]} className={styles.slide__image} />
+              </div>
+            </li>
+          );
+        })}
+      </ul>
       <div className={styles.slide__arrow}>
         <span onClick={() => setSlideIdx((idx) => idx - 1 || 6)}>
           <i className="fas fa-chevron-circle-left" />
@@ -44,19 +55,21 @@ export default function SlideImage() {
           <i className="fas fa-chevron-circle-right" />
         </span>
       </div>
-      <div className={styles.imageIdx__wrapper}>
-        {imageSet &&
-          [...Array(Object.keys(imageSet).length)].map((_, idx) => {
-            return (
-              <div
-                key={idx}
-                className={`${styles.imageIdx}
-                 ${slideIdx - 1 === idx && styles.imageIdx__selected}
-                `}
-              />
-            );
-          })}
-      </div>
+      <p className={styles.slide__idxWrapper}>
+        {Object.keys(imageSet).map((_, idx) => {
+          const val = idx + 1;
+          return (
+            <label
+              className={styles.slide__idx}
+              key={val}
+              htmlFor={`pos${val}`}
+              onClick={() => setSlideIdx(val)}
+            >
+              {val}
+            </label>
+          );
+        })}
+      </p>
     </div>
   );
 }

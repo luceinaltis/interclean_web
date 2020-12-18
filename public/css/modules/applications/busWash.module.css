@@ -42,7 +42,7 @@
 
 /* bus/headInfo.js */
 .headInfo {
-    margin: 50px 0px 30px;
+    margin: 70px 0px 30px;
 }
 
 .headInfo__title__blue {
@@ -61,6 +61,7 @@
 
 .headInfo__body {
     line-height: 1.5;
+    margin: 10px 0px 50px;
 }
 
 /* bus/body.js */
@@ -72,11 +73,12 @@
     color: #0c519b;
     font-size: 24px;
     font-weight: bold;
-    margin: 20px 0px 10px;
+    margin: 50px 0px 10px;
 }
 
 .body__body {
     line-height: 1.5;
+    margin: 10px 0px 50px;
 }
 
 .body__body__bold {
@@ -110,6 +112,7 @@
     height: 0;   /* 비율조정 */
     padding-bottom: 56.2%;  /* 비율조정 */
     overflow: hidden;
+    margin: 50px 0px 0px;
 }
 
 .tailInfo__video {

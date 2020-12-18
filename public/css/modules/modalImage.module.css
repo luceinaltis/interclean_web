@@ -26,11 +26,12 @@
     color: white;
     top: 0;
     font-size: 24px;
-    margin: 10px 0px 10px 15px;
+    margin: 10px;
 }
 
 .image {
     max-width: 100%;
+    max-height: 90vh;
 }
 
 .image__arrowContainer {
@@ -78,4 +79,51 @@
 
 .image__arrowContainer:hover .image__arrow__dir_right {
     color: white;
+}
+
+.closeIcon {
+    font-size: 200%;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.text__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.text__arrow {
+    color: white;
+    font-size: 150%;
+}
+
+.text__arrow:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+    .image__arrowContainer {
+        font-size: 200%;
+    }
+
+    .imageText {
+        font-size: 18px;
+    }
+
+    .closeIcon {
+        font-size: 150%;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
 }
