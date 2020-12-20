@@ -216,162 +216,24 @@ export default function TruckWashSystems() {
     }
   };
 
-    return (
-        <div>
-            <Header />
-            <Title
-                titleString="COMMERCIAL TRUCK WASH SYSTEMS"
-                titleSubString="Fast, innovative, and automatic truck wash systems enable you to maintain the highest standard of cleanliness for your entire fleet."
-            />
-            <div className="container">
-                <div className="inner__container">
-                    <div className={styles.headInfo}>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <div className={styles.headIcon__grid}>
-                            {iconData &&
-                                iconData.map((val, idx) => {
-                                    return (
-                                        <div key={idx} className={styles.headIcon__wrapper}>
-                                            <img src={val[0]} className={styles.headIcon__image} />
-                                            <div className={styles.headIcon__text}>{val[1]}</div>
-                                        </div>
-                                    );
-                                })}
-                        </div>
-                        <div className={styles.headText}>
-                            <div className={styles.headText__subtitle}>About Our</div>
-                            <div className={styles.headText__title}>TRUCK WASH SYSTEMS</div>
-                            <div className={styles.headText__body}>
-                                InterClean truck wash systems are fully-automated, custom cleaning
-                                solutions for municipal or commercial vehicles. Our in-house design
-                                team works with you to create the{" "}
-                                <span className={styles.headText__body__bold}>
-                                    best truck wash system to maximize
-                                </span>
-                                efficiency while meeting the needs of{" "}
-                                <span className={styles.headText__body__bold}>
-                                    your budget, space, and the shapes and sizes of your vehicles.
-                                </span>{" "}
-                                Our truck wash systems include a
-                                <span className={styles.headText__body__bold}>
-                                    drive-through automatic wash system, a roll-over wash system, a
-                                    wheel, tire, and chassis wash system, or a combination of
-                                    multiple systems.
-                                </span>
-                            </div>
-                        </div>
-                        <Link href="/contact">
-                            <span className={styles.headButton}>TALK TO A PRODUCT EXPERT</span>
-                        </Link>
-                    </div>
-                    <div className={styles.body}>
-                        <div className={styles.body__grid}>
-                            {/* 첫 번째 */}
-                            <img
-                                src={imagePath[0]}
-                                className={`${styles.body__image} ${styles.body__grid__cell}`}
-                            />
-                            <div className={`${styles.body__text} ${styles.body__grid__cell}`}>
-                                <div className={styles.body__title}>
-                                    DRIVE-THROUGH TRUCK WASH SYSTEM
-                                </div>
-                                <div className={styles.body__body}>
-                                    Efficient, heavy-duty cleaning power perfect for large fleets
-                                    with demanding wash cycles. InterClean drive-through washing
-                                    systems use a combination of wash detergents, high-volume,
-                                    low-pressure washing jets, and high-pressure washing jets to
-                                    efficiently clean trucks of all shapes and sizes.
-                                    <br />
-                                    Choose between:
-                                    <li>A completely brushless/ touchless system</li>
-                                    <li>
-                                        A drive-through system coupled with a rollover wash system
-                                        for an extra powerful clean.
-                                    </li>
-                                    It’s a safe and easy way to wash a variety of vehicles with the
-                                    least amount of water and chemicals.
-                                </div>
-                                <div className={styles.body__button}>LEARN MORE</div>
-                            </div>
-                            {/* 두 번째 */}
-                            <div className={`${styles.body__text} ${styles.body__grid__cell}`}>
-                                <div className={styles.body__title}>
-                                    ROLLOVER/ GANTRY TRUCK WASH SYSTEM
-                                </div>
-                                <div className={styles.body__body}>
-                                    Highly customizable, effective fleet washing system perfect for
-                                    both standard vehicle configurations and challenging vehicle
-                                    shapes (e.g. garbage trucks). The InterClean Ultra Gantry System
-                                    roll-over machine can be made with friction, touch-less, or a
-                                    combination of both. Customize your rollover vehicle wash system
-                                    with a variety of options including:
-                                    <br />
-                                    Choose between:
-                                    <li>Spot-free rinse</li>
-                                    <li>Blowers</li>
-                                    <li>Water recycling</li>
-                                    <li>Undercarriage wash</li>
-                                    Simply park your vehicle in the wash bay and let the rollover
-                                    wash system do the work!
-                                </div>
-                                <div className={styles.body__button}>LEARN MORE</div>
-                            </div>
-                            <img
-                                src={imagePath[1]}
-                                className={`${styles.body__image} ${styles.body__grid__cell}`}
-                            />
-                            {/* 세 번째 */}
-                            <img
-                                src={imagePath[2]}
-                                className={`${styles.body__image} ${styles.body__grid__cell}`}
-                            />
-                            <div className={`${styles.body__text} ${styles.body__grid__cell}`}>
-                                <div className={styles.body__title}>
-                                    WHEEL, TIRE, & CHASSIS WASH SYSTEM
-                                </div>
-                                <div className={styles.body__body}>
-                                    A high-pressure, environmentally friendly truck wash solution
-                                    perfect for removing dirt and grime from trucks working at job
-                                    sites with pollutants. InterClean is a leader for designing and
-                                    engineering effective solutions to wash and decontaminate the
-                                    tires and chassis of trucks and other heavy-duty equipment
-                                    leaving job sites such as:
-                                    <li>Landfills</li>
-                                    <li>Quarries</li>
-                                    <li>Steel mills</li>
-                                    <li>Chemical plants</li>
-                                    From dust control to heavy mud removal, we have the solution for
-                                    your tire and under chassis washing problem.
-                                </div>
-                                <div className={styles.body__button}>LEARN MORE</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.tailInfo}>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <div className={styles.tailInfo__title}>THE INTERCLEAN ADVANTAGE</div>
-                        <div className={styles.tailInfo__subtitle}>
-                            All InterClean Equipment Inc. truck wash systems are built with our
-                            customers’ needs in mind.
-                        </div>
-                        <div className={styles.tailInfo__grid}>
-                            {[0, 1, 2, 3].map((idx) => {
-                                return (
-                                    <div key={idx}>
-                                        <img
-                                            src={iconPath[idx]}
-                                            className={styles.tailIcon__image}
-                                        />
-                                        {getIconName(idx)}
-                                        <div className={styles.tailIcon__info}>{iconInfo[idx]}</div>
-                                    </div>
-                                );
-                            })}
-                        </div>
+  return (
+    <div>
+      <Header />
+      <Title
+        titleString="COMMERCIAL TRUCK WASH SYSTEMS"
+        titleSubString="Fast, innovative, and automatic truck wash systems enable you to maintain the highest standard of cleanliness for your entire fleet."
+      />
+      <div className="container">
+        <div className="inner__container">
+          <div className={styles.headInfo}>
+            <p>&nbsp;</p>
+            <div className={styles.headIcon__grid}>
+              {iconData &&
+                iconData.map((val, idx) => {
+                  return (
+                    <div key={idx} className={styles.headIcon__wrapper}>
+                      <img src={val[0]} className={styles.headIcon__image} />
+                      <div className={styles.headIcon__text}>{val[1]}</div>
                     </div>
                   );
                 })}
@@ -430,7 +292,7 @@ export default function TruckWashSystems() {
                 </div>
                 <Link href="/wash-systems/drive-thru-touchless">
                   <div className={styles.body__button}>LEARN MORE</div>
-                </Link>{" "}
+                </Link>
               </div>
               {/* 두 번째 */}
               <div
