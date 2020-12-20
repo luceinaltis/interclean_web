@@ -12,6 +12,9 @@ export default function Index() {
             <Title titleString={"SERVICES"} />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h1>SERVICE & MAINTENANCE, DETERGENT, AND REPLACEMENT PARTS</h1>
                     <h3>FOR INTERCLEAN HEAVY-DUTY VEHICLE WASH SYSTEMS</h3>
                     <p>
@@ -65,6 +68,9 @@ export default function Index() {
                             parts.
                         </strong>
                     </p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Footer />

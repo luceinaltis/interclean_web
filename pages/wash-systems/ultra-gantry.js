@@ -76,6 +76,7 @@ export default function UltraGantry() {
             <div className="container">
                 <div className="inner__container">
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <Image
                         src="/image/wash-systems/ultra-gantry/image1.jpg"
                         alt="Picture of the author"
@@ -83,7 +84,9 @@ export default function UltraGantry() {
                         width={806}
                         height={537}
                     />
+                    <p>&nbsp;</p>
                     <h1>ULTRA GANTRY WASH SYSTEM</h1>
+                    <p>&nbsp;</p>
                     <p>
                         InterClean’s Ultra Gantry, or rollover, style commercial vehicle wash system
                         is highly customizable to effectively clean a wide range of vehicles
@@ -116,6 +119,7 @@ export default function UltraGantry() {
                         device run time. The analytics, along with remote access to the data, help
                         customers save costs and improve effectiveness.
                     </p>
+                    <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <Image
                         src="/image/wash-systems/ultra-gantry/image2.jpg"
@@ -228,6 +232,7 @@ export default function UltraGantry() {
                         />
                     </div>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h2>OPTIONAL EXTRAS FOR THE ULTRA GANTRY</h2>
                     <p>&nbsp;</p>
                     <strong>Water Recycling and Treatment</strong>
@@ -256,6 +261,7 @@ export default function UltraGantry() {
                     </p>
                 </div>
             </div>
+            <p>&nbsp;</p>
             <Photos photosData={photosData} menuOpened={menu === "PHOTOS"} openMenu={openMenu} />
             <Videos
                 videoData={videoData}
@@ -273,6 +279,7 @@ export default function UltraGantry() {
                 menuOpened={menu === "Downloads"}
                 openMenu={openMenu}
             />
+            <p>&nbsp;</p>
             <Footer />
         </div>
     );

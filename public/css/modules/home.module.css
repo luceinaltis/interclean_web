@@ -175,7 +175,6 @@
 }
 
 .welcome__text {
-    
 }
 
 .welcome__buttonGrid {
@@ -192,8 +191,8 @@
     }
 
     .welcome__grid {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
     }
 }
 
@@ -256,7 +255,7 @@
 }
 
 .whatsNew__title__color_orange {
-    color: #ee7e02; 
+    color: #ee7e02;
     font-size: max(2.5vw, 40px);
     margin-bottom: 20px;
     text-align: center;
@@ -310,13 +309,13 @@
 .gridCell__imageContainer {
     width: 100%;
     height: 235px;
-    transition: .4s;
+    transition: 0.4s;
     overflow: hidden;
 }
 
 .gridCell__image {
     object-fit: cover;
-    transition: .4s;
+    transition: 0.4s;
     width: 100%;
     height: 100%;
 }
@@ -365,7 +364,6 @@
     }
 }
 
-
 @media only screen and (max-width: 700px) {
     .grid {
         display: grid;
@@ -378,7 +376,7 @@
 /* services.js */
 
 .services__background {
-    background-image: url('/image/home/background.png');
+    background-image: url("/image/home/background.png");
     width: 100%;
     padding: 30px 50px;
 }
@@ -470,29 +468,4 @@
     .vehicle__title__color_orange {
         font-size: 30px;
     }
-}
-
-.imageIdx__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url('/image/home/background.png');
-    padding: 5px 10px 0px;
-}
-
-.imageIdx {
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
-    background-color: #a3bad2 
-}
-
-.imageIdx__selected {
-    background-color: #ef7e00;
 }

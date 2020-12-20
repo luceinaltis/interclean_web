@@ -20,9 +20,12 @@ export default function Mobile() {
     return (
         <div>
             <Header />
-            <Title titleString={"MANUAL WASH SYSTEMS"} />
+            <Title titleString={"MOBILE WASH SYSTEMS"} />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h1>
                         ARE ENVIRONMENTAL REGULATIONS FORCING YOU TO UPDATE YOUR MOBILE WASH
                         SYSTEMS?
@@ -56,6 +59,9 @@ export default function Mobile() {
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Footer />

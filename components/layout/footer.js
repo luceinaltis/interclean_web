@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../../public/css/modules/footer.module.css";
 
 import { i18n, withTranslation } from "../../i18n";
+import { useState } from "react";
 
 function Footer({ t }) {
     return (
@@ -38,7 +39,10 @@ function Footer({ t }) {
                                         <select
                                             name="lang"
                                             id="lang"
-                                            onChange={(e) => i18n.changeLanguage(e.target.value)}
+                                            defaultValue={`${i18n.language}`}
+                                            onChange={(e) => {
+                                                i18n.changeLanguage(e.target.value);
+                                            }}
                                         >
                                             <option value="ko">🇰🇷 Korean</option>
                                             <option value="en">🇺🇸 English</option>

@@ -61,8 +61,12 @@ export default function WaterRecycling() {
             <Title titleString={"WASH SYSTEM WATER RECYCLING"} />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h1>INTRODUCING INTERCLEAN’S EQ100</h1>
                     <h3>A PATENTED HIGH-PRESSURE, ANTI TURBULENT RECYCLING MODULE</h3>
+                    <p>&nbsp;</p>
                     <div className="image__wrapper">
                         <Image
                             src="/image/wash-systems/water-recycling/recycling1.jpg"
@@ -71,6 +75,7 @@ export default function WaterRecycling() {
                             height={345}
                         />
                     </div>
+                    <p>&nbsp;</p>
                     <p>
                         This module is the heart of the InterClean system and has been used for
                         almost all InterClean applications where water recycling is needed. These
@@ -82,6 +87,8 @@ export default function WaterRecycling() {
                         control panel also allows a modem hook-up for remote control and
                         troubleshooting.
                     </p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h2>
                         GET HIGH VOLUMES OF RECYCLED WATER FOR YOUR INTERCLEAN TRUCK WASHING SYSTEM
                     </h2>
@@ -94,6 +101,8 @@ export default function WaterRecycling() {
                         mining and military vehicles and requires no chemical additives to minimize
                         any environmental impact. Contact Interclean for a quote on the EQ100.
                     </p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h3>
                         OUR WATER RECYCLING SYSTEM CAN PROVIDE WATER VOLUMES IN EXCESS OF 300 GPM
                     </h3>
@@ -109,9 +118,14 @@ export default function WaterRecycling() {
                         (734) 822-6988 to talk about our water recycling options for truck washes.
                     </p>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h2>OTHER INTERCLEAN WASH SYSTEMS:</h2>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Photos photosData={photosData} menuOpened={menu === "PHOTOS"} openMenu={openMenu} />

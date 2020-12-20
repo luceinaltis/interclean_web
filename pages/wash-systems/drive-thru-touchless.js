@@ -23,7 +23,11 @@ export default function DriveThruTouchless() {
             <Title titleString={"DRIVE-THRU TOUCHLESS WASH SYSTEMS"} />
             <div className="container">
                 <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h1>CUSTOM BUILT, TOUCHLESS DRIVE THRU VEHICLE WASH SYSTEMS</h1>
+                    <p>&nbsp;</p>
                     <p>
                         InterClean’s advanced brushless wash systems provide the ultimate,
                         scratch-free cleaning experience for all kinds of vehicles, especially those
@@ -77,6 +81,7 @@ export default function DriveThruTouchless() {
                         </li>
                     </ul>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h3>
                         INTERCLEAN OFFERS YOU THE OPTIONS YOU NEED FOR LIGHT, MEDIUM AND HEAVY
                         VEHICLE WASHING
@@ -114,6 +119,9 @@ export default function DriveThruTouchless() {
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <Footer />
