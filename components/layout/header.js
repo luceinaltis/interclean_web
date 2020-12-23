@@ -60,10 +60,13 @@ function Header({ t }) {
                     <div className="inner__container">
                         <div className={styles.header__top__container}>
                             <div>
-                                Follow us on:{" "}
-                                <span>
-                                    <i className="fab fa-facebook-square" />
-                                </span>
+                                <a
+                                    className={styles.box}
+                                    href="mailto:intercleankr@naver.com"
+                                    target="_blank"
+                                >
+                                    E-mail : <i class="fas fa-envelope" />
+                                </a>
                             </div>
                             <div className={styles.header__top__container__right}>
                                 <i className="fas fa-mobile-alt" />

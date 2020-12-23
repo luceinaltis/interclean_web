@@ -7,7 +7,7 @@
     "services": "서비스",
     "distributors": "DISTRIBUTORS",
 
-    "APPLICATIONS": "상품 응용",
+    "APPLICATIONS": "솔루션",
     "bus-wash-systems": "버스 세척",
     "truck-wash-systems": "트럭 세척",
     "retail-truck-wash-systems": "소매 트럭 세척",
@@ -15,6 +15,12 @@
     "military-wash-systems": "군용 차량 세척",
     "train-wash-systems": "열차 세척",
     "mining-oil-wash-systems": "중장비 세척",
-    "wheel-wash-systems": "휠, 타이어 / 섀시",
-    "water-recycling-wash-systems": "물 재활용"
+    "wheel-wash-systems": "휠, 타이어 / 섀시 세척",
+    "water-recycling-wash-systems": "물 재활용",
+
+    "contact-us-": "위치",
+    "company": "주식회사 인터클린 코리아.",
+    "location": "인천광역시 연수구 송도미래로 30, A동 108호",
+
+    "follow": "이메일 : "
 }

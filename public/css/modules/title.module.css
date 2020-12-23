@@ -1,5 +1,5 @@
 .title_image {
-    height: 200px;
+    height: 268px;
     background-image: url("../../image/wash-systems/bg1.jpg");
     background-position: bottom center;
     color: #eeeeee;
@@ -16,4 +16,10 @@
 .subTitle {
     font-size: 20px;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title_image {
+        height: 200px;
+    }
 }

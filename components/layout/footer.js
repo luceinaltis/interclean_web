@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "../../public/css/modules/footer.module.css";
 
@@ -37,6 +38,7 @@ function Footer({ t }) {
                                     </li>
                                     <li>
                                         <select
+                                            className={styles.select}
                                             name="lang"
                                             id="lang"
                                             defaultValue={`${i18n.language}`}
@@ -101,13 +103,43 @@ function Footer({ t }) {
                                 </ul>
                             </div>
                             <div>
-                                <h5>CONTACT US</h5>
+                                <h5>{t("contact-us-")}</h5>
                                 <ul>
                                     <li className={`${styles.footer_top__menu_items} click`}>
-                                        <Link href="/"> InterClean Equipment, LLC</Link>
+                                        <i class="fas fa-map-marker-alt" />{" "}
+                                        <Link href="/">{t("company")}</Link>
                                     </li>
-                                    <li>709 James L Hart Pkwy, Ypsilanti, MI 48197</li>
+                                    <li>{t("location")}</li>
                                 </ul>
+                            </div>
+                            <div>
+                                <Image
+                                    src="/image/logo/Interclean_Logo_2018_415x118.png"
+                                    alt="Picture of the author"
+                                    width={415}
+                                    height={118}
+                                />
+                                <div className={styles.flex}>
+                                    <div>
+                                        {t("follow")}
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <a
+                                            className={styles.box}
+                                            href="mailto:intercleankr@naver.com"
+                                            target="_blank"
+                                        >
+                                            <i class="fas fa-envelope" />
+                                        </a>
+                                    </div>
+                                    <Image
+                                        src="/image/home/USA.png"
+                                        alt="Picture of the author"
+                                        width={89}
+                                        height={73}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,7 +150,7 @@ function Footer({ t }) {
                 <div className="container">
                     <div className="inner__container">
                         <div className={styles.footer_bottom__title}>
-                            © 2020. All Rights Reserved. InterClean Equipment, LLC
+                            Copyright © 2020 InterClean Korea. All Rights Reserved.
                         </div>
                     </div>
                 </div>

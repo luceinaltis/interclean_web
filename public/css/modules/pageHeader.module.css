@@ -1,5 +1,5 @@
 .container {
-    background-image: url('/image/wash-systems/bg1.jpg');
+    background-image: url("/image/wash-systems/bg1.jpg");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% auto;
@@ -48,5 +48,4 @@
         font-size: 20px;
         text-align: center;
     }
-
 }

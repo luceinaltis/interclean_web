@@ -1,4 +1,5 @@
 {
+    "follow": "Follow us on :",
     "ABOUT": "회사소개",
 
     "APPLICATIONS": "솔루션",
@@ -12,8 +13,8 @@
     "WASH SYSTEMS": "세척 시스템",
     "Drive-Thru Touchless": "드라이브 스루 터치리스",
     "Gantry & Rollover": "갠트리 & 롤오버",
-    "Interior Trailer Wash System": "트레일러 내부 세차 시스템",
-    "Manual Wash Systems": "수동 제어 시스템",
+    "Interior Trailer Wash System": "트레일러 내부",
+    "Manual Wash Systems": "수동 제어",
     "Mobile Wash Systems": "맞춤 제작",
     "Single Brush Wash System": "단일 브러시",
     "Wheel, Tire, & Chassis": "휠, 타이어 및 섀시",
