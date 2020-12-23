@@ -145,6 +145,10 @@
         all: revert;
     }
 
+    .menu__bottom__subtitle__container {
+        height: 170px;
+    }
+
     .menu__top {
         display: block;
         width: auto;
