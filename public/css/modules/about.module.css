@@ -1,5 +1,5 @@
 .about {
-    padding: 50px 0px 80px;
+    padding: 50px 0px 30px;
 }
 
 .title {
@@ -22,6 +22,7 @@
 .title__color_emerald {
     color: #2db397;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .seperator {
