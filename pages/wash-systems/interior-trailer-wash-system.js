@@ -1,3 +1,5 @@
+import { withTranslation } from "../../i18n";
+
 // Layouts
 import Header from "../../components/layout/header";
 import Footer from "../../components/layout/footer";
@@ -17,65 +19,38 @@ const gridCellData = [
     ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", "WATER RECYCLING"],
 ];
 
-export default function InteriorTrailerWashSystem() {
+function InteriorTrailerWashSystem({ t }) {
     return (
         <div>
             <Header />
-            <Title
-                titleString={"TRAILER SANITIZING & WASH SYSTEMS"}
-                titleSubString={
-                    "Fast, automated interior truck cleaning and sanitizing solutions, customized for your site."
-                }
-            />
+            <Title titleString={t("title")} titleSubString={t("sub-title")} />
             <div className="container">
                 <div className="inner__container">
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h1>ABOUT OUR TRAILER SANITIZING & WASH SYSTEMS</h1>
+                    <h1>{t("p1")}</h1>
                     <p>&nbsp;</p>
-                    <p>
-                        In less than 4 minutes, the inside of your truck trailer or container is
-                        completely cleaned, sanitized, and ready for the next load. The automatic
-                        sanitizer and wash system can be installed on a dock or as a self-contained
-                        unit on a movable stand. Moving inside the trailer or container, the system
-                        completes an effective series of wash, rinse, and sanitizing cycles. Boost
-                        your trailer wash program with consistently clean and safe results every
-                        time.
-                    </p>
+                    <p>{t("p2")}</p>
+                    <p>{t("p3")}</p>
                     <p>&nbsp;</p>
-                    <h2>WHY USE INTERCLEAN TRAILER SANITIZING & WASH SYSTEMS</h2>
+                    <h2>{t("p4")}</h2>
                     <p>&nbsp;</p>
                     <div className={styles.grid}>
                         <div className={styles.grid_item}>
                             <i class="fas fa-user-shield" />
-                            <h3>IMPROVE SAFETY</h3>
-                            <p>
-                                Protect the safety of your employees and customers with effective
-                                interior trailer sanitation and cleaning. Not only does the
-                                automatic wash system remove any health hazards and debris, but it
-                                also prevents exposure of employees to safety hazards.
-                            </p>
+                            <h3>{t("p5")}</h3>
+                            <p>{t("p6")}</p>
                         </div>
                         <div className={styles.grid_item}>
                             <i class="fas fa-dollar-sign" />
-                            <h3>LOWER CLEANING COSTS</h3>
-                            <p>
-                                Manual cleaning programs are time-consuming and they tie up your
-                                team and trailers. Our automated user-friendly wash and sanitizing
-                                systems completely sanitize and clean all types of trailers and
-                                containers in a matter of minutes.
-                            </p>
+                            <h3>{t("p7")}</h3>
+                            <p>{t("p8")}</p>
                         </div>
                         <div className={styles.grid_item}>
                             <i class="far fa-thumbs-up" />
-                            <h3>CONSISTENT PERFORMANCE</h3>
-                            <p>
-                                Get the same, outstanding results with our automatic trailer
-                                sanitizing and cleaning systems after every wash. Have peace of mind
-                                knowing that your trailers are free of health hazards and are ready
-                                to be used immediately after wash.
-                            </p>
+                            <h3>{t("p9")}</h3>
+                            <p>{t("p10")}</p>
                         </div>
                     </div>
                     <p>&nbsp;</p>
@@ -91,3 +66,11 @@ export default function InteriorTrailerWashSystem() {
         </div>
     );
 }
+
+InteriorTrailerWashSystem.getInitialProps = async () => ({
+    namespacesRequired: ["wash-systems__interior-trailer-wash-system", "footer", "header"],
+});
+
+export default withTranslation("wash-systems__interior-trailer-wash-system")(
+    InteriorTrailerWashSystem
+);

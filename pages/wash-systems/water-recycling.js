@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { withTranslation } from "../../i18n";
 
 // Layouts
 import Header from "../../components/layout/header";
@@ -22,7 +23,7 @@ const gridCellData = [
 // applications 에서 공통적으로 필요한 layouts
 import { Photos, Downloads } from "@/components/layout/applications";
 
-export default function WaterRecycling() {
+function WaterRecycling({ t }) {
     const photosData = [
         [
             "/image/wash-systems/water-recycling/photos/grid1.jpg",
@@ -58,14 +59,14 @@ export default function WaterRecycling() {
     return (
         <div>
             <Header />
-            <Title titleString={"WASH SYSTEM WATER RECYCLING"} />
+            <Title titleString={t("title")} />
             <div className="container">
                 <div className="inner__container">
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h1>INTRODUCING INTERCLEAN’S EQ100</h1>
-                    <h3>A PATENTED HIGH-PRESSURE, ANTI TURBULENT RECYCLING MODULE</h3>
+                    <h1>{t("p1")}</h1>
+                    <h3>{t("p2")}</h3>
                     <p>&nbsp;</p>
                     <div className="image__wrapper">
                         <Image
@@ -76,51 +77,20 @@ export default function WaterRecycling() {
                         />
                     </div>
                     <p>&nbsp;</p>
-                    <p>
-                        This module is the heart of the InterClean system and has been used for
-                        almost all InterClean applications where water recycling is needed. These
-                        include wash systems for, trucks, trains, buses, aircraft, military and
-                        mining vehicles. Each EQ100 is capable of producing up to 300 GPM of
-                        recycled water continuously. The module has its own electrical control panel
-                        that monitors and enables the systems internal functions, such as liquid
-                        level monitoring, motor control, overloads, and adjustments. The main
-                        control panel also allows a modem hook-up for remote control and
-                        troubleshooting.
-                    </p>
+                    <p>{t("p3")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>
-                        GET HIGH VOLUMES OF RECYCLED WATER FOR YOUR INTERCLEAN TRUCK WASHING SYSTEM
-                    </h2>
-                    <p>
-                        The EQ100 is designed to recycle and aerate the wash water automatically,
-                        without changing filters or manual supervision. This method of water
-                        recycling provides inexpensive, simple and reliable use of high volumes of
-                        recycled wash water. The EQ100 can operate under the most demanding vehicle
-                        wash conditions such as recycling the water used to wash garbage trucks,
-                        mining and military vehicles and requires no chemical additives to minimize
-                        any environmental impact. Contact Interclean for a quote on the EQ100.
-                    </p>
+                    <h2>{t("p4")}</h2>
+                    <p>{t("p5")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h3>
-                        OUR WATER RECYCLING SYSTEM CAN PROVIDE WATER VOLUMES IN EXCESS OF 300 GPM
-                    </h3>
-                    <p>
-                        By using this effective yet inexpensive recycling system, InterClean
-                        Equipment is able to employ the full force of huge volumes of pressurized
-                        wash water, which create a cleaning impact that is simply not available with
-                        other automatic vehicle washing systems. To achieve recycled water volumes
-                        in excess of 300 gpm (1,250 l/m), multiple modules can be utilized in
-                        parallel. Each module is pre-wired, pre-plumbed and mounted on a skid. The
-                        overall dimensions of the unit are such that it can be shipped in standard
-                        road trailers, or in high cube 40 feet ocean freight containers. Call +1
-                        (734) 822-6988 to talk about our water recycling options for truck washes.
-                    </p>
+                    <h3>{t("p6")}</h3>
+                    <p>{t("p7")}</p>
+                    <p>{t("p8")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>OTHER INTERCLEAN WASH SYSTEMS:</h2>
+                    <h2>{t("p9")}</h2>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
                     <p>&nbsp;</p>
@@ -138,3 +108,9 @@ export default function WaterRecycling() {
         </div>
     );
 }
+
+WaterRecycling.getInitialProps = async () => ({
+    namespacesRequired: ["wash-systems__water-recycling", "footer", "header"],
+});
+
+export default withTranslation("wash-systems__water-recycling")(WaterRecycling);

@@ -1,3 +1,5 @@
+import { withTranslation } from "../../i18n";
+
 // Layouts
 import Header from "../../components/layout/header";
 import Footer from "../../components/layout/footer";
@@ -16,61 +18,30 @@ const gridCellData = [
     ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", "WATER RECYCLING"],
 ];
 
-export default function Index() {
+function Index({ t }) {
     return (
         <div>
             <Header />
-            <Title titleString={"WASH SYSTEMS"} />
+            <Title titleString={t("title")} />
             <div>
                 <div className="container">
                     <div className="inner__container">
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
-                        <h1>INTERCLEAN HEAVY DUTY, COMMERCIAL</h1>
-                        <h3>VEHICLE WASH SYSTEMS</h3>
-                        <p>
-                            InterClean designs, installs, and maintains heavy-duty commercial
-                            vehicle wash systems for light, medium, and heavy-duty vehicles. Our
-                            fully automatic wash systems are completely customizable and ideal for
-                            commercial trucks, retail trucks, buses, trains, aircraft, military
-                            vehicles, commercial fleets, as well as mining and oil vehicles. The
-                            InterClean touchless and rollover commercial truck washing systems are
-                            ideal for oddly shaped vehicles, extreme dirt, mud and salt conditions,
-                            and locations where water recycling is enforced. Every vehicle wash
-                            system is custom designed to meet the environmental conditions, vehicle
-                            needs, water restrictions, space allotment and budgetary concerns. All
-                            systems are guaranteed and maintained locally. Call +1 (734) 822-5910 to
-                            Speak to an InterClean Commercial Wash System Specialist.
-                        </p>
-                        <p>
-                            InterClean does not design or build wash systems that use deadly
-                            hydrofluoric acid in any part of the cleaning process. Read About the
-                            Danger of HF Acid in Wash Systems.
-                        </p>
+                        <h1>{t("p1")}</h1>
+                        <h3>{t("p2")}</h3>
+                        <p>{t("p3")}</p>
+                        <p>{t("p4")}</p>
 
-                        <h2>
-                            INTERCLEAN OPTIONS FOR LIGHT, MEDIUM, AND HEAVY VEHICLE WASHING SYSTEMS
-                            INCLUDE:
-                        </h2>
+                        <h2>{t("p5")}</h2>
                         <ul>
-                            <li>
-                                Automatic drive through packages for wash times less than 5 minutes
-                            </li>
-                            <li>
-                                Manual monitor and fire hose packages for standard applications and
-                                detail work
-                            </li>
-                            <li>
-                                Semi-automatic joystick controlled monitors to improve safety and
-                                productivity
-                            </li>
-                            <li>
-                                Fully-automatic robotic monitor packages that maximize safety,
-                                efficiency, and productivity
-                            </li>
-                            <li>Chassis Wash</li>
-                            <li>Tire Wash</li>
+                            <li>{t("p6")}</li>
+                            <li>{t("p7")}</li>
+                            <li>{t("p8")}</li>
+                            <li>{t("p9")}</li>
+                            <li>{t("p10")}</li>
+                            <li>{t("p11")}</li>
                         </ul>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
@@ -85,3 +56,9 @@ export default function Index() {
         </div>
     );
 }
+
+Index.getInitialProps = async () => ({
+    namespacesRequired: ["wash-systems", "footer", "header"],
+});
+
+export default withTranslation("wash-systems")(Index);

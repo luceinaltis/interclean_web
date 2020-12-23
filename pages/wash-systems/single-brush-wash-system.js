@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withTranslation } from "../../i18n";
 
 // Layouts
 import Header from "../../components/layout/header";
@@ -19,85 +20,47 @@ const gridCellData = [
     ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", "WATER RECYCLING"],
 ];
 
-export default function SingleBrushWashSystem() {
+function SingleBrushWashSystem({ t }) {
     return (
         <div>
             <Header />
-            <Title
-                titleString={"SINGLE BRUSH WASH SYSTEM"}
-                titleSubString={"An effective, low-cost upgrade from manual washing."}
-            />
+            <Title titleString={t("title")} titleSubString={t("sub-title")} />
             <div className="container">
                 <div className="inner__container">
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h1>THE ALPHA 500 SINGLE BRUSH WASH MACHINE</h1>
+                    <h1>{t("p1")}</h1>
                     <p>&nbsp;</p>
-                    <p>
-                        The Alpha 500 machine is a great mobile fleet wash system that offers a
-                        powerful clean for a wide range of commercial vehicles, including both
-                        trucks and buses. This system includes a large single brush mounted on a
-                        diesel or battery-powered machine that can be driven around each of your
-                        vehicles to speed up your cleaning routines and reduce labor costs.
-                    </p>
+                    <p>{t("p2")}</p>
                     <p>&nbsp;</p>
-                    <p>
-                        Contact us to get set up with your own Alpha 500 machine. Our expert
-                        technicians will deliver and assemble your equipment, so you can start using
-                        your single brush wash machine ASAP.
-                    </p>
+                    <p>{t("p3")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>WHY USE AN INTERCLEAN SINGLE BRUSH WASH MACHINE?</h2>
-                    <p>
-                        The InterClean single brush wash machine is a state-of-the-art bus and truck
-                        wash system with numerous product benefits:
-                    </p>
+                    <h2>{t("p4")}</h2>
+                    <p>{t("p5")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <div className={styles.grid}>
                         <div className={styles.grid__item}>
                             <i className="fas fa-hand-holding-usd" />
-                            <h3>LOW-COST UPGRADE</h3>
-                            <p>
-                                The Alpha 500 single wash brush system is a great option for those
-                                looking to upgrade from manual washing without investing in larger
-                                and more costly vehicle wash installations. It’s an affordable bus
-                                and truck wash system that doesn’t compromise on cleaning power.
-                            </p>
+                            <h3>{t("p6")}</h3>
+                            <p>{t("p7")}</p>
                         </div>
                         <div className={styles.grid__item}>
                             <i className="far fa-thumbs-up" />
-                            <h3>USER-FRIENDLY OPTION</h3>
-                            <p>
-                                It takes less than an hour for operators to learn how to use the
-                                single brush truck wash equipment. The machine is equipped with a
-                                user-friendly steering bar and hydraulic drive wheel so any user can
-                                easily maneuver this wash system. This bus and truck wash equipment
-                                also comes in three different driving positions to suit your driving
-                                preferences, including stand, seat, or cab.
-                            </p>
+                            <h3>{t("p8")}</h3>
+                            <p>{t("p9")}</p>
                         </div>
                         <div className={styles.grid__item}>
                             <i className="far fa-thumbs-up" />
-                            <h3>EFFICIENT BUS AND TRUCK WASH SOLUTION</h3>
-                            <p>
-                                Compared to manual washing, the single brush wash system will
-                                greatly reduce the amount of time spent on washing your vehicle
-                                fleet. With the help of the Alpha 500 single wash brush system,
-                                <strong> the entire wash takes less than 10 minutes.</strong>
-                            </p>
+                            <h3>{t("p10")}</h3>
+                            <p>{t("p11")}</p>
                         </div>
                         <div className={styles.grid__item}>
                             <i className="fas fa-user-clock" />
-                            <h3>POWERFUL YET GENTLE DAILY WASH</h3>
-                            <p>
-                                This mobile truck wash equipment is available with soft foam
-                                brushes. This will allow you to safely clean vehicles with
-                                high-quality paint finishes, decals, or wraps without fear of
-                                damaging the surfaces.
-                            </p>
+                            <h3>{t("p12")}</h3>
+                            <p>{t("p13")}</p>
                         </div>
                     </div>
                     <p>&nbsp;</p>
@@ -114,65 +77,45 @@ export default function SingleBrushWashSystem() {
                             />
                         </div>
                         <div>
-                            <h2>FEATURES OF THE SINGLE BRUSH WASH MACHINE</h2>
-                            <p>There are many great features packed in the Alpha 500 machine:</p>
+                            <h2>{t("p14")}</h2>
+                            <p>{t("p15")}</p>
                             <ul>
-                                <li>Diesel Motor unit (for outdoor use)</li>
-                                <li>24V batteries (for indoor use) </li>
-                                <li>Silencer unit for diesel engine</li>
-                                <li>Steering controls </li>
-                                <li>Hydraulic traction for variable speed</li>
-                                <li>Twin wheels for greater stability </li>
-                                <li>Automatic detergent dispensing device</li>
-                                <li>Water tank </li>
+                                <li>{t("p16")}</li>
+                                <li>{t("p17")}</li>
+                                <li>{t("p18")}</li>
+                                <li>{t("p19")}</li>
+                                <li>{t("p20")}</li>
+                                <li>{t("p21")}</li>
+                                <li>{t("p22")}</li>
+                                <li>{t("p23")}</li>
                             </ul>
                         </div>
                     </div>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>WHY PURCHASE A BUS AND TRUCK WASH SYSTEM FROM INTERCLEAN?</h2>
-                    <p>
-                        At InterClean, we are passionate about providing lasting solutions for our
-                        customers’ heavy-duty washing needs.
-                    </p>
+                    <h2>{t("p24")}</h2>
+                    <p>{t("p25")}</p>
                     <p>&nbsp;</p>
                     <div className={styles.grid__third}>
                         <div>
-                            <h3>DEDICATION TO CUSTOMER SERVICE</h3>
-                            <p>
-                                Our staff are committed to providing industry-leading responsiveness
-                                and ongoing support, service, and maintenance to our customers. We
-                                care about customer satisfaction and want to ensure that each
-                                customer has a great experience with our InterClean equipment.
-                            </p>
+                            <h3>{t("p26")}</h3>
+                            <p>{t("p27")}</p>
                         </div>
                         <div>
-                            <h3>TECHNICAL EXPERTISE</h3>
-                            <p>
-                                Our technicians are skilled in efficiently and effectively
-                                assembling our equipment, providing thorough training, and
-                                completing necessary maintenance and repairs.
-                            </p>
+                            <h3>{t("p28")}</h3>
+                            <p>{t("p29")}</p>
                         </div>
                         <div>
-                            <h3>PRODUCT INNOVATION</h3>
-                            <p>
-                                We invest significant time in research and development to ensure
-                                that all of our wash systems remain best-in-class. When purchasing
-                                an InterClean wash system, you can rest assured that your machine is
-                                one of the most innovative wash systems on the market.
-                            </p>
+                            <h3>{t("p30")}</h3>
+                            <p>{t("p31")}</p>
                         </div>
                     </div>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>GET STARTED WITH YOUR OWN ALPHA 500 BRUSH WASH SYSTEM</h2>
-                    <p>
-                        Contact us today to purchase an Alpha 500 Brush Wash System for your
-                        business and reduce the time spent cleaning your vehicle fleet!
-                    </p>
+                    <h2>{t("p32")}</h2>
+                    <p>{t("p33")}</p>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
                     <p>&nbsp;</p>
@@ -184,3 +127,9 @@ export default function SingleBrushWashSystem() {
         </div>
     );
 }
+
+SingleBrushWashSystem.getInitialProps = async () => ({
+    namespacesRequired: ["wash-systems__single-brush-wash-system", "footer", "header"],
+});
+
+export default withTranslation("wash-systems__single-brush-wash-system")(SingleBrushWashSystem);

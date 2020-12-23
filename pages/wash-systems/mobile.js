@@ -1,3 +1,5 @@
+import { withTranslation } from "../../i18n";
+
 // Layouts
 import Header from "../../components/layout/header";
 import Footer from "../../components/layout/footer";
@@ -16,46 +18,24 @@ const gridCellData = [
     ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", "WATER RECYCLING"],
 ];
 
-export default function Mobile() {
+function Mobile({ t }) {
     return (
         <div>
             <Header />
-            <Title titleString={"MOBILE WASH SYSTEMS"} />
+            <Title titleString={t("title")} />
             <div className="container">
                 <div className="inner__container">
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h1>
-                        ARE ENVIRONMENTAL REGULATIONS FORCING YOU TO UPDATE YOUR MOBILE WASH
-                        SYSTEMS?
-                    </h1>
+                    <h1>{t("p1")}</h1>
                     <p>&nbsp;</p>
-                    <p>
-                        InterClean has several rollover and touchless commercial vehicle wash
-                        systems to choose from. Our U.S. made commercial vehicle wash systems are
-                        custom made to accommodate vehicles of all shapes and sizes. We can include
-                        a variety of operational options, as well as tire and chassis wash systems,
-                        and high pressure water recycling modules. Call +1 (734) 822-6988 and speak
-                        to a commercial vehicle wash system expert about replacing your mobile wash
-                        system with a new, energy efficient truck washing system from InterClean.
-                    </p>
+                    <p>{t("p2")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>MOBILE WASH SYSTEMS ARE BECOMING OBSOLETE</h2>
+                    <h2>{t("p3")}</h2>
                     <p>&nbsp;</p>
-                    <p>
-                        If your vehicles are waiting to be washed, you are losing money. Mobile wash
-                        systems are inefficient, pose safety issues to your employees, and put
-                        dangerous chemicals into our clean water drain systems. InterClean can
-                        design a safe, drive through, manual, or robotic system that uses fresh or
-                        recycled water, and saves you money wash after wash. Imagine the increased
-                        productivity when you can completely clean your vehicles with our high
-                        pressure wash systems in 60-90 seconds. You can set a new standard of clean
-                        for your brand and a safer work environment for your crew. Contact
-                        Interclean today for specs and pricing on a new commercial vehicle wash
-                        system.
-                    </p>
+                    <p>{t("p4")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
@@ -68,3 +48,9 @@ export default function Mobile() {
         </div>
     );
 }
+
+Mobile.getInitialProps = async () => ({
+    namespacesRequired: ["wash-systems__mobile", "footer", "header"],
+});
+
+export default withTranslation("wash-systems__mobile")(Mobile);

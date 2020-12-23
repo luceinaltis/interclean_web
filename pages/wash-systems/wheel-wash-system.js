@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import { withTranslation } from "../../i18n";
 
 // Layouts
 import Header from "../../components/layout/header";
@@ -22,7 +23,7 @@ const gridCellData = [
 // applications 에서 공통적으로 필요한 layouts
 import { Photos, Videos, Drawings, Downloads } from "@/components/layout/applications";
 
-export default function WheelWashSystem() {
+function WheelWashSystem({ t }) {
     const photosData = [
         ["/image/wash-systems/wheel-wash-system/photos/grid1.jpg", "Truck chassis wash system"],
         ["/image/wash-systems/wheel-wash-system/photos/grid2.jpg", "wheel and tire wash sprayers"],
@@ -160,14 +161,14 @@ export default function WheelWashSystem() {
     return (
         <div>
             <Header />
-            <Title titleString={"WHEEL, TIRE, & CHASSIS WASH SYSTEM"} />
+            <Title titleString={t("title")} />
             <div className="container">
                 <div className="inner__container">
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h1>CLEAN WATER WHEEL WASH SYSTEMS</h1>
-                    <h3>FOR DIRTY JOBSITES</h3>
+                    <h1>{t("p1")}</h1>
+                    <h3>{t("p2")}</h3>
                     <p>&nbsp;</p>
                     <Image
                         src="/image/wash-systems/wheel-wash-system/image1.jpg"
@@ -176,33 +177,14 @@ export default function WheelWashSystem() {
                         height={347}
                     />
                     <p>&nbsp;</p>
-                    <p>
-                        InterClean Wheel Wash Systems keep your wheels, tires, and underbody free
-                        from debris and your sediment contained to the jobsite. Whether
-                        environmental regulations require you to keep mud and other debris at the
-                        jobsite or you are just being a good neighbor, our wheel wash systems offer
-                        a portable solution to remove dirt and grime before you hit the street. The
-                        InterClean automatic wheel wash systems is fast, efficient, and is the best
-                        solution for preventing trackout.
-                    </p>
+                    <p>{t("p3")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>WE KEEP YOUR WHEEL WASH WATER CLEAN AND CONTAINED</h2>
-                    <p>
-                        Our wheel wash systems can be designed with our EQ100 high-pressure,
-                        anti-turbulent water recycling module. If your job site contains pollutants
-                        such as heavy metals, oils, or grease, it’s important that your wastewater
-                        doesn’t reach storm drains without being filtered. InterClean can design a
-                        wheel wash and under chassis system to keep you compliant with local codes
-                        and environmental regulations.{" "}
-                        <strong>
-                            Call us today at +1 (734) 822-6988 for a quote on portable and
-                            semi-permanent wheel wash systems.
-                        </strong>
-                    </p>
+                    <h2>{t("p4")}</h2>
+                    <p>{t("p5")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>SEE OTHER COMMERCIAL VEHICLE WASH SYSTEMS MADE BY INTERCLEAN:</h2>
+                    <h2>{t("p6")}</h2>
                     <p>&nbsp;</p>
                     <ImageGrid cellData={gridCellData} />
                     <p>&nbsp;</p>
@@ -231,3 +213,9 @@ export default function WheelWashSystem() {
         </div>
     );
 }
+
+WheelWashSystem.getInitialProps = async () => ({
+    namespacesRequired: ["wash-systems__wheel-wash-system", "footer", "header"],
+});
+
+export default withTranslation("wash-systems__wheel-wash-system")(WheelWashSystem);

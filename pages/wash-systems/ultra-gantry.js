@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { withTranslation } from "../../i18n";
 
 // Layouts
 import Header from "../../components/layout/header";
@@ -11,7 +12,7 @@ import styles from "../../public/css/modules/wash-systems/ultra-gantry.module.cs
 // applications 에서 공통적으로 필요한 layouts
 import { Photos, Videos, Drawings, Downloads } from "@/components/layout/applications";
 
-export default function UltraGantry() {
+function UltraGantry({ t }) {
     const photosData = [
         ["/image/wash-systems/ultra-gantry/photos/grid1.jpg", "Clean company logos"],
         [
@@ -72,7 +73,7 @@ export default function UltraGantry() {
     return (
         <div>
             <Header />
-            <Title titleString={"GANTRY & ROLLOVER WASH SYSTEMS"} />
+            <Title titleString={t("title")} />
             <div className="container">
                 <div className="inner__container">
                     <p>&nbsp;</p>
@@ -85,40 +86,15 @@ export default function UltraGantry() {
                         height={537}
                     />
                     <p>&nbsp;</p>
-                    <h1>ULTRA GANTRY WASH SYSTEM</h1>
+                    <h1>{t("p1")}</h1>
                     <p>&nbsp;</p>
-                    <p>
-                        InterClean’s Ultra Gantry, or rollover, style commercial vehicle wash system
-                        is highly customizable to effectively clean a wide range of vehicles
-                        including transit buses, trains, school buses, commercial truck fleets, and
-                        garbage trucks. The Ultra’s brush module is extremely effective at cleaning
-                        buses and commercial fleets, while its high-pressure touchless cleaning
-                        options allow for effective cleaning of variably shaped vehicles such as
-                        garbage trucks or public works fleets.
-                    </p>
-                    <h3>CUSTOMIZABLE</h3>
-                    <p>
-                        The Ultra Gantry can be configured for a variety of wash applications and
-                        needs. The machine is built with a modular design allowing for a wide
-                        variety of touchless, friction, or combination models. Like the machine
-                        itself, the control software is modularized to allow for custom development
-                        of wash recipes. This customization allows our customers to effectively
-                        clean their fleets exactly the way they need to.
-                    </p>
-                    <h3>RELIABLE AND SUSTAINABLE</h3>
-                    <p>
-                        The use of quality components combined with our large in-house engineering
-                        team ensure the Ultra Gantry’s high machine reliability. The Ultra has also
-                        been designed with a focus on sustainability, allowing for minimal power and
-                        water usage and decreased operating costs.
-                    </p>
-                    <h3>DATA-DRIVEN</h3>
-                    <p>
-                        Each system includes an analytics feature that tracks valuable wash
-                        information such as number of washes, average time of wash, water usage, and
-                        device run time. The analytics, along with remote access to the data, help
-                        customers save costs and improve effectiveness.
-                    </p>
+                    <p>{t("p2")}</p>
+                    <h3>{t("p3")}</h3>
+                    <p>{t("p4")}</p>
+                    <h3>{t("p5")}</h3>
+                    <p>{t("p6")}</p>
+                    <h3>{t("p7")}</h3>
+                    <p>{t("p8")}</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <Image
@@ -129,11 +105,11 @@ export default function UltraGantry() {
                         height={537}
                     />
                     <p>&nbsp;</p>
-                    <h2>RECOMMENDED MACHINE CONFIGURATIONS FOR THE ULTRA GANTRY</h2>
+                    <h2>{t("p9")}</h2>
                     <p>&nbsp;</p>
                     <div className={styles.grid}>
                         <div>
-                            <h4>PWX TOUCHLESS SPINNER</h4>
+                            <h4>{t("p10")}</h4>
                             <Image
                                 src="/image/wash-systems/ultra-gantry/image3.png"
                                 alt="Picture of the author"
@@ -141,15 +117,10 @@ export default function UltraGantry() {
                                 width={236}
                                 height={236}
                             />
-                            <p>
-                                High-pressure water (touchless) wash method for heavy dirt and mud
-                                removal. Great for surface cleaning of any shaped vehicle or
-                                equipment. Ideal for municipal public works garages and other mixed
-                                fleets.
-                            </p>
+                            <p>{t("p11")}</p>
                         </div>
                         <div>
-                            <h4>FLEET & BUS 3-BRUSH HYBRID</h4>
+                            <h4>{t("p12")}</h4>
                             <Image
                                 src="/image/wash-systems/ultra-gantry/image4.png"
                                 alt="Picture of the author"
@@ -157,14 +128,10 @@ export default function UltraGantry() {
                                 width={236}
                                 height={236}
                             />
-                            <p>
-                                High-pressure water and brush (hybrid) wash method for complete
-                                cleaning of standard trucks and buses. Ideal for fleets with
-                                standard vehicle shapes, such as transit buses or tractor-trailers.
-                            </p>
+                            <p>{t("p13")}</p>
                         </div>
                         <div>
-                            <h4>RETAIL & FLEX HYBRID</h4>
+                            <h4>{t("p14")}</h4>
                             <Image
                                 src="/image/wash-systems/ultra-gantry/image5.png"
                                 alt="Picture of the author"
@@ -172,12 +139,7 @@ export default function UltraGantry() {
                                 width={236}
                                 height={236}
                             />
-                            <p>
-                                High-pressure water and brush combination (hybrid) with choice of
-                                brush, touchless, or hybrid wash options. Ideal for “for-profit”
-                                truck washes and other mixed fleets with demanding cleaning
-                                standards.
-                            </p>
+                            <p>{t("p15")}</p>
                         </div>
                     </div>
                     <p>&nbsp;</p>
@@ -191,35 +153,14 @@ export default function UltraGantry() {
                             height={420}
                         />
                     </div>
-                    <h4>TOTAL BRUSH CONTOL (TBC):</h4>
-                    <p>
-                        All two or three brush configurations utilize Total Brush Control (TBC)
-                        technology to scrub every surface of the vehicle while protecting sensitive
-                        areas, such as mirrors and bike racks, from damage.
-                    </p>
+                    <h4>{t("p16")}</h4>
+                    <p>{t("p17")}</p>
                     <ul>
-                        <li>
-                            Location, travel speed, and RPM of each brush is independently
-                            controlled and monitored.
-                        </li>
-                        <li>
-                            Brush movements are controlled by electric motors equipped with variable
-                            frequency drives (VFDs).
-                        </li>
-                        <li>
-                            The brush pressure (crush) is maintained via a torque feedback mechanism
-                            monitored by the VFDs. Alternatively, pre-programmed paths can be
-                            configured by trained operators.
-                        </li>
-                        <li>
-                            Brushes have complete flexibility. Ability to use touchless only for the
-                            tractor and touchless or brushes for the trailer.
-                        </li>
-                        <li>
-                            Both the 2-brush and 3-brush models feature complete brush overlap using
-                            the vertical brushes. The 3-brush model allows for an additional
-                            overlap, using the horizontal brush.
-                        </li>
+                        <li>{t("p18")}</li>
+                        <li>{t("p19")}</li>
+                        <li>{t("p20")}</li>
+                        <li>{t("p21")}</li>
+                        <li>{t("p22")}</li>
                     </ul>
                     <p>&nbsp;</p>
                     <div className="image__wrapper">
@@ -233,32 +174,16 @@ export default function UltraGantry() {
                     </div>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>OPTIONAL EXTRAS FOR THE ULTRA GANTRY</h2>
+                    <h2>{t("p23")}</h2>
                     <p>&nbsp;</p>
-                    <strong>Water Recycling and Treatment</strong>
-                    <p>
-                        The InterClean water recycling system results in the reuse of more than 90%
-                        of all water consumed by the Ultra. If desired or required by code, pH
-                        neutralization and disinfectant can be added.
-                    </p>
-                    <strong>Chassis Wash</strong>
-                    <p>
-                        Chassis Wash Systems keep the chassis of vehicles free from debris, salt,
-                        and other corrosive agents that can be picked up from road surfaces and job
-                        sites.
-                    </p>
-                    <strong>Spot Free Rinse</strong>
-                    <p>
-                        InterClean reverse osmosis (RO) technology is used to remove all solids from
-                        water. Using RO water as the final rinse will prevent spotting on vehicle
-                        surfaces and windows.
-                    </p>
-                    <strong>Blowers</strong>
-                    <p>
-                        Blowers can be used at the end of the wash to dry vehicles and reduce any
-                        residue or streaking on surfaces. They also help maximize recycled water
-                        usage and prevent water runout into other areas of the facility.
-                    </p>
+                    <strong>{t("p24")}</strong>
+                    <p>{t("p25")}</p>
+                    <strong>{t("p26")}</strong>
+                    <p>{t("p27")}</p>
+                    <strong>{t("p28")}</strong>
+                    <p>{t("p29")}</p>
+                    <strong>{t("p30")}</strong>
+                    <p>{t("p31")}</p>
                 </div>
             </div>
             <p>&nbsp;</p>
@@ -284,3 +209,9 @@ export default function UltraGantry() {
         </div>
     );
 }
+
+UltraGantry.getInitialProps = async () => ({
+    namespacesRequired: ["wash-systems__ultra-gantry", "footer", "header"],
+});
+
+export default withTranslation("wash-systems__ultra-gantry")(UltraGantry);
