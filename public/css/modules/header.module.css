@@ -139,14 +139,18 @@
         position: relative;
     }
 
-    .menu__bottom__subtitle > div,
-    .menu__bottom__subtitle__container,
     .menu__button {
-        all: revert;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .menu__bottom__subtitle__container {
-        height: 170px;
+        position: relative;
+        background-color: ghostwhite;
+        box-shadow: none;
+        -webkit-animation: none;
+        animation: none;
+        width: 95.5%;
     }
 
     .menu__top {
