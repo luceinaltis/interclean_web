@@ -60,8 +60,9 @@ function Header({ t }) {
     return (
         <header className={styles.header}>
             <Head>
-                <title>InterClean Korea | 세척 솔루션</title>
-                <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon" />
+                <meta charSet="UTF-8" />
+                <title>InterClean 대한민국 | 혁신적인 세척 솔루션</title>
+                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
                 {/* fontawesome.com 아이콘 불러오기 */}
                 <link
                     rel="stylesheet"
