@@ -43,7 +43,7 @@ function Header({ t }) {
             setOpenMenu("");
         }
     }
-
+  
     useEffect(() => {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -56,44 +56,54 @@ function Header({ t }) {
             page_title: window.document.title,
         });
     }, []);
+  
 
     return (
         <header className={styles.header}>
             <Head>
-                {/* fontawesome.com 아이콘 불러오기 */}
-                <link
-                    rel="stylesheet"
-                    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-                    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-                    crossOrigin="anonymous"
-                />
-                <script
-                    type="text/javascript"
-                    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=18a3fa40cd55ade77853a455e8ac8aba&libraries=services"
-                />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC" />
-                <meta
-                    name="description"
-                    content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
-                />
-                <meta property="og:locale" content="ko_KR" />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:title"
-                    content="중형차량 세척 시스템 전문 설계 및 제작회사, 인터클린"
-                />
-                <meta
-                    name="og:description"
-                    content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
-                />
-                <meta property="og:url" content="https://interclean-web.vercel.app/" />
-                <meta property="og:site_name" content="인터클린 코리아" />
-                <meta name="keywords" content="인터클린, interclean, 세차, 중형차" />
-                <meta
-                    name="robots"
-                    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-                />
-                <meta http-equiv="Title" content="인터클린 코리아" />
+                 {/* fontawesome.com 아이콘 불러오기 */}
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+          crossOrigin="anonymous"
+        />
+        <script
+          type="text/javascript"
+          src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=18a3fa40cd55ade77853a455e8ac8aba&libraries=services"
+        />
+        <link rel="canonical" href="https://interclean-web.vercel.app/" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC"
+        />
+        <meta
+          name="description"
+          content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta name="keywords" content="인터클린, interclean, 세차, 중형차" />
+        <meta http-equiv="title" content="인터클린 코리아" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="중형차량 세척 시스템 전문 설계 및 제작회사, 인터클린"
+        />
+        <meta
+          name="og:description"
+          content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
+        />
+        <meta property="og:url" content="https://interclean-web.vercel.app/" />
+        <meta property="og:site_name" content="인터클린 코리아" />
+        <meta name="twitter:title" content="인터클린 코리아" />
+        <meta
+          name="twiiter:description"
+          content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
+        />
             </Head>
             <div className={styles.header__top}>
                 <div className="container">
