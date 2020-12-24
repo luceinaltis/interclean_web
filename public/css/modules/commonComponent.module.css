@@ -45,7 +45,8 @@
     margin-top: 20px;
 }
 
-.button__blue:hover,.button__green:hover {
+.button__blue:hover,
+.button__green:hover {
     background-color: #0c519b;
     cursor: pointer;
 }

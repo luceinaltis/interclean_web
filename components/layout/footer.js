@@ -106,7 +106,7 @@ function Footer({ t }) {
                                 <h5>{t("contact-us-")}</h5>
                                 <ul>
                                     <li className={`${styles.footer_top__menu_items} click`}>
-                                        <i class="fas fa-map-marker-alt" />{" "}
+                                        <i className="fas fa-map-marker-alt" />{" "}
                                         <Link href="/">{t("company")}</Link>
                                     </li>
                                     <li>{t("location")}</li>
@@ -130,7 +130,7 @@ function Footer({ t }) {
                                             href="mailto:intercleankr@naver.com"
                                             target="_blank"
                                         >
-                                            <i class="fas fa-envelope" />
+                                            <i className="fas fa-envelope" />
                                         </a>
                                     </div>
                                     <Image

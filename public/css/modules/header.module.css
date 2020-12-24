@@ -150,7 +150,7 @@
         box-shadow: none;
         -webkit-animation: none;
         animation: none;
-        width: 95.5%;
+        width: calc(100% - 33px);
     }
 
     .menu__top {

@@ -51,12 +51,12 @@
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .slide__idxWrapper {
     position: absolute;
-    bottom: 10px; 
+    bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
@@ -64,7 +64,7 @@
 }
 
 .slide__idx {
-    width: 20px; 
+    width: 20px;
     height: 20px;
     margin: 0px 3px 0px;
     border-radius: 10px;
@@ -99,13 +99,11 @@
 .slide [id="pos3"]:checked ~ .slide__idxWrapper label:nth-child(3),
 .slide [id="pos4"]:checked ~ .slide__idxWrapper label:nth-child(4),
 .slide [id="pos5"]:checked ~ .slide__idxWrapper label:nth-child(5),
-.slide [id="pos6"]:checked ~ .slide__idxWrapper label:nth-child(6)
-{
+.slide [id="pos6"]:checked ~ .slide__idxWrapper label:nth-child(6) {
     background-color: #ef7e00;
 }
 
 @media only screen and (max-width: 1100px) {
-
     .slide__arrow {
         transform: translateY(-50%);
     }
@@ -356,7 +354,6 @@
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 1fr;
         justify-items: center;
-        
     }
 }
 
@@ -390,7 +387,7 @@
 .services__button {
     background-color: #74ae24;
     color: white;
-    width: 160px;
+    width: 100px;
     height: 49px;
     text-align: center;
     display: flex;

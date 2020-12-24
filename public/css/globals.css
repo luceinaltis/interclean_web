@@ -116,7 +116,8 @@ footer ul {
     }
 
     .empty {
-        all: revert;
+        width: auto;
+        height: auto;
     }
 }
 
