@@ -1,11 +1,13 @@
 import Head from "next/head";
 import React, { useRef, useEffect } from "react";
+import { withTranslation } from "../../i18n";
+import Title from "@/components/layout/wash-systems/title";
 
 // Layouts
 import Header from "../../components/layout/header";
 import Footer from "../../components/layout/footer";
 
-export default function LocateDistributor() {
+function LocateDistributor({ t }) {
     const container = useRef();
     useEffect(() => {
         const { kakao: asd } = window;
@@ -39,11 +41,31 @@ export default function LocateDistributor() {
     return (
         <div>
             <Header />
-
-            <main>
-                <div ref={container} style={{ width: "500px", height: "400px" }}></div>
-            </main>
+            <Title titleString={t("title")} />
+            <div className="container">
+                <div className="inner__container">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <h1>{t("p1")}</h1>
+                    <p>&nbsp;</p>
+                    <ul>
+                        <li>{t("p2")}</li>
+                        <li>{t("p3")}</li>
+                        <li>{t("p4")}</li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <div ref={container} style={{ width: "100%", height: "400px" }}></div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
             <Footer />
         </div>
     );
 }
+
+LocateDistributor.getInitialProps = async () => ({
+    namespacesRequired: ["location", "footer", "header"],
+});
+
+export default withTranslation("location")(LocateDistributor);
