@@ -50,7 +50,11 @@ function Header({ t }) {
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", "G-HJ76HWLCTC");
+    gtag("config", "G-HJ76HWLCTC", {
+      page_location: window.location.href,
+      page_path: window.location.pathname,
+      page_title: window.document.title,
+    });
   }, []);
 
   return (
