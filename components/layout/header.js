@@ -71,6 +71,10 @@ function Header({ t }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC"
         />
+        <meta
+          name="description"
+          content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
+        />
       </Head>
       <div className={styles.header__top}>
         <div className="container">
