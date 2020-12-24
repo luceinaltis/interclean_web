@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,10 +44,23 @@ function Header({ t }) {
     }
   }
 
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HJ76HWLCTC");
+  }, []);
+
   return (
     <header className={styles.header}>
       <Head>
         {/* fontawesome.com 아이콘 불러오기 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC"
+        />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
