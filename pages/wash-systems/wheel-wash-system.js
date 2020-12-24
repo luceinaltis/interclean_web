@@ -209,6 +209,9 @@ function WheelWashSystem({ t }) {
                 menuOpened={menu === "Downloads"}
                 openMenu={openMenu}
             />
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
             <Footer />
         </div>
     );

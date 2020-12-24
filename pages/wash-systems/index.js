@@ -30,10 +30,14 @@ function Index({ t }) {
                         <p>&nbsp;</p>
                         <h1>{t("p1")}</h1>
                         <h3>{t("p2")}</h3>
+                        <p>&nbsp;</p>
                         <p>{t("p3")}</p>
                         <p>{t("p4")}</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
 
                         <h2>{t("p5")}</h2>
+                        <p>&nbsp;</p>
                         <ul>
                             <li>{t("p6")}</li>
                             <li>{t("p7")}</li>

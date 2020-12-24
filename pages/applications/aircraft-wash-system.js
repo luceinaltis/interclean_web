@@ -64,6 +64,7 @@ function AircraftWashSystem({ t }) {
                         >
                             {t("p1")}
                         </div>
+                        <p>&nbsp;</p>
                         <div className={styles__aircraft.content__title__orange}>{t("p2")}</div>
                         <div className={styles__aircraft.zoom__imageWrapper}>
                             <img
