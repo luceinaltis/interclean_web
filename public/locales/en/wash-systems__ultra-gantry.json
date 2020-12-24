@@ -44,5 +44,20 @@
     "p29": "InterClean reverse osmosis (RO) technology is used to remove all solids from water. Using RO water as the final rinse will prevent spotting on vehicle surfaces and windows.",
 
     "p30": "Blowers",
-    "p31": "Blowers can be used at the end of the wash to dry vehicles and reduce any residue or streaking on surfaces. They also help maximize recycled water usage and prevent water runout into other areas of the facility."
+    "p31": "Blowers can be used at the end of the wash to dry vehicles and reduce any residue or streaking on surfaces. They also help maximize recycled water usage and prevent water runout into other areas of the facility.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }

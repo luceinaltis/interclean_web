@@ -46,5 +46,22 @@
     "p31": "We invest significant time in research and development to ensure that all of our wash systems remain best-in-class. When purchasing an InterClean wash system, you can rest assured that your machine is one of the most innovative wash systems on the market.",
 
     "p32": "GET STARTED WITH YOUR OWN ALPHA 500 BRUSH WASH SYSTEM",
-    "p33": "Contact us today to purchase an Alpha 500 Brush Wash System for your business and reduce the time spent cleaning your vehicle fleet!"
+    "p33": "Contact us today to purchase an Alpha 500 Brush Wash System for your business and reduce the time spent cleaning your vehicle fleet!",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
+
+
 }

@@ -12,5 +12,22 @@
     "p7": "By using this effective yet inexpensive recycling system, InterClean Equipment is able to employ the full force of huge volumes of pressurized wash water, which create a cleaning impact that is simply not available with other automatic vehicle washing systems.",
     "p8": "To achieve recycled water volumes in excess of 300 gpm (1,250 l/m), multiple modules can be utilized in parallel. Each module is pre-wired, pre-plumbed and mounted on a skid. The overall dimensions of the unit are such that it can be shipped in standard road trailers, or in high cube 40 feet ocean freight containers. Call +1 (734) 822-7815 to talk about our water recycling options for truck washes.",
 
-    "p9": "OTHER INTERCLEAN WASH SYSTEMS:"
+    "p9": "OTHER INTERCLEAN WASH SYSTEMS:",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
+
+
 }

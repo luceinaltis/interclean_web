@@ -12,12 +12,12 @@ import styles from "@/public/css/modules/home.module.css";
 
 function Home({ t }) {
     const gridCellData = [
-        ["/image/grid/Bus.jpg", "/applications/bus-wash-system", "버스"],
-        ["/image/grid/Truck.jpg", "/applications/truck-wash-system", "트럭"],
-        ["/image/grid/Train.jpg", "/applications/train-wash-system", "열차"],
-        ["/image/grid/Aircraft.jpg", "/applications/aircraft-wash-system", "항공기"],
-        ["/image/grid/Military.jpg", "/applications/military-wash-system", "군용차량"],
-        ["/image/grid/Mining.jpg", "/applications/mining-oil-wash-system", "가스 & 오일 차량"],
+        ["/image/grid/Bus.jpg", "/applications/bus-wash-system", t("bus")],
+        ["/image/grid/Truck.jpg", "/applications/truck-wash-system", t("truck")],
+        ["/image/grid/Train.jpg", "/applications/train-wash-system", t("train")],
+        ["/image/grid/Aircraft.jpg", "/applications/aircraft-wash-system", t("aircraft")],
+        ["/image/grid/Military.jpg", "/applications/military-wash-system", t("military")],
+        ["/image/grid/Mining.jpg", "/applications/mining-oil-wash-system", t("mining")],
     ];
 
     return (

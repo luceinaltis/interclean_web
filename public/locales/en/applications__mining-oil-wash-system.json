@@ -36,5 +36,20 @@
     "p27": "Can be installed in hazardous locations such as underground mines and underneath the vehicle",
 
     "p28": "INTERCLEAN’S HEAVY-DUTY TIRE, WHEEL AND UNDER-CHASSIS WASH SYSTEMS FEATURE THE ULTIMATE IN WATER RECYCLING TECHNOLOGY",
-    "p29": "InterClean has become a leader for designing and engineering effective solutions to wash and decontaminate the tires and chassis of trucks and other heavy duty equipment leaving landfills, quarries, steel mills and chemical plants. Our low-pressure, high-volume tire and chassis wash system allow you to dial in on the exact amount of water and detergents you need, where you need them. Our wash systems are custom designed to accommodate the types of mining and oil equipment you are cleaning and whether your operations will be manual, robotic, or a combination of both. Call +1 (734) 822-7815 to discuss your heavy duty wheel, chassis, and equipment wash system needs."
+    "p29": "InterClean has become a leader for designing and engineering effective solutions to wash and decontaminate the tires and chassis of trucks and other heavy duty equipment leaving landfills, quarries, steel mills and chemical plants. Our low-pressure, high-volume tire and chassis wash system allow you to dial in on the exact amount of water and detergents you need, where you need them. Our wash systems are custom designed to accommodate the types of mining and oil equipment you are cleaning and whether your operations will be manual, robotic, or a combination of both. Call +1 (734) 822-7815 to discuss your heavy duty wheel, chassis, and equipment wash system needs.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }

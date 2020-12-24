@@ -310,6 +310,9 @@
 }
 
 .gridCell__textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     vertical-align: middle;
     width: 100%;
     height: 50px;
@@ -317,7 +320,7 @@
     background-color: #064991;
     color: white;
     padding: 10px 0px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
     font-family: -apple-system, brandon, sans-serif;
 }

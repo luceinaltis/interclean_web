@@ -48,5 +48,20 @@
     "p36": "There’s no such thing as “downtime” with an Interclean truck wash system. Our high-tech, heavy-duty wash systems are designed for continuous use and have very little upkeep required. Our low-maintenance truck wash solutions ensure that your truck fleet of clean vehicles can get back on the road as efficiently as possible.",
 
     "p37": "SIMPLE OPERATION",
-    "p38": "There is no attendant required for InterClean heavy-duty vehicle wash systems. Our truck cleaning systems are fully automated and easy to operate, so you can start using your new fleet washing system as soon as possible once it is installed."
+    "p38": "There is no attendant required for InterClean heavy-duty vehicle wash systems. Our truck cleaning systems are fully automated and easy to operate, so you can start using your new fleet washing system as soon as possible once it is installed.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }

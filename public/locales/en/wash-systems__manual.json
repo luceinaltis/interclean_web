@@ -19,5 +19,22 @@
     "p13": "Can be programmed for multiple vehicle types and sizes",
     "p14": "The system can be installed in hazardous locations such as underground mines and underneath the vehicle",
     "p15": "The wash system software is designed to recognize the vehicle and wash specifically designated areas while avoiding sections of the vehicle that cannot withstand a direct blast from the water cannons.",
-    "p16":  "InterClean wants to ensure the best automatic, manual, or robotic vehicle wash system for your heavy-duty industrial oil and mining vehicles. Contact us today for specs and pricing."
+    "p16":  "InterClean wants to ensure the best automatic, manual, or robotic vehicle wash system for your heavy-duty industrial oil and mining vehicles. Contact us today for specs and pricing.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
+
+
 }

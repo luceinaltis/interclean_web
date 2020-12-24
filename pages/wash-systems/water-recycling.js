@@ -9,21 +9,21 @@ import Footer from "../../components/layout/footer";
 import Title from "../../components/layout/wash-systems/title";
 import ImageGrid from "../../components/layout/home/imageGrid";
 
-// 그리드에 들어갈 이미지 데이터
-// [이미지경로, 이동경로, 타이틀]
-const gridCellData = [
-    ["/image/grid/Rollover.jpg", "/wash-systems/ultra-gantry", "GANTRY / ROLLOVER"],
-    ["/image/grid/Touchless.jpg", "/wash-systems/drive-thru-touchless", "TOUCHLESS"],
-    ["/image/grid/Manual.jpg", "/wash-systems/manual", "MANUAL"],
-    ["/image/grid/Mobile.jpg", "/wash-systems/mobile", "MOBILE"],
-    ["/image/grid/Wheel.jpg", "/wash-systems/wheel-wash-system", "WHEEL / TIRE & CHASSIS"],
-    ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", "WATER RECYCLING"],
-];
-
 // applications 에서 공통적으로 필요한 layouts
 import { Photos, Downloads } from "@/components/layout/applications";
 
 function WaterRecycling({ t }) {
+    // 그리드에 들어갈 이미지 데이터
+    // [이미지경로, 이동경로, 타이틀]
+    const gridCellData = [
+        ["/image/grid/Rollover.jpg", "/wash-systems/ultra-gantry", t("gantry")],
+        ["/image/grid/Touchless.jpg", "/wash-systems/drive-thru-touchless", t("touchless")],
+        ["/image/grid/Manual.jpg", "/wash-systems/manual", t("manual")],
+        ["/image/grid/Mobile.jpg", "/wash-systems/mobile", t("mobile")],
+        ["/image/grid/Wheel.jpg", "/wash-systems/wheel-wash-system", t("wheel")],
+        ["/image/grid/WaterRecycling.jpg", "/wash-systems/water-recycling", t("water")],
+    ];
+
     const photosData = [
         [
             "/image/wash-systems/water-recycling/photos/grid1.jpg",

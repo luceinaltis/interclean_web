@@ -141,6 +141,7 @@
 
     .menu__button {
         display: flex;
+        height: 33px;
         justify-content: flex-start;
     }
 

@@ -21,5 +21,21 @@
     "p14": "Some of the available options include:",
     "p15": "Manual monitor and fire hose packages for standard applications and detail work",
     "p16": "Semi-automatic joystick controlled monitors to improve safety and productivity",
-    "p17": "Fully-automatic robotic monitor packages that maximize safety, efficiency and productivity"
+    "p17": "Fully-automatic robotic monitor packages that maximize safety, efficiency and productivity",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
+
 }

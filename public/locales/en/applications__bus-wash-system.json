@@ -13,5 +13,20 @@
     "p8": "The Hybrid Wash System is a drive-through wash system designed to use a combination of touchless cleaning for the front, top, rear, wheel and chassis and foam brushes for the sides. The brushes are in a fixed position and use a foam brush material to help prevent scratching and damage to the bus.",
 
     "p9": "INTERCLEAN ULTRA GANTRY SYSTEM FOR BUSES",
-    "p10": "InterClean Ultra Gantry System is the latest version of our Truck and Bus Wash System – now designed and built in the USA. This roll-over machine can be made with friction cleaning, touch-less or a combination of both. Ideal for commercial and retail applications, fleets, transit and can be customized for special applications such as RV’s and commercial delivery vehicles. Options include Spot Free Rinse, Blowers, Water Recycling and Chassis Wash."
+    "p10": "InterClean Ultra Gantry System is the latest version of our Truck and Bus Wash System – now designed and built in the USA. This roll-over machine can be made with friction cleaning, touch-less or a combination of both. Ideal for commercial and retail applications, fleets, transit and can be customized for special applications such as RV’s and commercial delivery vehicles. Options include Spot Free Rinse, Blowers, Water Recycling and Chassis Wash.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }
