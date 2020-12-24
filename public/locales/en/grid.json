@@ -1,0 +1,16 @@
+{
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
+}

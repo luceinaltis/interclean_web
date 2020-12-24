@@ -14,5 +14,22 @@
     "p8": "Manual cleaning programs are time-consuming and they tie up your team and trailers. Our automated user-friendly wash and sanitizing systems completely sanitize and clean all types of trailers and containers in a matter of minutes.",
 
     "p9": "CONSISTENT PERFORMANCE",
-    "p10": "Get the same, outstanding results with our automatic trailer sanitizing and cleaning systems after every wash. Have peace of mind knowing that your trailers are free of health hazards and are ready to be used immediately after wash."
+    "p10": "Get the same, outstanding results with our automatic trailer sanitizing and cleaning systems after every wash. Have peace of mind knowing that your trailers are free of health hazards and are ready to be used immediately after wash.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
+
+
 }

@@ -11,5 +11,20 @@
     "p7": "SERVICES",
     "p8": "The heavy-duty vehicle wash systems InterClean designs and manufactures can help our clients simplify maintenance and improve efficiency by removing heavy mud, dirt and contaminants quickly and effectively from the vehicles in their fleets.  Like any other piece of equipment, the wash system needs to be used and maintained properly.  To help understand the maintenance that is required, we provide detailed operations and maintenance manuals for each wash system we manufacture.  If you don’t have the time or resources to maintain the wash system, we also offer spare parts, preventative maintenance, training and a custom chemical program.",
 
-    "read-more": "READ MORE"
+    "read-more": "READ MORE",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }

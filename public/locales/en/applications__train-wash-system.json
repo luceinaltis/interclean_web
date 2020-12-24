@@ -17,5 +17,20 @@
     "p11": "InterClean locomotive wash systems have been successfully used in a variety of different applications and climates from the iron mines of Australia to the Canadian Arctic. To date, our Centri*Spinner is the most effective piece of equipment ever designed for diesel locomotive washing. Using a combination of strategically placed flat and spinning nozzles and brushes, our custom drive through wash systems for locomotives reach all the hard places, removing dirt and fuel residue with clean water and custom detergents, wash after wash.",
 
     "p12": "US-MADE TRAIN & RAIL WASH SYSTEMS",
-    "p13": "InterClean train wash systems are designed and manufactured by experienced engineers, right here in the U.S.A. When you order a custom train wash system, we design and manufacture the system, at our headquarters, and use local distributors to build and maintain them. For you, that means a trusted, local InterClean specialist you can rely on for parts, service, and repair. And when you need that special blend of detergents, simply contact us direct. We will ship you the replacement chemicals you need, so you can keep your locomotive shiny and clean day after day."
+    "p13": "InterClean train wash systems are designed and manufactured by experienced engineers, right here in the U.S.A. When you order a custom train wash system, we design and manufacture the system, at our headquarters, and use local distributors to build and maintain them. For you, that means a trusted, local InterClean specialist you can rely on for parts, service, and repair. And when you need that special blend of detergents, simply contact us direct. We will ship you the replacement chemicals you need, so you can keep your locomotive shiny and clean day after day.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }

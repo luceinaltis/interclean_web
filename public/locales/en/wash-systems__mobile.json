@@ -5,5 +5,20 @@
     "p2": "InterClean has several rollover and touchless commercial vehicle wash systems to choose from. Our U.S. made commercial vehicle wash systems are custom made to accommodate vehicles of all shapes and sizes. We can include a variety of operational options, as well as tire and chassis wash systems, and high pressure water recycling modules. Call +1 (734) 822-7815 and speak to a commercial vehicle wash system expert about replacing your mobile wash system with a new, energy efficient truck washing system from InterClean.",
 
     "p3": "MOBILE WASH SYSTEMS ARE BECOMING OBSOLETE",
-    "p4": "If your vehicles are waiting to be washed, you are losing money. Mobile wash systems are inefficient, pose safety issues to your employees, and put dangerous chemicals into our clean water drain systems. InterClean can design a safe, drive through, manual, or robotic system that uses fresh or recycled water, and saves you money wash after wash. Imagine the increased productivity when you can completely clean your vehicles with our high pressure wash systems in 60-90 seconds. You can set a new standard of clean for your brand and a safer work environment for your crew. Contact Interclean today for specs and pricing on a new commercial vehicle wash system."
+    "p4": "If your vehicles are waiting to be washed, you are losing money. Mobile wash systems are inefficient, pose safety issues to your employees, and put dangerous chemicals into our clean water drain systems. InterClean can design a safe, drive through, manual, or robotic system that uses fresh or recycled water, and saves you money wash after wash. Imagine the increased productivity when you can completely clean your vehicles with our high pressure wash systems in 60-90 seconds. You can set a new standard of clean for your brand and a safer work environment for your crew. Contact Interclean today for specs and pricing on a new commercial vehicle wash system.",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }

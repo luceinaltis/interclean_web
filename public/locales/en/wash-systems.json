@@ -12,5 +12,20 @@
     "p8": "Semi-automatic joystick controlled monitors to improve safety and productivity",
     "p9": "Fully-automatic robotic monitor packages that maximize safety, efficiency, and productivity",
     "p10": "Chassis Wash",
-    "p11": "Tire Wash"
+    "p11": "Tire Wash",
+
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }

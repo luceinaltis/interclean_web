@@ -85,6 +85,7 @@ function MiningOilWashSystem({ t }) {
                         >
                             {t("p1")}
                         </div>
+                        <p>&nbsp;</p>
                         <div
                             className={`${styles.content__title__orange} ${styles.content__title__center}`}
                         >

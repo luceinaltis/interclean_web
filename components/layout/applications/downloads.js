@@ -6,32 +6,28 @@ import { Collapse } from "react-collapse";
 import styles from "@/public/css/modules/downloads.module.css";
 
 export default function Downloads({ downloadsData, menuOpened, openMenu }) {
-  return (
-    <>
-      <div className="container">
-        <div className="inner__container">
-          <Dropbar
-            menuName="Downloads"
-            opened={menuOpened}
-            openMenu={openMenu}
-          />
-          <Collapse isOpened={menuOpened}>
-            <ul>
-              {downloadsData &&
-                downloadsData.map((value, index) => {
-                  return (
-                    <li key={index} style={{ marginLeft: 30, marginTop: 10 }}>
-                      <a href={value[0]} target="_blank">
-                        {value[1]}
-                      </a>
-                      <span>{" " + value[2]}</span>
-                    </li>
-                  );
-                })}
-            </ul>
-          </Collapse>
-        </div>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <div className="container">
+                <div className="inner__container">
+                    <Dropbar menuName="DOWNLOADS" opened={menuOpened} openMenu={openMenu} />
+                    <Collapse isOpened={menuOpened}>
+                        <ul>
+                            {downloadsData &&
+                                downloadsData.map((value, index) => {
+                                    return (
+                                        <li key={index} style={{ marginLeft: 30, marginTop: 10 }}>
+                                            <a href={value[0]} target="_blank">
+                                                {value[1]}
+                                            </a>
+                                            <span>{" " + value[2]}</span>
+                                        </li>
+                                    );
+                                })}
+                        </ul>
+                    </Collapse>
+                </div>
+            </div>
+        </>
+    );
 }
