@@ -67,6 +67,7 @@ function Header({ t }) {
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
           crossOrigin="anonymous"
         />
+        <link rel="canonical" href="https://interclean-web.vercel.app/" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC"
@@ -75,6 +76,12 @@ function Header({ t }) {
           name="description"
           content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
         />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta name="keywords" content="인터클린, interclean, 세차, 중형차" />
+        <meta http-equiv="title" content="인터클린 코리아" />
         <meta property="og:locale" content="ko_KR" />
         <meta property="og:type" content="website" />
         <meta
@@ -87,12 +94,11 @@ function Header({ t }) {
         />
         <meta property="og:url" content="https://interclean-web.vercel.app/" />
         <meta property="og:site_name" content="인터클린 코리아" />
-        <meta name="keywords" content="인터클린, interclean, 세차, 중형차" />
+        <meta name="twitter:title" content="인터클린 코리아" />
         <meta
-          name="robots"
-          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+          name="twiiter:description"
+          content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
         />
-        <meta http-equiv="Title" content="인터클린 코리아" />
       </Head>
       <div className={styles.header__top}>
         <div className="container">
