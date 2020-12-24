@@ -8,6 +8,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
+    color: #505050;
 }
 
 a {
@@ -80,7 +81,7 @@ h3 {
 }
 
 strong {
-    font-weight: 500;
+    font-weight: 600;
     color: #505050;
 }
 

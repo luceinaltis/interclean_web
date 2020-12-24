@@ -8,5 +8,19 @@
     "p4": "WE KEEP YOUR WHEEL WASH WATER CLEAN AND CONTAINED",
     "p5": "Our wheel wash systems can be designed with our EQ100 high-pressure, anti-turbulent water recycling module. If your job site contains pollutants such as heavy metals, oils, or grease, it’s important that your wastewater doesn’t reach storm drains without being filtered. InterClean can design a wheel wash and under chassis system to keep you compliant with local codes and environmental regulations. Call us today at +1 (734) 822-7815 for a quote on portable and semi-permanent wheel wash systems.",
 
-    "p6": "SEE OTHER COMMERCIAL VEHICLE WASH SYSTEMS MADE BY INTERCLEAN:"
+    "p6": "SEE OTHER COMMERCIAL VEHICLE WASH SYSTEMS MADE BY INTERCLEAN:",
+    "bus": "BUS WASH SYSTEMS",
+    "truck": "TRUCK WASH SYSTEMS",
+    "retail": "RETAIL TRUCK",
+    "aircraft": "AIRCRAFT WASH SYSTEMS",
+    "military": "MILITARY WASH SYSTEMS",
+    "train": "TRAIN WASH SYSTEMS",
+    "mining": "MINING & OIL WASH SYSTEMS",
+    "wheel": "WHEEL / TIRE & CHASSIS",
+    "water": "WATER RECYCLING SYSTEMS",
+
+    "gantry": "GANTRY / ROLLOVER",
+    "touchless": "TOUCHLESS",
+    "manual": "MANUAL",
+    "mobile": "MOBILE"
 }
