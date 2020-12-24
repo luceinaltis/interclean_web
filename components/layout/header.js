@@ -57,15 +57,15 @@ function Header({ t }) {
     <header className={styles.header}>
       <Head>
         {/* fontawesome.com 아이콘 불러오기 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC"
-        />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
           crossOrigin="anonymous"
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC"
         />
       </Head>
       <div className={styles.header__top}>
