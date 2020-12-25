@@ -153,6 +153,7 @@ function TruckWashSystems({ t }) {
                                     return (
                                         <div key={idx} className={styles.headIcon__wrapper}>
                                             <img src={val[0]} className={styles.headIcon__image} />
+                                            <br />
                                             <div className={styles.headIcon__text}>{val[1]}</div>
                                         </div>
                                     );
