@@ -1,6 +1,7 @@
 import styles from "@/public/css/modules/contact.module.css";
 
 import { ButtonOrange } from "@/components/elements";
+import Email from "@/components/email";
 
 export default function ContactHead() {
   return (
@@ -17,6 +18,9 @@ export default function ContactHead() {
           </p>
           <div className={styles.contactHead__button}>
             <ButtonOrange content="LOCATE A DISTRIBUTOR" />
+          </div>
+          <div style={{ marginTop: 40, marginBottom: 40 }}>
+            <Email />
           </div>
         </div>
       </div>
