@@ -1,39 +1,113 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
+import styles from "../public/css/modules/email.module.css";
+
 const Email = () => {
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const [userName, setUserName] = useState(false);
+    const [userEmail, setUserEmail] = useState(false);
+    const [subject, setSubject] = useState(false);
+    const [message, setMessage] = useState(false);
 
-    emailjs
-      .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
-        e.target,
-        process.env.USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-  return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
-  );
+        emailjs
+            .sendForm(
+                process.env.SERVICE_ID, //"interclean_service",
+                process.env.TEMPLATE_ID, //"interclean_template",
+                e.target,
+                process.env.USER_ID,
+                // "user_z7EdG8oXwhyrNPSuYp8ze"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
+
+    return (
+        <form className={styles.contact_form} onSubmit={sendEmail}>
+            <div className={styles.contact_form_row}>
+                <div className={styles.input_container}>
+                    <input
+                        className={
+                            userName
+                                ? `${styles.contact_input} ${styles.touched}`
+                                : styles.contact_input
+                        }
+                        type="text"
+                        name="user_name"
+                        required
+                        placeholder="Name"
+                        spellCheck="false"
+                        onFocus={() => setUserName(true)}
+                    />
+                </div>
+                <div className={styles.input_container}>
+                    <input
+                        className={
+                            userEmail
+                                ? `${styles.contact_input} ${styles.touched}`
+                                : styles.contact_input
+                        }
+                        type="email"
+                        name="user_email"
+                        required
+                        placeholder="Email"
+                        spellCheck="false"
+                        onFocus={() => setUserEmail(true)}
+                    />
+                </div>
+            </div>
+            <div className={styles.contact_form_row}>
+                <div className={styles.input_container}>
+                    <input
+                        className={
+                            subject
+                                ? `${styles.contact_input} ${styles.touched}`
+                                : styles.contact_input
+                        }
+                        type="text"
+                        name="subject"
+                        required
+                        placeholder="Subject"
+                        spellCheck="false"
+                        onFocus={() => setSubject(true)}
+                    />
+                </div>
+            </div>
+            <div className={styles.contact_form_row}>
+                <div className={styles.input_container}>
+                    <textarea
+                        className={
+                            message
+                                ? `${styles.contact_input} ${styles.touched}`
+                                : styles.contact_input
+                        }
+                        name="message"
+                        required
+                        placeholder="Message"
+                        rows="6"
+                        spellCheck="false"
+                        onFocus={() => setMessage(true)}
+                    />
+                </div>
+            </div>
+            <div className={styles.contact_form_row}>
+                <div
+                    id="recaptcha"
+                    className="g-recaptcha"
+                    data-sitekey="6LflYxoaAAAAAHvYdzStBrJvsVry4gkMR4_esUnI"
+                ></div>
+                <input className={styles.button} type="submit" value="Send" />
+            </div>
+        </form>
+    );
 };
 
 export default Email;

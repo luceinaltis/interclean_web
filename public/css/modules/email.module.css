@@ -1,0 +1,59 @@
+.contact_form {
+    display: grid;
+    grid-template-rows: 3rem 3rem 7rem;
+    gap: 1rem;
+}
+
+.contact_form_row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contact_form_row:last-child {
+    margin-top: 1rem;
+}
+
+.input_container {
+    width: 100%;
+}
+
+.contact_input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5rem;
+    outline: none;
+    border: 1px solid #999999;
+    resize: none;
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    line-height: 1.15;
+}
+
+.contact_input:valid {
+    border-color: #999999;
+}
+
+.touched:invalid {
+    border-color: #ef5771;
+}
+
+.button {
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: inherit;
+    font: inherit;
+    border: none;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+.button:focus {
+    outline: none;
+}
