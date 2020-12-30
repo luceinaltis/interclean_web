@@ -6,7 +6,7 @@ export default function title({ titleString, titleSubString }) {
         <>
             <div className="empty" />
             <div className={styles.title_image}>
-                <div>{titleString}</div>
+                <div className={styles.title}>{titleString}</div>
                 {titleSubString ? <div className={styles.subTitle}>{titleSubString}</div> : null}
             </div>
         </>
