@@ -98,12 +98,11 @@ const Email = () => {
                 </div>
             </div>
             <div className={styles.contact_form_row}>
-                asd
                 <div
+                    id="recaptcha"
                     className="g-recaptcha"
-                    data-sitekey="6LdnXBoaAAAAAGwGe9UETKFDsZ0VN4yYGFeOfU0E"
+                    data-sitekey="6LflYxoaAAAAAHvYdzStBrJvsVry4gkMR4_esUnI"
                 ></div>
-                asd
                 <input className={styles.button} type="submit" value="Send" />
             </div>
         </form>
