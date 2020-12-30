@@ -57,18 +57,18 @@ function LocateDistributor({ t }) {
                 <div className="inner__container">
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h1>문의</h1>
+                    <h1>{t("p1")}</h1>
                     <p>&nbsp;</p>
                     <Email />
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h1>{t("p1")}</h1>
+                    <h1 name="location">{t("p2")}</h1>
                     <p>&nbsp;</p>
                     <ul>
-                        <li>{t("p2")}</li>
                         <li>{t("p3")}</li>
                         <li>{t("p4")}</li>
+                        <li>{t("p5")}</li>
                     </ul>
                     <p>&nbsp;</p>
                     <div ref={container} style={{ width: "100%", height: "400px" }}></div>
@@ -82,7 +82,7 @@ function LocateDistributor({ t }) {
 }
 
 LocateDistributor.getInitialProps = async () => ({
-    namespacesRequired: ["location", "footer", "header"],
+    namespacesRequired: ["location", "footer", "header", "email"],
 });
 
 export default withTranslation("location")(LocateDistributor);

@@ -122,7 +122,9 @@ function Footer({ t }) {
                                     </li>
                                     <li className={`${styles.footer_top__menu_items} click`}>
                                         <i className="fas fa-map-marker-alt" />{" "}
-                                        <Link href="/">{t("company")}</Link>
+                                        <Link href="/contact/locate-a-distributor#location">
+                                            {t("company")}
+                                        </Link>
                                     </li>
                                     <li className={`${styles.footer_top__menu_items}`}>
                                         {t("location")}

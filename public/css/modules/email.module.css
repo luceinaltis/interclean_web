@@ -1,17 +1,23 @@
 .contact_form {
     display: grid;
-    grid-template-rows: 3rem 3rem 7rem;
+    grid-template-rows: 1fr 3rem 7rem;
     gap: 1rem;
 }
 
 .contact_form_row {
     display: flex;
     gap: 1rem;
-    width: 100%;
+    justify-content: space-between;
+}
+
+.contact_form_row:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .contact_form_row:last-child {
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .input_container {
@@ -19,6 +25,7 @@
 }
 
 .contact_input {
+    color: #2c3e50;
     width: 100%;
     box-sizing: border-box;
     padding: 0.75rem 1.5rem;
@@ -40,11 +47,13 @@
 
 .button {
     width: 15rem;
+    height: 4rem;
     padding: 0.5rem;
     font-size: 1.2rem;
     color: inherit;
     font: inherit;
     border: none;
+    cursor: not-allowed;
 
     /* Corrects font smoothing for webkit */
     -webkit-font-smoothing: inherit;
@@ -52,8 +61,19 @@
 
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-size: 1.2rem;
 }
 
 .button:focus {
     outline: none;
+}
+
+.valid {
+    background-color: #0c519b;
+    color: #eeeeee;
+}
+
+.valid:hover {
+    cursor: pointer;
 }
