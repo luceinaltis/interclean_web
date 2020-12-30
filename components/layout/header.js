@@ -76,6 +76,7 @@ function Header({ t }) {
                 />
                 <link rel="canonical" href="https://interclean-web.vercel.app" />
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ76HWLCTC" />
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 <meta
                     name="description"
                     content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
