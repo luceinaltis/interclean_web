@@ -1,4 +1,3 @@
-require("dotenv").config();
 const { nextI18NextRewrites } = require("next-i18next/rewrites");
 
 const localeSubpaths = {};
