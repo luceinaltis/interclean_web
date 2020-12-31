@@ -117,7 +117,7 @@ function Header({ t }) {
                                     href="mailto:intercleankr@naver.com"
                                     target="_blank"
                                 >
-                                    E-mail : <i className="fas fa-envelope" />
+                                    <i className="fas fa-envelope" /> intercleankr@naver.com
                                 </a>
                             </div>
                             <div className={styles.header__top__container__right}>
