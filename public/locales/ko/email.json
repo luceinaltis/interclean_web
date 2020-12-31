@@ -1,0 +1,16 @@
+{
+    "name": "이름",
+    "email": "이메일",
+    "subject": "제목",
+    "message": "내용",
+
+    "send": "보내기",
+
+    "success_title": "전송 완료",
+    "success_text": "문의 내용을 확인하는 대로 답장 드리겠습니다",
+
+    "error_title": "전송 실패",
+    "error_text": "전송 중 오류가 있습니다",
+
+    "confirm": "OK"
+}

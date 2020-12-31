@@ -5,7 +5,7 @@
     "applications": "솔루션",
     "wash-systems": "세척 시스템",
     "services": "서비스",
-    "distributors": "위치",
+    "distributors": "문의",
 
     "APPLICATIONS": "솔루션",
     "bus-wash-systems": "버스 세척",
@@ -20,12 +20,12 @@
 
     "contact-us-": "인터클린",
     "company": "주식회사 인터클린 코리아.",
-    "location": "인천광역시 연수구 송도미래로 30, A동 108호",
+    "location": "인천광역시 연수구 청량로 11",
     "license-number": "사업자번호 : 660-89-00164",
-    "CEO": "대표 : 왕효성",
-    "company-phone": "인터클린코리아 : 032-885-0303",
+    "CEO": "대표이사 : 왕효성",
+    "company-phone": "연락처 : 032)885-0303",
     "fax": "팩스 : 032-712-4811",
-    "handphone": "핸드폰 : 010-6650-6111",
+    "handphone": "",
     "follow": "이메일 : "
 
 }

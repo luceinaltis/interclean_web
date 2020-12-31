@@ -9,6 +9,7 @@ body {
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
     color: #505050;
+    font-size: 1rem;
 }
 
 a {
@@ -114,6 +115,19 @@ footer ul {
         width: 100%;
         margin-left: 8vw;
         margin-right: 8vw;
+    }
+
+    .empty {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .inner__container {
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .empty {

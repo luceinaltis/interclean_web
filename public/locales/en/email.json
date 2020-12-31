@@ -1,0 +1,16 @@
+{
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+
+    "send": "SEND",
+
+    "success_title": "Success!!",
+    "success_text": "I will reply as soon as I check the contents of the inquiry",
+
+    "error_title": "Failure..",
+    "error_text": "There is an error in the transmission",
+
+    "confirm": "OK"
+}

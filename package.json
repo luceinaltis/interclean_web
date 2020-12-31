@@ -8,11 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-<<<<<<< HEAD
-=======
-    "classnames": "^2.2.6",
-    "dotenv": "^8.2.0",
->>>>>>> e18dc34e23b5bebfa6bc2a0ee8fe84beeea9b912
     "emailjs-com": "^2.6.4",
     "i18next": "^19.8.4",
     "i18next-icu": "^1.4.2",
@@ -22,6 +17,9 @@
     "react": "17.0.1",
     "react-collapse": "^5.1.0",
     "react-dom": "17.0.1",
-    "react-i18next": "^11.8.4"
+    "react-google-recaptcha": "^2.1.0",
+    "react-i18next": "^11.8.4",
+    "sweetalert2": "^10.12.6",
+    "sweetalert2-react-content": "^3.2.2"
   }
 }
