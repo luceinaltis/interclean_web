@@ -148,7 +148,11 @@ const Email = ({ t }) => {
                 </div>
             </div>
             <div className={styles.contact_form_row}>
-                <ReCAPTCHA sitekey="6LflYxoaAAAAAHvYdzStBrJvsVry4gkMR4_esUnI" onChange={onChange} />
+                <ReCAPTCHA
+                    size="normal"
+                    sitekey="6LflYxoaAAAAAHvYdzStBrJvsVry4gkMR4_esUnI"
+                    onChange={onChange}
+                />
                 <input
                     className={isValid ? `${styles.button} ${styles.valid}` : styles.button}
                     type="submit"
