@@ -44,18 +44,21 @@
 
 .content__title__blue {
     color: #0c519b;
-    font-size: 24px;
+    font-size: 1.75rem;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 .content__title__orange {
     color: #ef8e00;
-    font-size: 24px;
+    font-size: 1.75rem;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 .content__text {
-    line-height: 1.5;
+    line-height: 2;
+    font-size: 1rem;
     margin-bottom: 30px;
     margin-top: 10px;
 }
@@ -67,7 +70,7 @@
 }
 
 .headInfo__title {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .content__wrapper {
@@ -78,16 +81,9 @@
 /* aircraft/body.js */
 .body {
     width: 100%;
-    margin: 0px 0px -30px;
+    margin: 0px 0px -60px;
 }
 
 .body__content__wrapper {
     margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 800px) {
-    .content__text {
-        line-height: 1.8;
-        font-size: 14px;
-    }
 }

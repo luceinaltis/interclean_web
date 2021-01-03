@@ -1,6 +1,6 @@
 /* headInfo.js */
 .headInfo {
-    margin: 0px 0px 30px;
+    margin: -20px 0px 30px;
 }
 
 .headIcon__grid {
@@ -20,7 +20,7 @@
 .headIcon__text {
     color: #f7821f;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -32,17 +32,19 @@
 
 .headText__subtitle {
     color: #f7821f;
+    font-weight: bold;
+    margin-bottom: 7px;
 }
 
 .headText__title {
     color: #0c519b;
-    font-size: 30px;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
 .headText__body {
     margin: 20px 0px 10px 0px;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .headText__body__bold {
@@ -83,11 +85,12 @@
 .body__title {
     color: #f7821f;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.75rem;
 }
 
 .body__body {
-    line-height: 1.7;
+    line-height: 2;
+    font-size: 1rem;
     margin: 20px 0px;
 }
 
@@ -106,7 +109,7 @@
 
 /* tailInfo.js */
 .tailInfo {
-    margin: 70px 0px 50px;
+    margin: 70px 0px -10px;
 }
 
 .tailIcon__image {
@@ -123,20 +126,21 @@
 }
 
 .tailIcon__info {
-    line-height: 1.5;
+    line-height: 2;
     margin-top: 15px;
+    font-size: 1rem;
 }
 
 .tailInfo__iconName {
     color: #f7821f;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .tailInfo__title {
     color: #0c519b;
-    font-size: 24px;
+    font-size: 1.75rem;
     text-align: center;
     font-weight: bold;
 }
@@ -173,16 +177,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-
-    .headText__body {
-        font-size: 14px;
-    }
-
-    .body__body {
-        font-size: 14px;
-        line-height: 1.7;
-        margin: 20px 0px;
-    }
 
     .tailInfo__grid {
         grid-template-columns: repeat(1, 1fr);

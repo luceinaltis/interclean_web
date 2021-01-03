@@ -8,48 +8,48 @@ import styles from "@/public/css/modules/about.module.css";
 import { withTranslation } from "../i18n";
 
 function About({ t }) {
-    return (
-        <div>
-            <Header />
-            <Title titleString={t("title")} />
-            <div className="container">
-                <div className="inner__container">
-                    <div className={styles.about}>
-                        <div className={`${styles.title} ${styles.title__color_blue}`}>
-                            {t("p1")}
-                        </div>
-                        <ZoomImage imagePath="/image/about/headImage.jpg" />
-                        {/* 첫 번째 */}
-                        <div className={styles.content__wrapper}>
-                            <div className={`${styles.title} ${styles.title__color_emerald}`}>
-                                {t("p2")}
-                            </div>
-                            <p>{t("p3")}</p>
-                        </div>
-                        {/* 두 번째 */}
-                        <div className={styles.content__wrapper}>
-                            <div className={`${styles.title} ${styles.title__color_emerald}`}>
-                                {t("p4")}
-                            </div>
-                            <p>{t("p5")}</p>
-                        </div>
-                        {/* 세 번째 */}
-                        <div className={styles.content__wrapper}>
-                            <div className={`${styles.title} ${styles.title__color_emerald}`}>
-                                {t("p6")}
-                            </div>
-                            <p>{t("p7")}</p>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div>
+      <Header />
+      <Title titleString={t("title")} />
+      <div className="container">
+        <div className="inner__container">
+          <div className={styles.about}>
+            <div className={`${styles.title} ${styles.title__color_blue}`}>
+              {t("p1")}
             </div>
-            <Footer />
+            <ZoomImage imagePath="/image/about/headImage.jpg" />
+            {/* 첫 번째 */}
+            <div className={styles.content__wrapper}>
+              <div className={`${styles.title} ${styles.title__color_emerald}`}>
+                {t("p2")}
+              </div>
+              <p className={styles.content__text}>{t("p3")}</p>
+            </div>
+            {/* 두 번째 */}
+            <div className={styles.content__wrapper}>
+              <div className={`${styles.title} ${styles.title__color_emerald}`}>
+                {t("p4")}
+              </div>
+              <p className={styles.content__text}>{t("p5")}</p>
+            </div>
+            {/* 세 번째 */}
+            <div className={styles.content__wrapper}>
+              <div className={`${styles.title} ${styles.title__color_emerald}`}>
+                {t("p6")}
+              </div>
+              <p className={styles.content__text}>{t("p7")}</p>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 About.getInitialProps = async () => ({
-    namespacesRequired: ["about", "footer", "header"],
+  namespacesRequired: ["about", "footer", "header"],
 });
 
 export default withTranslation("about")(About);
