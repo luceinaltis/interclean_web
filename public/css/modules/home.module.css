@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px 4rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -27,16 +27,11 @@
 }
 
 .slide__arrow > span {
-    font-size: 60px;
-    color: yellowgreen;
-    background-color: white;
-    border-radius: 60px;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #064991;
     padding: 0px 2px 2px;
     cursor: pointer;
-}
-
-.slide__arrow > span:hover {
-    color: #0c519b;
 }
 
 .slide__ul {
@@ -57,7 +52,7 @@
 
 .slide__idxWrapper {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 0;
     right: 0;
     text-align: center;
@@ -65,11 +60,10 @@
 }
 
 .slide__idx {
-    width: 20px;
-    height: 20px;
-    margin: 0px 3px 0px;
-    border-radius: 10px;
-    background-color: #a3bad2;
+    width: 3rem;
+    height: 0.3rem;
+    margin: 0px 5px 0px;
+    background-color: gainsboro;
     display: inline-block;
     font-size: 0;
     transition: 0.3s;
@@ -101,27 +95,12 @@
 .slide [id="pos4"]:checked ~ .slide__idxWrapper label:nth-child(4),
 .slide [id="pos5"]:checked ~ .slide__idxWrapper label:nth-child(5),
 .slide [id="pos6"]:checked ~ .slide__idxWrapper label:nth-child(6) {
-    background-color: #ef7e00;
+    background-color: #064991;
 }
 
 @media only screen and (max-width: 1100px) {
     .slide__arrow {
-        transform: translateY(-50%);
-    }
-
-    .slide__arrow > span {
-        font-size: 30px;
-        color: yellowgreen;
-        background-color: white;
-        border-radius: 60px;
-        padding: 1px 2px 2px;
-    }
-
-    .slide__idx {
-        width: 12px;
-        height: 12px;
-        margin: 0px 6px 0px;
-        border-radius: 10px;
+        padding: 0 1rem;
     }
 }
 

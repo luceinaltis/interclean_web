@@ -22,7 +22,7 @@ const Translate = ({ children, direction = "up", className = "" }) => {
         observer.observe(domRef.current);
 
         return () => {
-            if (observer.unobserve) {
+            if (observer && observer.unobserve) {
                 observer.unobserve(domRef.current);
             }
         };
