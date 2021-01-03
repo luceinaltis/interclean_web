@@ -36,13 +36,13 @@
 
 .headInfo__title {
     color: #0c519b;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .headInfo__subtitle {
     color: #ef8e00;
-    font-size: 24px;
+    font-size: 1.75rem;
     font-weight: bold;
     margin: 10px 0px 20px;
 }
@@ -54,13 +54,13 @@
 
 .body__title {
     color: #0c519b;
-    font-size: 24px;
+    font-size: 1.75rem;
     font-weight: bold;
     margin: 50px 0px 10px;
 }
 
 .body__body {
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .body__body__bold {
@@ -75,11 +75,4 @@
 .body__body__link:hover {
     cursor: pointer;
     color: skyblue;
-}
-
-@media only screen and (max-width: 800px) {
-    .body__body {
-        line-height: 1.8;
-        font-size: 14px;
-    }
 }

@@ -207,6 +207,13 @@ function Header({ t }) {
                         </Link>
                       </div>
                       <div className={styles.menu__bottom__subtitle}>
+                        <Link href="/applications/retail-truck-wash-system">
+                          <div className="click">
+                            {t("Retail Truck Washes")}
+                          </div>
+                        </Link>
+                      </div>
+                      <div className={styles.menu__bottom__subtitle}>
                         <Link href="/applications/train-wash-system">
                           <div className="click">{t("Train Washes")}</div>
                         </Link>

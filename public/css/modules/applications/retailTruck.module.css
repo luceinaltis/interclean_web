@@ -1,16 +1,18 @@
 /* 공용 */
 .title__blue{
-    font-size: 32px;
+    font-size: 1.75rem;
     color: #0c519b;
     font-weight: bold;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .title__orange{
-    font-size: 24px;
+    font-size: 1.75rem;
     color: #ee7e02;
     font-weight: bold;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .contentWrapper {
@@ -18,7 +20,8 @@
 }
 
 .content__text {
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 2;
 }
 
 /* retailTruck/headInfo.js */
@@ -38,16 +41,5 @@
 
 /* retailTruck/body.js */
 .body {
-    margin: 0px 0px 0px;
-}
-
-@media only screen and (max-width: 800px) {
-    .content__text {
-        line-height: 1.8;
-        font-size: 14px;
-    }
-
-    .title__blue {
-        text-align: center;
-    }
+    margin: 0px 0px -50px;
 }
