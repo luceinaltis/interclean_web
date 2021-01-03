@@ -10,20 +10,192 @@
 .title__color_blue {
     color: #0c519b;
     font-size: 2rem;
-    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-.title__color_emerald {
-    color: #2db397;
-    font-size: 1.75rem;
-    margin-bottom: 10px;
+.background_text__wrapper {
+    padding: 2rem;
+    max-width: 1100px;
+    height: min-content;
+    background-color: #efefef;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: black;
 }
 
-.content__wrapper {
-    margin: 60px 0px 20px;
+.background_text {
+    border: 2px solid black;
+    padding: 5rem 2rem 5rem 2rem;
+    line-height: 1.5;
 }
 
-.content__text {
-    line-height: 2;
-    font-size: 1rem;
+.background_text__title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1100px) {
+    .background_image {
+        padding-top: 130px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title__color_blue {
+        color: #0c519b;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .title__color_emerald {
+        color: #2db397;
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+    }
+
+    .content__wrapper {
+        position: relative;
+        padding: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        line-height: 1.5;
+    }
+
+    .content__image {
+        position: absolute;
+        left: 1rem;
+        width: 57.6%;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    .content__text__wrapper {
+        display: inline-block;
+        width: 61.8%;
+        padding: 2rem;
+        background-color: #efefef;
+        transition: transform 1s ease-in-out;
+    }
+
+    .content__text {
+        border: 2px solid black;
+        padding: 4rem 1rem 4rem 40%;
+        color: #000;
+    }
+
+    .content__text__title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .content__text__desc {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .content__text__left {
+        padding: 4rem 40% 4rem 2rem;
+    }
+
+    .content__text__wrapper__left {
+        justify-content: flex-start;
+    }
+
+    .content__image__right {
+        left: auto;
+        right: 1rem;
+    }
+
+    .background_text__wrapper {
+        padding: 2rem;
+        max-width: 1100px;
+        height: min-content;
+        background-color: #efefef;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+        color: black;
+    }
+
+    .background_text {
+        border: 2px solid black;
+        padding: 5rem 2rem 5rem 2rem;
+        line-height: 1.5;
+    }
+
+    .background_text__title {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .content__text__wrapper {
+        padding: 1rem;
+    }
+
+    .content__text {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .content__text__title {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content__text__title {
+        font-size: 1.5rem;
+    }
+
+    .content__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 3rem 0rem;
+        background-color: #efefef;
+        padding: 1rem;
+        line-height: 1.5;
+    }
+
+    .content__text__wrapper {
+        padding-top: 1rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: #000;
+    }
+
+    .content__text__title {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .background_text__wrapper {
+        padding: 2rem;
+        max-width: 1100px;
+        height: min-content;
+        background-color: #efefef;
+        font-size: 1.1rem;
+        margin-top: 5rem;
+        color: black;
+    }
+
+    .background_text {
+        border: 2px solid black;
+        padding: 5rem 2rem 5rem 2rem;
+        line-height: 1.5;
+    }
+
+    .background_text__title {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
 }

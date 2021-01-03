@@ -169,7 +169,8 @@ function Footer({ t }) {
                 <div className="container">
                     <div className="inner__container">
                         <div className={styles.footer_bottom__title}>
-                            Copyright © 2020 InterClean Korea. All Rights Reserved.
+                            Copyright © {new Date().getFullYear()} InterClean Korea. All Rights
+                            Reserved.
                         </div>
                     </div>
                 </div>

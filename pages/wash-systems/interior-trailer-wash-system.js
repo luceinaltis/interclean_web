@@ -33,6 +33,7 @@ function InteriorTrailerWashSystem({ t }) {
                     <p>{t("p2")}</p>
                     <p>{t("p3")}</p>
                     <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                     <h2>{t("p4")}</h2>
                     <p>&nbsp;</p>
                     <div className={styles.grid}>
