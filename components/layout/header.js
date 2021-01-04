@@ -65,6 +65,10 @@ function Header({ t }) {
           name="google-site-verification"
           content="WSbSTUphVRPUoMXyx0v3PTnVuFrKr8Ecfz0etdRLbQ8"
         />
+        <meta
+          name="naver-site-verification"
+          content="5bb095ee4a7f2671f5e222314edad39ca340e7c3"
+        />
         <title>InterClean 대한민국 | 혁신적인 세척 솔루션</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         {/* fontawesome.com 아이콘 불러오기 */}
