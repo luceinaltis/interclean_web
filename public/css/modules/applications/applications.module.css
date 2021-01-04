@@ -68,12 +68,12 @@
 .dropbar {
     background-color: #72ab1a;
     color: white;
-    padding: 12px 20px 12px 40px;
-    font-size: 20px;
+    padding: 12px 20px 12px 2rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0px 10px;
+    margin: 0.4rem 0px;
     transition: 0.4s;
 }
 
@@ -129,6 +129,12 @@
 
 .handglassCell:hover .handglassCell__glassContainer {
     opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .dropbar {
+        font-size: 1.1rem;
+    }
 }
 
 /* handglassGrid.js */
