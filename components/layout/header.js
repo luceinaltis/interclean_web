@@ -61,6 +61,10 @@ function Header({ t }) {
     <header className={styles.header}>
       <Head>
         <meta charSet="UTF-8" />
+        <meta
+          name="google-site-verification"
+          content="WSbSTUphVRPUoMXyx0v3PTnVuFrKr8Ecfz0etdRLbQ8"
+        />
         <title>InterClean 대한민국 | 혁신적인 세척 솔루션</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         {/* fontawesome.com 아이콘 불러오기 */}
