@@ -61,6 +61,14 @@ function Header({ t }) {
         <header className={styles.header}>
             <Head>
                 <meta charSet="UTF-8" />
+                <meta
+                    name="google-site-verification"
+                    content="WSbSTUphVRPUoMXyx0v3PTnVuFrKr8Ecfz0etdRLbQ8"
+                />
+                <meta
+                    name="naver-site-verification"
+                    content="5bb095ee4a7f2671f5e222314edad39ca340e7c3"
+                />
                 <title>인터클린 대한민국 | 혁신적인 세척 솔루션</title>
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 {/* fontawesome.com 아이콘 불러오기 */}
@@ -96,18 +104,12 @@ function Header({ t }) {
                     name="og:description"
                     content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
                 />
-                <meta property="og:url" content="https://interclean-web.vercel.app" />
-                <meta property="og:url" content="https://interclean-web.vercel.app/" />
                 <meta property="og:url" content="https://interclean.kr/" />
                 <meta property="og:site_name" content="인터클린 코리아" />
                 <meta name="twitter:title" content="인터클린 코리아" />
                 <meta
                     name="twiiter:description"
                     content="인터클린은 중차량, 버스, 트럭 및 철도차량 세척 시스템 전문 설계 및 제작회사입니다."
-                />
-                <meta
-                    name="naver-site-verification"
-                    content="52dad42cc2cbb5cd3682760779638b0824ea30f1"
                 />
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
