@@ -136,7 +136,7 @@ function Header({ t }) {
               </div>
               <div className={styles.header__top__container__right}>
                 <i className="fas fa-mobile-alt" />
-                032)885-0303
+                +82-10-6650-6111
               </div>
             </div>
           </div>
