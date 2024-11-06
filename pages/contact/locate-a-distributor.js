@@ -33,7 +33,8 @@ function LocateDistributor({ t }) {
         var geocoder = new kakao.maps.services.Geocoder();
 
         // 주소로 좌표를 검색합니다
-        geocoder.addressSearch("인천광역시 연수구 송도동 214", function (result, status) {
+        // geocoder.addressSearch("인천광역시 연수구 송도동 214", function (result, status) {
+        geocoder.addressSearch("인천광역시 동구 방축로9번길 55", function (result, status) {
             // 정상적으로 검색이 완료됐으면
             if (status === kakao.maps.services.Status.OK) {
                 var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
@@ -67,7 +68,7 @@ function LocateDistributor({ t }) {
                     <p>&nbsp;</p>
                     <ul>
                         <li>{t("p3")}</li>
-                        <li>{t("p4")}</li>
+                        {/* <li>{t("p4")}</li> */}
                         <li>{t("p5")}</li>
                     </ul>
                     <p>&nbsp;</p>

@@ -4,7 +4,9 @@
     "p1": "CONTACT",
 
     "p2": "LOCATION",
-    "p3": "ADDRESS : D-dong 410, Songdomirae-ro 30, Yeonsu-gu, Incheon, Republic of Korea",
+    "__p3__": "ADDRESS : D-dong 410, Songdomirae-ro 30, Yeonsu-gu, Incheon, Republic of Korea",
+    "p3": "Address: 55, Bangchuk-ro 9beon-gil, Dong-gu, Incheon, Republic of Korea",
+
     "p4": "FAX : 032)712-4811",
-    "p5": "CONTACT : +82-10-6650-6111"
+    "p5": "Contact: +82-10-6650-6111"
 }

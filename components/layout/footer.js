@@ -105,18 +105,18 @@ function Footer({ t }) {
                             <div>
                                 <h5>{t("contact-us-")}</h5>
                                 <ul>
-                                    <li className={`${styles.footer_top__menu_items}`}>
+                                    {/* <li className={`${styles.footer_top__menu_items}`}>
                                         {t("CEO")}
-                                    </li>
-                                    <li className={`${styles.footer_top__menu_items}`}>
+                                    </li> */}
+                                    {/* <li className={`${styles.footer_top__menu_items}`}>
                                         {t("license-number")}
-                                    </li>
+                                    </li> */}
                                     <li className={`${styles.footer_top__menu_items}`}>
                                         {t("company-phone")}
                                     </li>
-                                    <li className={`${styles.footer_top__menu_items}`}>
+                                    {/* <li className={`${styles.footer_top__menu_items}`}>
                                         {t("fax")}
-                                    </li>
+                                    </li> */}
                                     <li className={`${styles.footer_top__menu_items}`}>
                                         {t("handphone")}
                                     </li>

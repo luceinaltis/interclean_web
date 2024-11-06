@@ -18,9 +18,13 @@
     "wheel-wash-systems": "휠, 타이어 / 섀시 세척",
     "water-recycling-wash-systems": "물 재활용",
 
-    "contact-us-": "인터클린",
-    "company": "주식회사 인터클린 코리아.",
-    "location": "인천광역시 연수구 송도미래로 30 스마트밸리 D동 410호",
+    "contact-us-": "인터크린",
+    "__company__": "주식회사 인터크린 코리아",
+    "company": "주식회사 명진테크",
+    
+    "__location__": "인천광역시 연수구 송도미래로 30 스마트밸리 D동 410호",
+    "location": "인천광역시 동구 방축로9번길 55",
+    
     "license-number": "사업자번호 : 660-86-00164",
     "CEO": "대표이사 : 왕효성",
     "company-phone": "연락처 : +82-10-6650-6111",

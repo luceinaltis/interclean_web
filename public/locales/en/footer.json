@@ -19,11 +19,14 @@
     "water-recycling-wash-systems": "Water Recycling Systems",
 
     "contact-us-": "CONTACT US",
-    "company": "InterClean Korea.",
-    "location": "D-dong 410, Songdomirae-ro 30, Yeonsu-gu, Incheon, Republic of Korea",
+    "__company__": "InterClean Korea.",
+    "company": "Myungjin Tech Co., Ltd.",
+
+    "__location__": "D-dong 410, Songdomirae-ro 30, Yeonsu-gu, Incheon, Republic of Korea",
+    "location": "55, Bangchuk-ro 9beon-gil, Dong-gu, Incheon, Republic of Korea",
     "license-number": "Business Registration : 660-86-00164",
     "CEO": "CEO : Wang Hyosung",
-    "company-phone": "Interclean Korea : +82-10-6650-6111",
+    "company-phone": "TEL. +82-10-6650-6111",
     "fax": "Fax : 032-712-4811",
     "handphone": "",
     "follow": "Follow us on:"
